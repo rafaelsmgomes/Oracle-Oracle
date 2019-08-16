@@ -4,16 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "watch:sass": "node-sass sass/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rafaelsmgomes/Oracle_at_oracle.git"
+    "url": "git+https://github.com/rafaelsmgomes/Oracle-Oracle.git"
   },
   "author": "Rafael Gomes",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rafaelsmgomes/Oracle_at_oracle/issues"
+    "url": "https://github.com/rafaelsmgomes/Oracle-Oracle/issues"
   },
-  "homepage": "https://github.com/rafaelsmgomes/Oracle_at_oracle#readme"
+  "homepage": "https://github.com/rafaelsmgomes/Oracle_at_oracle#readme",
+  "dependencies": {
+    "jquery": "^3.4.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
 }
