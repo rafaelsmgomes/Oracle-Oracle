@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch:sass": "node-sass sass/"
+    "watch:sass": "node-sass sass/main.scss bin-dev/css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss bin-dev/css/style.comp.css",
+    "concat:css": "concat -o bin-dev/css/style.concat.css bin-dev/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 5 versions' bin-dev/css/style.concat.css -o bin-dev/css/style.prefix.css",
+    "compress:css": "node-sass bin-dev/css/style.prefix.css bin-dev/css/style.min.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "repository": {
     "type": "git",
@@ -15,11 +20,15 @@
   "bugs": {
     "url": "https://github.com/rafaelsmgomes/Oracle-Oracle/issues"
   },
-  "homepage": "https://github.com/rafaelsmgomes/Oracle_at_oracle#readme",
+  "homepage": "https://github.com/rafaelsmgomes/Oracle-Oracle#readme",
   "dependencies": {
     "jquery": "^3.4.1"
   },
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "autoprefixer": "^9.6.1",
+    "concat": "^1.0.3",
+    "node-sass": "^4.12.0",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^6.1.3"
   }
 }

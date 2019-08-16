@@ -166,9 +166,6 @@
 /**PHONE**/
 
 @media only screen and (max-width:767px) {
-    .thumb-container{
-        max-width:  Calc(#{100vw} - #{30px});
-    }
 
     .img-responsive img{
         width: 100%;
