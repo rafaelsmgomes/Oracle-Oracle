@@ -1,0 +1,176 @@
+@font-face {
+    font-family: "Univers-Bold";
+    src: url("../fonts/UniversNextPro-Bold.ttf");
+    font-weight: normal;
+}
+@font-face {
+    /*55 Roman*/
+    font-family: "Univers";
+    src: url("../fonts/UniversLTStd.otf");
+    font-weight: normal;
+}
+@font-face {
+    /*45 Light*/
+    font-family: "Univers-lt";
+    src: url("../fonts/UniversLTStd-Light.otf");
+    font-weight: normal;
+}
+
+
+html {
+  font-family: sans-serif;
+  font-weight: 400;
+}
+
+body {
+  /* currently ems cause chrome bug misinterpreting rems on body element */
+  line-height: 1.5em;
+  font-family: $font-arial;
+  color: #4e5052;
+}
+
+p {
+  -webkit-margin-before:0px;
+  display: block;
+  line-height: 1.333333333333em;
+}
+
+a {
+  background-color: transparent;
+  cursor: pointer;
+  color: #00758f;
+  text-decoration: none;    
+  &:active{
+    outline: 0;  
+  }
+  &:hover{
+    outline: 0; 
+    text-decoration: underline;
+  }
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+h1 {
+    color:#00758f;
+    line-height: normal;
+    font-family: $font-reg;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+h2{
+    line-height: 1.2em;
+    color:#00758f;
+    font-weight: normal;
+    font-family: $font-reg;
+}
+
+h3{
+    color: #003b4d;
+    font-family: $font-reg;
+    font-weight: 400;
+    line-height: 1.555555555555556em;
+}
+h4{    
+    color: #00758f;
+    font-family: $font-reg;
+    font-weight: 400;
+}
+h6{
+    color: #00758f;
+    font-weight: normal;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.3em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+textarea {
+  overflow: auto;
+}
+
+.cover__title{
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: .01em;
+  color: $color-white-1;
+  
+  &--main{
+    font-family: $font-bold;
+    font-size: $big-font-size-1;
+    display: block;
+  }
+  &--sub{
+    font-family: $font-reg;
+    display: block;
+    font-size: $big-font-size-1;    
+  }  
+}
+
+.header{
+  color: $color-blue-1;
+  font-family: $font-arial;
+  font-weight: 700;
+  font-size: $big-font-size-1;
+
+  &--1{
+
+  }  
+}
+
+.pg{
+  font-size: $reg-font-size-1;
+  line-height: 1.5em;
+  margin-top: 1.05rem;
+}
+
+.vid_text{
+  color: #00758f;
+  font-size: $reg-font-size-1;
+  font-family: Arial, Helvetica, sans-serif;
+  &--1{
+    margin-top: 0.25rem;
+    margin-bottom: .5rem;  
+    letter-spacing: -.01em;
+  }
+}
+.btn-txt{
+  margin-right: auto;
+  font-size: $reg-font-size-1;
+  font-family: Arial, Helvetica, sans-serif; 
+  &--1{
+  }
+}
+
+.txt-color{
+  &--blue{
+    &-1{
+      color: $color-blue-2;
+    }
+  }
+  &--green{
+    &-1{
+      color: $color-green-1;
+    }
+  }
+  &--orange{
+    &-1{
+      color: $color-orange-1;
+    }
+  }
+}

@@ -1,0 +1,216 @@
+// v 2.1.1
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+
+@import 'components/arrows';
+@import 'components/buttons';
+@import 'components/citation';
+@import 'components/dropdown-toc';
+@import 'components/footr';
+@import 'components/images';
+@import 'components/list';
+@import 'components/nav-bar';
+@import 'components/popups-sliders';
+@import 'components/quote';
+@import 'components/table';
+@import 'components/videos';
+
+@import 'layout/container';
+@import 'layout/cover';
+@import 'layout/footer';
+@import 'layout/grid';
+
+@import 'pages/body';
+
+@import 'vendors/preloader';
+@import 'vendors/scrollbar';
+
+// Placed at the bottom for order of importance
+@import 'base/utilities';
+
+/**********Tablet Landscape***************/
+@media only screen and (max-width: 1024px){
+
+    span.desktop_invis{
+        display: inline;
+    }
+    .tablet-relative{
+        position: relative;
+    }
+    .TOC-right{
+      margin-top: 3.7rem;
+    }
+    #preloader{
+        height: 100vh;
+    }
+
+    .main_container{
+        position:fixed;
+        bottom:0rem;
+        overflow: hidden;
+        top:0rem;
+    }
+    .TOC-chap-num{
+      top: 0px;
+    }
+    .page{
+        -webkit-overflow-scrolling: touch;
+    }
+    #search_results .popupContainer{
+        background-color:#dee0e0 ;
+    }
+
+    .nav-left{
+        width: unset;
+    }
+    .nav-right{
+        width: 50%;
+    }
+    .scrollbar_setup {
+        height: 456px;
+        overflow: auto;
+    }
+    .container{
+        height: auto;
+    }
+    .mobile-TOC{
+        margin-top: -11px;
+        margin-bottom: 31px;
+    }
+    .mobile-TOC-link{
+        width: 100%;
+        display: inline-block;
+        color: #f29111;
+        font-size:14px;
+        margin-bottom: 17px;
+
+    }
+    .container-right-2-col .TOC-wrap {
+        margin-top: 0px;
+        margin-left: auto;
+    }
+    section.slick-slide {
+        overflow-y: scroll;
+    }
+    .bttn{
+        margin-bottom: 24px;
+    }
+
+    .desktop_only{
+        display: none!important;
+    }
+    .tablet-only {
+        display: inherit;
+    }
+    .tablet-only--1{
+        display: flex;
+    }
+    body {
+        transform: scale(1);
+        transform-origin: top center;
+    }
+    article {
+        padding-top: 0px;
+        margin-bottom: 16px;
+    }
+    h1{
+        margin-bottom: 21px;
+        letter-spacing: normal;
+        // width: 84%;
+    }
+    .row:after{
+        display: inline-block;
+    }   
+    .contents_header{
+        width:85%;
+        margin: auto;
+        padding-top: 3rem;
+        margin-bottom: 2rem;
+
+    }
+    .footer-chap-title {
+        margin-left: 4.4rem;
+    }
+    .footer {
+        height: 2.9rem;
+    }
+    .row.toc {
+        margin-top: 0px;
+    }
+    #p2 .background-holder,#p3 .background-holder, #p5 .background-holder::before, #p9 .background-holder {
+        background-image: none;
+    }
+    .TOC-article-wrap{
+        border-left:none;
+        margin-left: 0px;
+        margin-top: 0px;
+        padding-left: 0px;
+        padding-bottom: 60px;
+    }
+    .icon-wrap .hamburger_icon > ul{
+        padding-top: 2rem;
+    }
+
+}
+/**********Tablet Portrtait*******/
+
+@media only screen and (max-width: 910px) {
+
+}
+
+/**PHONE**/
+
+@media only screen and (max-width:767px) {
+    .thumb-container{
+        max-width:  Calc(#{100vw} - #{30px});
+    }
+
+    .img-responsive img{
+        width: 100%;
+    }
+    .search-box {
+        width: 150px;
+        background-position: 120px;
+        left: unset;
+        right: 45px;
+
+    }
+    article{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .content-holder{
+        padding-bottom: 0px; 
+    }
+    .trail-bttn.phone-only{
+        position: absolute;
+        float: none;
+        transform: translateX(-50%);
+        left: 50%;
+    }
+    .icon-wrap{
+        margin-top: -3px;
+    }
+    .slick-list{
+        min-height: 100vh;
+    }
+
+    .footer-phone{
+        display: block;
+    }
+    .unrow{
+        width: calc(100% + 30px);
+        margin-left: -15px;
+    }
+
+}
+@media only screen and (max-width:767px) {  
+  button:active{
+    background-color: unset;
+  }
+}

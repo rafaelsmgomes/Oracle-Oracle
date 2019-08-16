@@ -1,0 +1,61 @@
+.container {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 0rem;
+  box-sizing: border-box;
+  
+  @include clearfix;
+
+	&-1-col{
+	    height: 40.00rem;;
+	    float: left;
+	    width: 100%;
+	    &--1{
+	    	padding-top: 2.95rem;
+	    	padding-left: 0rem;
+	    }
+	}
+	&-left-3-col{
+	    padding: 4.60rem 2.25rem 0 2.20rem;
+	    float: left;
+	    width: 34%;
+	    height:40.00rem;
+	}
+	&-mid-3-col{
+	    padding: 4.60rem 1.25rem 0 1.60rem;
+	    float: left;
+	    width: 32%;
+	    height:40.00rem;
+	}
+	&-right-3-col{
+	    padding: 4.60rem 2.65rem 0 1.80rem;
+	    float: left;
+	    width: 34%;
+	    height:40.00rem;
+	}
+	&-right-2-col{
+	    height:40.00rem;
+	    padding: 7.30rem 2.65rem  0 3.55rem;
+	    width: 50%;
+	    float: left;
+	    background-color: orangered;
+	}
+	&-left-2-col{
+	  height:40.00rem;
+	  padding: 7.30rem 2.65rem 0 3.55rem;	  
+	  width: 50%;
+	  float: left;
+	  background-color: tan;
+	}
+}
+
+.container-right-3-col, .container-right-2-col, .container-left-2-col, .container-left-3-col, .container-mid-3-col, .container-left-2-col, .container-left-3-col, .container-left-2-col, .container-mid-3-col, .TOC-left, .TOC-right, .container-1-col {
+	@include bp(1053){
+    width: 100%;
+    height: auto;
+    padding: 0;
+    float: unset;
+    margin: 0 auto;
+  }
+}

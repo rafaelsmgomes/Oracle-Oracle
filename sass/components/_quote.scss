@@ -1,0 +1,20 @@
+.quote{
+	font-family: $font-arial;	
+	color: $color-blue-3;
+	b{
+		font-weight: 700;	
+		color: $color-pink-1;
+	}
+	&--1{
+		font-size: 1.60rem;
+		line-height: 2.10rem;
+	}
+	&__bolden{
+		color: $color-pink-1;
+	}
+	&__author{
+		display: block;		
+		font-size: 0.80rem;
+		line-height: 1.05rem;
+	}
+}

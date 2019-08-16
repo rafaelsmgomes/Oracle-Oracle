@@ -1,0 +1,68 @@
+.cover__text-box{
+  padding-bottom: 5rem;
+  padding-left: 3.60rem;
+  padding-right: 5.10rem;
+  position: absolute;
+  width: 100%;
+	bottom: 0;
+  display: flex;
+  align-items: center;
+  @include bp(1053){
+    padding-left: 5.46vw;
+    padding-right: 5.46vw;
+    padding-bottom: 6.45rem;
+  }
+  @include bp(767){
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+}
+.cover-logo-oracle {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 3.60rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/images/desktop/badge-cover.svg);
+    width: 10.35rem;
+    height: 3.80rem;
+    @include bp(1053){
+      height: 3.60rem;
+      width: 10.28rem;
+      left: 0;
+      margin-left: 5.46vw;
+      margin-top: -2.90rem;
+    }
+    @include bp(767){
+      // margin-left: 1.00rem;
+      // width: 6.87rem;
+      // height: 2.40rem;
+      margin-left: 5vw;
+      margin-top: -2.06rem;
+    }
+    @include bp(500){
+      height: 3.24rem;
+      width: 9.25rem;      
+    }
+    @include bp(450){
+      height: 3.08rem;
+      width: 8.79rem;      
+    }
+    @include bp(400){
+      height: 2.77rem;
+      width: 7.91rem;      
+    }    
+    @include bp(351){
+      height: 2.63rem;
+      width: 7.51rem;      
+    }       
+}
+.cover__arrow{
+  flex: 0 0 1.44rem;
+  height: 2.62rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/graphics/icons/cover-arrow.svg');
+  cursor: pointer;
+}

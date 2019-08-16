@@ -1,0 +1,19 @@
+img {
+  border: 0;
+  max-width: 100%;
+  max-height: 100%;	
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+.img-right img, .img-responsive img{
+    width: 100%;
+}
+
+.imgContainer{
+	&--1{
+		
+	}
+}

@@ -1,0 +1,178 @@
+.nav-bar {
+    display: flex;
+    width: 100%;
+    height: 2.90rem;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transition-delay: 5s;
+    transition: .25s all ease-in-out;
+    background-color: rgba(123,44,54,.1);
+    a {
+      text-decoration: none;
+        letter-spacing: -.04em;
+    }
+    &.nav-flex{
+      display:flex;
+    }
+
+}
+
+.company-logo{
+  opacity: 1;
+  background-image: url("../assets/graphics/icons/oracle-logo.svg");
+  background-repeat: no-repeat;
+  height: 2.90rem;
+  width: 7.80rem;
+  float: left;
+  margin-left: 3.55rem;
+  background-size: cover;
+  display: inline-block;
+  transition-delay: background 0s;
+  position: relative;
+
+    a {
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 0;
+      bottom: 0;
+    }
+}
+
+.icon-wrap {
+  display: block;
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  &__desc{
+    font-size: 0.95rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  & > *{
+    display: inline-block;
+    position: relative;
+    /*  height: 100% !important;*/
+    background-repeat: no-repeat;
+    background-position: center center;
+    & > ul {
+      transform: translateY(2.3*.5rem);
+      visibility: hidden;
+      opacity:0 ;
+      top: 100%;
+      left: 50%;
+      z-index: 2;
+      padding-left: 0.50rem;
+      border-radius: 0;
+      padding: 0;
+      margin-top: 2.50rem;
+      margin-left: -2.30rem;
+      margin-bottom: .1.00rem;
+      -webkit-transition: all .25s ease-in-out;
+      -moz-transition:all .25s ease-in-out;
+      -o-transition:all .25s ease-in-out;
+      
+      & > li {
+        list-style: none;                
+        a,
+        span{
+          padding: 1.10rem 1.00rem .1.00rem 1.50rem;
+          display: block;
+          transition: all .25s ease-in-out;
+          cursor: pointer;
+        }
+      }
+    }
+    & > .social-dd {
+      margin-top: 0.15rem;
+    }
+  }
+  & > .icon-smedia > ul {
+    left: auto;
+    right: 0;
+    transform: translateX(0);
+  }
+  .hamburger_icon > ul {
+    left: 0%;
+    padding-top: 1.45rem;
+    padding-bottom: 1.45rem;
+    
+    &.social-dd {
+      padding-bottom: 1.25rem;
+      padding-top: 1.25rem;
+    }
+  }    
+  &.hoverish  ul {
+    transform: translateY(0.8*.5rem);
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition:all .25s ease-in-out;
+    -o-transition:all .25s ease-in-out;
+  }
+}        
+
+.icon-wrap > * > ul > li .icon-download a {
+    padding: 0.60rem 1.00rem .1.00rem 0px;
+}
+
+.icon-wrap > * > ul > li span, .icon-wrap > * > ul > li a {
+  transition: background-color .25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+
+.icon-wrap > * > ul > li:hover a, .icon-wrap > * > ul > li:hover span {
+  transition: .25s ease-in-out;
+  text-decoration: none;
+}
+.menu-dd li:hover  a .txt-blue-dk{
+  text-decoration: underline;
+}
+.hashover{
+    cursor: pointer;
+}
+.social-dd .hashover:hover .txt-blue-dk{
+    text-decoration: underline;
+}
+
+.hamburger_icon {
+  background-image: url("../assets/graphics/icons/ddownicon.svg");
+  width: 2.40rem;
+  height: 2.15rem;
+    background-position: top left;
+  cursor: pointer;
+  margin-right: 0.28rem;
+}
+.hamburger_icon.lighter{
+    background-image: url("../assets/graphics/icons/hamburger-light.svg");
+}
+
+
+.hamburger_icon > ul {
+    width: 29.25rem;
+}
+
+.icon-download {
+    background-image: url('../assets/graphics/icons/download-arrow.png');
+    background-repeat: no-repeat;
+    background-size: 1.40rem 1.95rem;
+    padding-left: 2.50rem;
+/*    margin-bottom: 20px;*/
+    min-height: 1.95rem;
+    background-position-x: .2.00rem;
+    padding-top: .3.50rem;
+}
+
+.icon-download > ul {
+  text-align: center;
+}
+
+.icon-download > ul .pdf-link {
+  font-size: 0.80rem;
+  padding: 0.75rem .2.50rem;
+  width: 10.00rem;
+}

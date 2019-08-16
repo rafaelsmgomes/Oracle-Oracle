@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+
+*:focus{
+  outline: none;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  overflow:hidden;
+  font-size: 125%; //20px
+  box-sizing: border-box;
+  @include artboard-top-center;
+  @include bpx(1400,799){
+    font-size: 94%;
+  };
+  @include bp(1053){
+    font-size: 125%;
+    overflow: hidden;    
+  }
+  @include bp(767){
+    font-size: 112%; //18px    
+  };
+}
+
+body {
+  @include artboard-top-center;
+  @include bp(1053){
+    height:100vh;
+    position: relative;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+[hidden],
+template {
+  display: none;
+}
+
+
+abbr[title] {
+  border-bottom: 1rem dotted;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+pre {
+  overflow: auto;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+section{
+  &.slick-slide{
+    overflow: hidden;
+  }
+}

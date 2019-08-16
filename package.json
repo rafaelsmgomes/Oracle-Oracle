@@ -1,0 +1,19 @@
+{
+  "name": "oracle_at_oracle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rafaelsmgomes/Oracle_at_oracle.git"
+  },
+  "author": "Rafael Gomes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rafaelsmgomes/Oracle_at_oracle/issues"
+  },
+  "homepage": "https://github.com/rafaelsmgomes/Oracle_at_oracle#readme"
+}

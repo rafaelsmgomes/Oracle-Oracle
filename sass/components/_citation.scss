@@ -1,0 +1,19 @@
+.citation{
+	&__container{
+		display: flex;
+		flex-direction: column;
+		// height: 34.30rem;
+		position: relative;
+	}
+	&__item{
+		font-size: 0.70rem;
+		font-family: $font-arial;
+		line-height: 1rem;
+		&:nth-child(1){
+			margin-top: 0.40rem;
+		}
+		&:not(:last-child){
+			margin-bottom: .6rem;
+		}
+	}
+}

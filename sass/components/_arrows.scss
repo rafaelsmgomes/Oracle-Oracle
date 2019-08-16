@@ -1,0 +1,84 @@
+%slick-shared{
+  font-size: 0;
+  line-height: 0;
+  position: absolute;
+  border-radius: 0;
+  top: 50%;
+  display: block;
+  -webkit-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  cursor: pointer;
+  color: transparent;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus {
+  opacity: .75;
+  color: transparent;
+  outline: none;
+}
+
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before {
+  opacity: 1;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  font-size: 1.00rem;
+  line-height: 1;
+  opacity: .75;
+  color: white;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev{
+  @extend %slick-shared;
+  width: 1.60rem;
+  height: 2.80rem;
+  background-image: url("../assets/graphics/icons/arrow-prev.svg");
+  left: 0.00rem;
+  z-index: 2000;
+}
+
+[dir='rtl'] .slick-prev {
+  right: -1.24rem;
+  left: auto;
+}
+
+
+.slick-next {
+  @extend %slick-shared;
+  width: 1.60rem;
+  height: 2.80rem;
+  background-image: url("../assets/graphics/icons/arrow-next.svg");
+  right: 0.00rem;
+  z-index: 2000;
+}
+
+[dir='rtl'] .slick-next {
+  right: auto;
+}
+
+.arrow{
+  &--1{
+    height: 0.90rem;
+    width: 1.05rem;
+    background-image: url('../assets/graphics/icons/arrow_blue_lt.svg');
+    background-size: cover;
+    transition: transform 500ms;
+  }
+}

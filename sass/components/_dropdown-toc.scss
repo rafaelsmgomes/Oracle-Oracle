@@ -1,0 +1,22 @@
+.menu-dd{
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #bde6ee;
+
+		&.social-dd{
+	    margin-top: .1.00rem;
+	    padding-left: 1.50rem;
+	    padding-top: 1.10rem;
+	    padding-bottom: .3.50rem;
+		}    
+}
+
+
+
+.social-dd {
+    
+    li {display: inline;}
+}
+
+.toc-link:hover{
+  text-decoration: underline;
+}
