@@ -308,11 +308,12 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     switch(currentSlide) {
         case 0:
             $('.footer').hide();
+            $('.nav-bar').hide();
             // $('.footer-phone').hide();
             $('.nav-bar').removeClass('nav-flex');
             break;
         case lastSlide:
-            // $('.nav-bar').hide();
+            $('.nav-bar').hide();
             $('.footer').hide();
             // $('.footer-phone').hide();
             break;
@@ -411,8 +412,8 @@ function openPop1(){
             content:'image',
             modalclose:'true',
             appendTo:'slick-active',
-        modalColor:'#003b4d',
-        opacity:'0.90',
+            modalColor:'#003b4d',
+            opacity:'0.90',
             closeClass:'b-close'
 
         },
