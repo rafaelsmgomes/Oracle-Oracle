@@ -6,6 +6,123 @@
 	}
 }
 
+// TEXT STYLE MIXINS
+
+@mixin H1 {
+  font-family: OracleSans;
+  font-size: 40px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin H2 {
+  font-family: OracleSans;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.31;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin H3 {
+  font-family: OracleSans;
+  font-size: 22px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin Body-1-Bold {
+  font-family: OracleSans;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin Body-1-Regular {
+  font-family: OracleSans;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $col-dark-grayscale9;
+}
+
+@mixin Body-2-Bold {
+  font-family: OracleSans;
+  font-size: 16px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin Body-2-Italic {
+  font-family: OracleSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $col-dark-grayscale9;
+}
+
+@mixin Body-2-Regular {
+  font-family: OracleSans;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: $col-dark-grayscale9;
+}
+
+@mixin Caption-Bold {
+  font-family: OracleSans;
+  font-size: 12px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $col-dark-grayscale13;
+}
+
+@mixin Caption-Regular {
+  font-family: OracleSans;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: $col-dark-grayscale9;
+}
+
+
+
+
+
+
 @mixin artboard-top-center{	 
   transform-origin: top center;
   -webkit-font-smoothing: antialiased;

@@ -8,12 +8,41 @@ $reg-font-size-1:	0.80rem; // 16px;
 $med-font-size-1:	1.20rem; // 24px;
 $big-font-size-1:	1.80rem; // 36px;
 // FONT-FAMILY
+
 $font-bold: Univers-Bold, Arial, Helvetica, sans-serif;
 $font-reg: Univers, Arial, Helvetica, sans-serif;
 $font-lt: Univers-lt, Arial, Helvetica, sans-serif;
 $font-arial: Arial, Helvetica, sans-serif;
+
+
+// COLOR PALETTE
+
+
+$col-red-1: #c54839;
+$col-red0: #e55845;
+$col-red1: #ee644f;
+$col-red2: #f76e5a;
+
+$col-light-grayscale1: #fcfbfa;
+$col-light-grayscale2: #f8f7f4;
+$col-light-grayscale3: #f0f0ea;
+$col-light-grayscale4: #e6e1de;
+$col-light-grayscale5: #dedad7;
+$col-light-grayscale6: #d1ccc7;
+$col-light-grayscale7: #cbc5bf;
+
+$col-dark-grayscale8: #71665e;
+$col-dark-grayscale9: #645b54;
+$col-dark-grayscale10: #575049;
+$col-dark-grayscale11: #4b453f;
+$col-dark-grayscale12: #3f3a37;
+$col-dark-grayscale13: #383330;
+$col-dark-grayscale14: #2a2523;
+
+
 // COLORS
-$color-white-1: #fff;
+
+$col-white: #fff;
 
 $color-blue-1: #4e5052;
 $color-blue-2: #00758f;
@@ -31,5 +60,6 @@ $color-brown-1: #942745;
 $color-green-1: #3a913f;
 
 $color-orange-1: #f29111;
+
 
 
