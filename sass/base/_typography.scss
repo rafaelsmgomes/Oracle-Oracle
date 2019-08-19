@@ -1,18 +1,18 @@
 @font-face {
-    font-family: "Univers-Bold";
+    font-family: "OracleSans_Bd";
     src: url("../fonts/OracleSans_Bd.ttf");
     font-weight: normal;
 }
 @font-face {
     /*55 Roman*/
-    font-family: "Univers";
-    src: url("../fonts/OracleSans_Lt.ttf");
+    font-family: "OracleSans";
+    src: url("../fonts/OracleSans_Rg.ttf");
     font-weight: normal;
 }
 @font-face {
     /*45 Light*/
-    font-family: "Univers-lt";
-    src: url("../fonts/OracleSans_Rg.ttf");
+    font-family: "OracleSans_Lt";
+    src: url("../fonts/OracleSans_Lt.ttf");
     font-weight: normal;
 }
 
@@ -30,6 +30,7 @@ body {
 }
 
 p {
+  @include Body-1-Regular;
   -webkit-margin-before:0px;
   display: block;
   line-height: 1.333333333333em;
@@ -55,17 +56,10 @@ strong {
 }
 
 h1 {
-    color:#00758f;
-    line-height: normal;
-    font-family: $font-reg;
-    letter-spacing: 0.02em;
-    font-weight: 400;
+    @include H1;
 }
 h2{
-    line-height: 1.2em;
-    color:#00758f;
-    font-weight: normal;
-    font-family: $font-reg;
+    @include H2;
 }
 
 h3{
@@ -105,20 +99,23 @@ textarea {
 }
 
 .cover__title{
+  @include H1;
+  font-family: OracleSans_Bd;
   font-weight: 400;
   line-height: normal;
   letter-spacing: .01em;
-  color: $color-white-1;
-  
+  color: $col-white;
+   
   &--main{
     font-family: $font-bold;
     font-size: $big-font-size-1;
     display: block;
   }
   &--sub{
-    font-family: $font-reg;
+    @include H3;
     display: block;
-    font-size: $big-font-size-1;    
+    color: $col_white;
+    margin-bottom: 1.4rem
   }  
 }
 
@@ -134,9 +131,7 @@ textarea {
 }
 
 .pg{
-  font-size: $reg-font-size-1;
-  line-height: 1.5em;
-  margin-top: 1.05rem;
+  @include Body-1-Regular;
 }
 
 .vid_text{
@@ -151,13 +146,17 @@ textarea {
 }
 .btn-txt{
   margin-right: auto;
-  font-size: $reg-font-size-1;
-  font-family: Arial, Helvetica, sans-serif; 
+  @include Body-2-Bold;
+ 
   &--1{
+    color: white;
   }
 }
 
 .txt-color{
+  &--white{
+    color: $col-white; 
+  }
   &--blue{
     &-1{
       color: $color-blue-2;

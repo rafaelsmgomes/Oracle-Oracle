@@ -9,8 +9,8 @@
 // TEXT STYLE MIXINS
 
 @mixin H1 {
-  font-family: OracleSans;
-  font-size: 40px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -20,8 +20,8 @@
 }
 
 @mixin H2 {
-  font-family: OracleSans;
-  font-size: 32px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -31,8 +31,8 @@
 }
 
 @mixin H3 {
-  font-family: OracleSans;
-  font-size: 22px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -42,8 +42,8 @@
 }
 
 @mixin Body-1-Bold {
-  font-family: OracleSans;
-  font-size: 18px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -53,8 +53,8 @@
 }
 
 @mixin Body-1-Regular {
-  font-family: OracleSans;
-  font-size: 18px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -64,8 +64,8 @@
 }
 
 @mixin Body-2-Bold {
-  font-family: OracleSans;
-  font-size: 16px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -75,8 +75,8 @@
 }
 
 @mixin Body-2-Italic {
-  font-family: OracleSans;
-  font-size: 16px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
   font-weight: normal;
   font-style: italic;
   font-stretch: normal;
@@ -86,8 +86,8 @@
 }
 
 @mixin Body-2-Regular {
-  font-family: OracleSans;
-  font-size: 16px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
@@ -97,8 +97,8 @@
 }
 
 @mixin Caption-Bold {
-  font-family: OracleSans;
-  font-size: 12px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
   font-weight: bold;
   font-style: normal;
   font-stretch: normal;
@@ -108,8 +108,8 @@
 }
 
 @mixin Caption-Regular {
-  font-family: OracleSans;
-  font-size: 12px;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
   font-weight: normal;
   font-style: normal;
   font-stretch: normal;
