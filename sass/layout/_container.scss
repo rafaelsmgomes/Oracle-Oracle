@@ -4,7 +4,7 @@
   margin: 0 auto;
   padding: 0 0rem;
   box-sizing: border-box;
-  
+
   @include clearfix;
 
 	&-1-col{
@@ -13,7 +13,7 @@
 	    width: 100%;
 	    &--1{
 	    	padding-top: 2.95rem;
-	    	padding-left: 0rem;
+	    	padding-left: 12.7rem; 
 	    }
 	}
 	&-left-3-col{
@@ -39,14 +39,12 @@
 	    padding: 7.30rem 2.65rem  0 3.55rem;
 	    width: 50%;
 	    float: left;
-	    background-color: orangered;
 	}
 	&-left-2-col{
 	  height:40.00rem;
 	  padding: 7.30rem 2.65rem 0 3.55rem;	  
 	  width: 50%;
 	  float: left;
-	  background-color: tan;
 	}
 }
 

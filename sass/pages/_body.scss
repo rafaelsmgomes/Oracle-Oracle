@@ -44,6 +44,10 @@
 	@include bp(767){
 	 	@include platformPhone;
 	}
+
+	&--1{
+		background-color:$col-red-1;
+	}
 }
 
 .chap-name{
