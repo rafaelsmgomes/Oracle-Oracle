@@ -13,7 +13,7 @@ select {
   text-transform: none;
 }
 
-button,
+// button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
@@ -52,25 +52,26 @@ input {
 
 .btn{
   display: flex;
-  background-color: orangered;
+  background-color: transparent;
+  color: white;
   cursor: pointer;
   align-items: center;  
   transition: all 500ms; 
+  
   &--1{
-    width: 11.30rem;
     height: 1.80rem;
-    margin-left: auto;
-    background-color: $color-blue-2;
+
     padding-right: 0.55rem;
     padding-left: 0.55rem; 
-    border: 1px solid transparent;
+    border: 1px solid white;
+    border-radius: .2rem;
 
 
     &:hover{
       background-color: #fff;
-      border: 1px solid $color-blue-2;
+      color: $col-red1;
       & > *{
-        color: $color-blue-2;
+        color: $col-red1;
       }
       & > .arrow--2{
         background-image: url('../assets/graphics/icons/arrow_blue_lt.svg');
