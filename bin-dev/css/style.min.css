@@ -118,13 +118,15 @@ section.slick-slide {
 
 html {
   font-family: sans-serif;
-  font-weight: 400; }
+  font-weight: 400;
+  height: 100%; }
 
 body {
   /* currently ems cause chrome bug misinterpreting rems on body element */
   line-height: 1.5em;
   font-family: Arial, Helvetica, sans-serif;
-  color: #4e5052; }
+  color: #4e5052;
+  height: 100%; }
 
 p {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -176,10 +178,14 @@ h2 {
   margin-top: 1.6rem; }
 
 h3 {
-  color: #003b4d;
   font-family: OracleSans, Arial, Helvetica, sans-serif;
-  font-weight: 400;
-  line-height: 1.555555555555556em; }
+  font-size: 1.1rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.32;
+  letter-spacing: normal;
+  color: #383330; }
 
 h4 {
   color: #00758f;
@@ -245,13 +251,24 @@ textarea {
 
 .pg {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
-  font-size: .9rem;
+  font-size: .80rem;
   font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #645b54;
+  margin-bottom: 1rem; }
+
+.bold {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: #645b54; }
+  color: #383330; }
 
 .vid_text {
   color: #00758f;
@@ -281,8 +298,8 @@ textarea {
 .txt-color--blue-1 {
   color: #00758f; }
 
-.txt-color--green-1 {
-  color: #3a913f; }
+.txt-color--red {
+  color: #c54839; }
 
 .txt-color--orange-1 {
   color: #f29111; }
@@ -418,6 +435,58 @@ input {
       .btn--1:hover > .arrow--2 {
         background-image: url("../assets/graphics/icons/arrow_blue_lt.svg");
         transform: translateX(0.2rem); }
+
+.callout__slider {
+  background-color: #c54839;
+  margin-left: -3.1rem;
+  margin-right: -4.15rem;
+  padding-left: 3.1rem;
+  padding-right: 4.15rem;
+  padding-top: 2rem;
+  width: 22.7;
+  height: 100%; }
+
+.callout__list {
+  color: #fff; }
+
+.callout__item {
+  padding-bottom: 0.90rem;
+  position: relative; }
+  .callout__item__header {
+    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #383330;
+    color: #fcfbfa;
+    display: block;
+    margin-bottom: .2rem; }
+  .callout__item__description {
+    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-size: .80rem;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #645b54;
+    color: #fcfbfa;
+    display: block; }
+  .callout__item:before {
+    background-color: rgba(255, 255, 255, 0.15);
+    width: 2px;
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -.85rem; }
+  .callout__item:first-of-type:before {
+    top: .8rem; }
+  .callout__item:last-of-type:before {
+    height: .8rem; }
 
 .citation__container {
   display: flex;
@@ -606,14 +675,16 @@ svg:not(:root) {
   display: block;
   padding-top: .8rem;
   width: 3.4rem;
-  border-bottom: 5px solid #c54839; }
+  border-bottom: 5px solid #c54839;
+  margin-bottom: 2rem; }
 
 .under-white::after {
   content: "";
   padding-top: 1.15rem;
   display: block;
   width: 3.4rem;
-  border-bottom: 5px solid white; }
+  border-bottom: 5px solid white;
+  margin-bottom: 2rem; }
 
 ul.no-dots-ul {
   list-style: none; }
