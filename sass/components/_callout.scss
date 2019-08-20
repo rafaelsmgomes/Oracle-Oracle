@@ -1,0 +1,52 @@
+.callout{
+    &__slider{
+        background-color: $col-red-1;
+        margin-left: -3.1rem;
+        margin-right: -4.15rem;
+        padding-left: 3.1rem;
+        padding-right: 4.15rem;
+        padding-top: 2rem;
+        width: 22.7;
+        height: 100%;
+    }
+
+    &__list{
+        color: $col-white;
+    }
+
+    &__item{
+        padding-bottom: 0.90rem;
+        position: relative;
+
+        &__header{
+            @include Body-1-Bold;
+            color: $col-light-grayscale1;
+            display: block;
+            margin-bottom: .2rem;
+        }
+
+        &__description{
+            @include Body-2-Regular;
+            color: $col-light-grayscale1;
+            display: block;
+        }
+
+        &:before{
+            background-color: rgba($color: #fff, $alpha: .15);
+            width: 2px;
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: -.85rem;
+        }
+
+        &:first-of-type:before{
+            top: .8rem;
+        }
+        &:last-of-type:before{
+            height: .8rem;
+        }
+    }
+
+}

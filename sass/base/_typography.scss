@@ -20,6 +20,7 @@
 html {
   font-family: sans-serif;
   font-weight: 400;
+  height: 100%;
 }
 
 body {
@@ -27,6 +28,7 @@ body {
   line-height: 1.5em;
   font-family: $font-arial;
   color: #4e5052;
+  height: 100%;
 }
 
 p {
@@ -63,10 +65,7 @@ h2{
 }
 
 h3{
-    color: #003b4d;
-    font-family: $font-reg;
-    font-weight: 400;
-    line-height: 1.555555555555556em;
+    @include H3;
 }
 h4{    
     color: #00758f;
@@ -131,9 +130,13 @@ textarea {
 }
 
 .pg{
-  @include Body-1-Regular;
+  @include Body-2-Regular;
+  margin-bottom: 1rem; 
 }
 
+.bold{
+  @include Body-1-Bold;
+}
 .vid_text{
   color: #00758f;
   font-size: $reg-font-size-1;
@@ -162,10 +165,8 @@ textarea {
       color: $color-blue-2;
     }
   }
-  &--green{
-    &-1{
-      color: $color-green-1;
-    }
+  &--red{
+    color: $col-red-1;
   }
   &--orange{
     &-1{
