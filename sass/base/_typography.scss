@@ -54,12 +54,12 @@ b,
 strong {
   font-weight: 700;
 }
-
 h1 {
     @include H1;
 }
 h2{
     @include H2;
+    margin-top: 1.6rem; 
 }
 
 h3{
