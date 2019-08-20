@@ -172,7 +172,8 @@ h2 {
   font-stretch: normal;
   line-height: 1.31;
   letter-spacing: normal;
-  color: #383330; }
+  color: #383330;
+  margin-top: 1.6rem; }
 
 h3 {
   color: #003b4d;
@@ -600,14 +601,14 @@ svg:not(:root) {
 .img-right img, .img-responsive img {
   width: 100%; }
 
-.underline::after {
+.under::after {
   content: "";
   display: block;
-  padding-top: 1.15rem;
+  padding-top: .8rem;
   width: 3.4rem;
   border-bottom: 5px solid #c54839; }
 
-.underline-white::after {
+.under-white::after {
   content: "";
   padding-top: 1.15rem;
   display: block;
@@ -948,12 +949,12 @@ table {
     height: 40.00rem; }
   .container-right-2-col {
     height: 40.00rem;
-    padding: 7.30rem 2.65rem  0 3.55rem;
+    padding: 4.8rem 6.15rem  0 6.15rem;
     width: 50%;
     float: left; }
   .container-left-2-col {
     height: 40.00rem;
-    padding: 7.30rem 2.65rem 0 3.55rem;
+    padding: 4.8rem 6.15rem  0 6.15rem;
     width: 50%;
     float: left; }
 
