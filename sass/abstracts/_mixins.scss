@@ -16,7 +16,7 @@
   font-stretch: normal;
   line-height: 1.35;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
 @mixin H2 {
@@ -27,7 +27,7 @@
   font-stretch: normal;
   line-height: 1.31;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
 @mixin H3 {
@@ -38,10 +38,10 @@
   font-stretch: normal;
   line-height: 1.32;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
-@mixin Body-1-Bold {
+@mixin Body-1--Bold {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
@@ -49,10 +49,10 @@
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
-@mixin Body-1-Regular {
+@mixin Body-1 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: normal;
@@ -60,10 +60,10 @@
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: $col-dark-grayscale9;
+  color: $col-dark-gray9;
 }
 
-@mixin Body-2-Bold {
+@mixin Body-2--Bold {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   font-weight: bold;
@@ -71,7 +71,7 @@
   font-stretch: normal;
   line-height: 1.38;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
 @mixin Body-2-Italic {
@@ -82,10 +82,10 @@
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: $col-dark-grayscale9; 
+  color: $col-dark-gray9; 
 }
 
-@mixin Body-2-Regular {
+@mixin Body-2 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   font-weight: normal;
@@ -93,7 +93,7 @@
   font-stretch: normal;
   line-height: 1.5;
   letter-spacing: normal;
-  color: $col-dark-grayscale9;
+  color: $col-dark-gray9;
 }
 
 @mixin Caption-Bold {
@@ -104,7 +104,7 @@
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: $col-dark-grayscale13;
+  color: $col-dark-gray13;
 }
 
 @mixin Caption-Regular {
@@ -115,7 +115,7 @@
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: $col-dark-grayscale9;
+  color: $col-dark-gray9;
 }
 
 
@@ -126,7 +126,7 @@
 @mixin artboard-top-center{	 
   transform-origin: top center;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -moz-osx-font-smoothing: gray;
 }
 
 @mixin absCenter{
