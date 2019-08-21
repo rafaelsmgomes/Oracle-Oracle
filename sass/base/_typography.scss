@@ -96,27 +96,27 @@ textarea {
 .cover__title{
   @include H1;
   font-family: OracleSans_Bd;
-  font-weight: 400;
   line-height: normal;
-  letter-spacing: .01em;
   color: $col-white;
    
   &--main{
-    font-family: $font-bold; 
-    font-size: $big-font-size-1;
     display: block;
   }
   &--sub{
     @include H3;
     display: block;
     color: $col_white;
-    margin-bottom: 1.4rem
   }  
 }
 
 .header{
-
+  
   &__primary{
+    @include H1;
+    color: $col-white;
+    margin-top: 2rem;
+  }
+  &__secondary{
     @include H2;
     margin-top: 1.6rem;
 
@@ -130,7 +130,7 @@ textarea {
     } 
   }
 
-  &__secondary{
+  &__tertiary{
     @include Body-1--Bold;
     color: $col-red-1;
     position: relative;

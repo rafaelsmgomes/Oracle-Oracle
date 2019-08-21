@@ -11,6 +11,9 @@ $Breakpoint argument choices:
 -land
 -desk
 */
+* {
+  outline: hotpink solid 1px; }
+
 *,
 *::after,
 *::before {
@@ -208,13 +211,9 @@ textarea {
   letter-spacing: normal;
   color: #383330;
   font-family: OracleSans_Bd;
-  font-weight: 400;
   line-height: normal;
-  letter-spacing: .01em;
   color: #fff; }
   .cover__title--main {
-    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-    font-size: 1.8rem;
     display: block; }
   .cover__title--sub {
     font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -226,10 +225,21 @@ textarea {
     letter-spacing: normal;
     color: #383330;
     display: block;
-    color: #fff;
-    margin-bottom: 1.4rem; }
+    color: #fff; }
 
 .header__primary {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: #383330;
+  color: #fff;
+  margin-top: 2rem; }
+
+.header__secondary {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
@@ -239,7 +249,7 @@ textarea {
   letter-spacing: normal;
   color: #383330;
   margin-top: 1.6rem; }
-  .header__primary::after {
+  .header__secondary::after {
     content: "";
     display: block;
     padding-top: .8rem;
@@ -247,7 +257,7 @@ textarea {
     border-bottom: 5px solid #D1350F;
     margin-bottom: 2rem; }
 
-.header__secondary {
+.header__tertiary {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
@@ -258,14 +268,14 @@ textarea {
   color: #383330;
   color: #D1350F;
   position: relative; }
-  .header__secondary::after {
+  .header__tertiary::after {
     content: "";
     display: block;
     padding-top: .5rem;
     width: 100%;
     border-bottom: 2px solid #e6e1de;
     margin-bottom: 2rem; }
-  .header__secondary--sub {
+  .header__tertiary--sub {
     display: inline-block;
     position: absolute;
     top: 0;
@@ -325,6 +335,29 @@ textarea {
 
 .txt-color--orange-1 {
   color: #f29111; }
+
+.callout__txt__header {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.38;
+  letter-spacing: normal;
+  color: #383330;
+  color: #fff; }
+
+.callout__txt__description {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
+  font-weight: normal;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #645b54;
+  font-size: .6rem;
+  color: #fff; }
 
 .callout__flex__txt {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -501,9 +534,36 @@ input {
     display: flex;
     align-items: center;
     justify-content: space-between; }
+  .callout__slider--4 {
+    margin: 0;
+    margin-bottom: .6rem;
+    padding: .6rem;
+    display: flex;
+    align-items: center; }
 
 .callout__flex--2 {
   padding-right: 3rem; }
+
+.callout__symb {
+  margin-left: .6rem;
+  margin-right: 1.4rem;
+  width: 2.5rem;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  color: #383330;
+  color: #fff;
+  font-size: 1.1rem; }
+
+.callout__description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 16rem; }
 
 .citation__container {
   display: flex;
@@ -686,6 +746,14 @@ svg:not(:root) {
 
 .img-right img, .img-responsive img {
   width: 100%; }
+
+.home-icon {
+  background-image: url(../assets/graphics/icon-home.svg); }
+  .home-icon--2 {
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    fill: #fff !important; }
 
 .under-white::after {
   content: "";
@@ -1063,6 +1131,8 @@ table {
     .container-1-col--1 {
       padding-top: 2.95rem;
       padding-left: 12.7rem; }
+    .container-1-col--2 {
+      padding: 2.2rem 6.2rem 0 6.2rem; }
   .container-left-3-col {
     padding: 4.60rem 2.25rem 0 2.20rem;
     float: left;
@@ -1277,6 +1347,8 @@ table {
       max-height: 100vh;
       max-width: 100vw; } }
   .page--1 {
+    background-color: #D1350F; }
+  .page--6 {
     background-color: #D1350F; }
 
 .chap-name {
@@ -1696,6 +1768,10 @@ img.inline {
     height: 1.6rem; }
   .filler--2 {
     height: 5.75rem; }
+  .filler--3 {
+    height: 4.4rem; }
+  .filler--4 {
+    height: 1rem; }
 
 /**********Tablet Landscape***************/
 @media only screen and (max-width: 1024px) {

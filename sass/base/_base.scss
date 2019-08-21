@@ -1,3 +1,7 @@
+*{
+  outline: hotpink solid 1px; 
+}
+
 *,
 *::after,
 *::before {
@@ -10,10 +14,6 @@
 *:focus{
   outline: none;
 }
-
-// *{
-//   outline: hotpink solid 1px; 
-// }
 
 html {
   -webkit-text-size-adjust: 100%;

@@ -45,9 +45,8 @@
 	 	@include platformPhone;
 	}
 
-	&--1{
-		background-color:$col-red-1;
-	}
+	&--1{ background-color:$col-red-1; }
+	&--6{ background-color:$col-red-1; }
 }
 
 .chap-name{

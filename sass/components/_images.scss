@@ -17,3 +17,14 @@ svg:not(:root) {
 		
 	}
 }
+
+.home-icon{
+  background-image: url(../assets/graphics/icon-home.svg);
+
+  &--2{
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    fill: $col-white !important;
+  }
+}
