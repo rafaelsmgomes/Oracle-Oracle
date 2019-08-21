@@ -36,3 +36,61 @@ ul.no-dots-ul{
 		}
 	}
 }
+
+.bullet{
+
+	
+	&__list{
+			
+		&--1,
+		&--2{
+			color: $col-white;
+		}
+		&--3{
+			color: $col-red-1;
+		}
+		
+	}
+	&__item{
+		padding-bottom: 0.90rem;
+		position: relative;
+	
+		&__header{
+			@include Body-1--Bold;
+			color: $col-light-gray1;
+			display: block;
+			margin-bottom: .2rem;
+
+			&--3{color: $col-red-1;}
+		}
+	
+		&__description{
+			@include Body-2;
+			color: $col-light-gray1;
+			display: block;
+
+			&--3{ color: $col-dark-gray9; }
+		}
+	
+		&__connected{
+			&:before{
+				background-color: rgba($color: #fff, $alpha: .15);
+				width: 2px;
+				content: "";
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: -.85rem;
+			}
+			&--3:before{background-color: rgba($col-dark-gray9, $alpha: .15);}
+	
+			&:first-of-type:before{
+				top: .8rem;
+			}
+			&:last-of-type:before{
+				height: .8rem;
+			}
+		}
+	}
+
+}	
