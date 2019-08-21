@@ -201,6 +201,21 @@ textarea {
 }
 
 .callout{
+
+  &__txt{
+    
+    &__header{
+      @include Body-2--Bold;
+      color: $col-white; 
+    }
+    &__description{
+      @include Body-2--Italic;
+      font-size: .6rem;
+      color: $col-white; 
+    }
+    
+  }
+
   &__flex{
     
     &__txt{
@@ -213,7 +228,7 @@ textarea {
         color: $col-white;
       }
     }
-
   }
+
 }
 
