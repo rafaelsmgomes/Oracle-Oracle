@@ -1,12 +1,4 @@
 .under{
-    &::after {
-        content: "";
-        display: block;
-        padding-top: .8rem;
-        width: 3.4rem;
-        border-bottom: 5px solid $col-red-1;
-        margin-bottom: 2rem; 
-    } 
     &-white::after {
         content: "";
         padding-top: 1.15rem;
@@ -15,5 +7,6 @@
         border-bottom: 5px solid white;
         margin-bottom: 2rem;
     } 
+  
 }
     

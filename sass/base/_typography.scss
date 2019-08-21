@@ -32,7 +32,7 @@ body {
 }
 
 p {
-  @include Body-1-Regular;
+  @include Body-1;
   -webkit-margin-before:0px;
   display: block;
   line-height: 1.333333333333em;
@@ -60,21 +60,17 @@ h1 {
     @include H1;
 }
 h2{
-    @include H2;
-    margin-top: 1.6rem; 
+
 }
 
 h3{
-    @include H3;
+  @include H3;
 }
 h4{    
-    color: #00758f;
-    font-family: $font-reg;
-    font-weight: 400;
+  font-weight: 700;
 }
 h6{
-    color: #00758f;
-    font-weight: normal;
+  font-weight: 700;
 }
 
 sub,
@@ -106,7 +102,7 @@ textarea {
   color: $col-white;
    
   &--main{
-    font-family: $font-bold;
+    font-family: $font-bold; 
     font-size: $big-font-size-1;
     display: block;
   }
@@ -119,23 +115,52 @@ textarea {
 }
 
 .header{
-  color: $color-blue-1;
-  font-family: $font-arial;
-  font-weight: 700;
-  font-size: $big-font-size-1;
 
-  &--1{
+  &__primary{
+    @include H2;
+    margin-top: 1.6rem;
 
-  }  
+    &::after {
+      content: "";
+      display: block;
+      padding-top: .8rem;
+      width: 3.4rem;
+      border-bottom: 5px solid $col-red-1;
+      margin-bottom: 2rem; 
+    } 
+  }
+
+  &__secondary{
+    @include Body-1--Bold;
+    color: $col-red-1;
+    position: relative;
+
+    &::after {
+      content: "";
+      display: block;
+      padding-top: .5rem;
+      width: 100%;
+      border-bottom: 2px solid $col-light-gray4;
+      margin-bottom: 2rem; 
+    } 
+
+    &--sub{
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: -1rem;
+    }
+
+  }
 }
 
 .pg{
-  @include Body-2-Regular;
+  @include Body-2;
   margin-bottom: 1rem; 
 }
 
 .bold{
-  @include Body-1-Bold;
+  @include Body-1--Bold;
 }
 .vid_text{
   color: #00758f;
@@ -149,7 +174,7 @@ textarea {
 }
 .btn-txt{
   margin-right: auto;
-  @include Body-2-Bold;
+  @include Body-2--Bold;
  
   &--1{
     color: white;
@@ -174,3 +199,21 @@ textarea {
     }
   }
 }
+
+.callout{
+  &__flex{
+    
+    &__txt{
+      @include Body-1;
+      color: $col-white;
+
+      &--bold{
+        @include Body-1--Bold;
+        font-size: 1.1rem;
+        color: $col-white;
+      }
+    }
+
+  }
+}
+
