@@ -11,9 +11,6 @@ $Breakpoint argument choices:
 -land
 -desk
 */
-* {
-  outline: hotpink solid 1px; }
-
 *,
 *::after,
 *::before {
@@ -236,8 +233,9 @@ textarea {
   line-height: 1.35;
   letter-spacing: normal;
   color: #383330;
-  color: #fff;
-  margin-top: 2rem; }
+  color: #fff; }
+  .header__primary--1 {
+    display: inline-block; }
 
 .header__secondary {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -747,13 +745,10 @@ svg:not(:root) {
 .img-right img, .img-responsive img {
   width: 100%; }
 
-.home-icon {
-  background-image: url(../assets/graphics/icon-home.svg); }
-  .home-icon--2 {
-    display: inline-block;
-    width: 1rem;
-    height: 1rem;
-    fill: #fff !important; }
+.home-icon--2 {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem; }
 
 .under-white::after {
   content: "";
@@ -761,6 +756,14 @@ svg:not(:root) {
   display: block;
   width: 3.4rem;
   border-bottom: 5px solid white;
+  margin-bottom: 2rem; }
+
+.under-red::after {
+  content: "";
+  padding-top: 1.15rem;
+  display: block;
+  width: 3.4rem;
+  border-bottom: 5px solid #f76e5a;
   margin-bottom: 2rem; }
 
 ul.no-dots-ul {

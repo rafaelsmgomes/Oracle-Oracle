@@ -114,7 +114,11 @@ textarea {
   &__primary{
     @include H1;
     color: $col-white;
-    margin-top: 2rem;
+
+    &--1{
+      display: inline-block;
+      
+    }
   }
   &__secondary{
     @include H2;

@@ -1,0 +1,20 @@
+.under{
+    &-white::after {
+        content: "";
+        padding-top: 1.15rem;
+        display: block;
+        width: 3.4rem; 
+        border-bottom: 5px solid white;
+        margin-bottom: 2rem;
+    } 
+    &-red::after {
+        content: "";
+        padding-top: 1.15rem;
+        display: block;
+        width: 3.4rem;
+        border-bottom: 5px solid $col-red2;
+        margin-bottom: 2rem;
+    } 
+  
+}
+    
