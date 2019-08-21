@@ -1,0 +1,24 @@
+.flex{
+
+    &-wrapper{
+        height: 13.5rem;
+
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    &__container{
+        margin-right: 6.5rem;
+        width: 22.65rem;
+        margin-bottom: 1.65rem;
+    }
+
+    &__direction{
+        border: 1px solid $col-red2;
+        border-radius: 4px;
+        margin: -.8rem;
+        margin-top: 0;
+        padding: .8rem;
+    }
+}

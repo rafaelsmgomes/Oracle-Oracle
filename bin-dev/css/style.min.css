@@ -11,6 +11,9 @@ $Breakpoint argument choices:
 -land
 -desk
 */
+* {
+  outline: hotpink solid 1px; }
+
 *,
 *::after,
 *::before {
@@ -224,6 +227,11 @@ textarea {
     display: block;
     color: #fff; }
 
+.heading__home {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2.5rem; }
+
 .header__primary {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 2rem;
@@ -235,7 +243,8 @@ textarea {
   color: #383330;
   color: #fff; }
   .header__primary--1 {
-    display: inline-block; }
+    display: block;
+    font-size: 1.6rem; }
 
 .header__secondary {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -289,6 +298,9 @@ textarea {
   letter-spacing: normal;
   color: #645b54;
   margin-bottom: 1rem; }
+  .pg--white {
+    color: #fff;
+    font-size: .8rem; }
 
 .bold {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -298,7 +310,8 @@ textarea {
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  color: #383330; }
+  color: #383330;
+  color: inherit; }
 
 .vid_text {
   color: #00758f;
@@ -384,7 +397,7 @@ textarea {
   line-height: 0;
   position: absolute;
   border-radius: 0;
-  top: 50%;
+  bottom: -2rem;
   display: block;
   -webkit-transform: translate(0, -50%);
   -ms-transform: translate(0, -50%);
@@ -425,9 +438,10 @@ textarea {
 .slick-prev {
   width: 1.60rem;
   height: 2.80rem;
-  background-image: url("../assets/graphics/icons/arrow-prev.svg");
-  left: 0.00rem;
-  z-index: 2000; }
+  background-image: url("../assets/graphics/icon-back.svg");
+  left: 2.70rem;
+  z-index: 2000;
+  background-repeat: no-repeat; }
 
 [dir='rtl'] .slick-prev {
   right: -1.24rem;
@@ -436,9 +450,10 @@ textarea {
 .slick-next {
   width: 1.60rem;
   height: 2.80rem;
-  background-image: url("../assets/graphics/icons/arrow-next.svg");
-  right: 0.00rem;
-  z-index: 2000; }
+  background-image: url("../assets/graphics/icon-next.svg");
+  right: 2.70rem;
+  z-index: 2000;
+  background-repeat: no-repeat; }
 
 [dir='rtl'] .slick-next {
   right: auto; }
@@ -563,6 +578,28 @@ input {
   align-items: flex-start;
   width: 16rem; }
 
+.chapters__wrapper {
+  display: flex;
+  justify-content: space-between; }
+
+.chapters__container {
+  height: 13.5rem;
+  width: 13.5rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  padding: 0 .8rem; }
+
+.chapters__title {
+  height: 3.2rem;
+  border-bottom: 1px solid #f0f0ea; }
+
+.chapters__symbol {
+  height: 8.25rem; }
+
+.chapters__cta {
+  height: 2.0rem;
+  border-top: 1px solid #f0f0ea; }
+
 .citation__container {
   display: flex;
   flex-direction: column;
@@ -608,6 +645,24 @@ input {
 
 .toc-link:hover {
   text-decoration: underline; }
+
+.flex-wrapper {
+  height: 13.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
+.flex__container {
+  margin-right: 6.5rem;
+  width: 22.65rem;
+  margin-bottom: 1.65rem; }
+
+.flex__direction {
+  border: 1px solid #f76e5a;
+  border-radius: 4px;
+  margin: -.8rem;
+  margin-top: 0;
+  padding: .8rem; }
 
 .footr {
   color: #003b4d;
@@ -746,25 +801,10 @@ svg:not(:root) {
   width: 100%; }
 
 .home-icon--2 {
-  display: inline-block;
-  width: 2rem;
-  height: 2rem; }
-
-.under-white::after {
-  content: "";
-  padding-top: 1.15rem;
   display: block;
-  width: 3.4rem;
-  border-bottom: 5px solid white;
-  margin-bottom: 2rem; }
-
-.under-red::after {
-  content: "";
-  padding-top: 1.15rem;
-  display: block;
-  width: 3.4rem;
-  border-bottom: 5px solid #f76e5a;
-  margin-bottom: 2rem; }
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: .7rem; }
 
 ul.no-dots-ul {
   list-style: none; }
@@ -1054,6 +1094,22 @@ table {
       vertical-align: middle; }
   table th {
     padding: 0; }
+
+.under-white::after {
+  content: "";
+  padding-top: 1.15rem;
+  display: block;
+  width: 3.4rem;
+  border-bottom: 5px solid white;
+  margin-bottom: 2rem; }
+
+.under-red::after {
+  content: "";
+  padding-top: .5rem;
+  display: block;
+  width: 100%;
+  border-bottom: 2px solid #f76e5a;
+  margin-bottom: 1.05rem; }
 
 .video-thumbnail {
   cursor: pointer;
@@ -1775,6 +1831,8 @@ img.inline {
     height: 4.4rem; }
   .filler--4 {
     height: 1rem; }
+  .filler--5 {
+    height: 2.5rem; }
 
 /**********Tablet Landscape***************/
 @media only screen and (max-width: 1024px) {

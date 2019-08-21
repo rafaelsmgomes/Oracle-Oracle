@@ -1,7 +1,7 @@
-// *{
-//   outline: hotpink solid 1px; 
-// }
-
+*{
+  outline: hotpink solid 1px; 
+}
+ 
 *,
 *::after,
 *::before {
@@ -9,7 +9,6 @@
     padding: 0;
     box-sizing: inherit;
 }
-
 
 *:focus{
   outline: none;

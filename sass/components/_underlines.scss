@@ -9,11 +9,11 @@
     } 
     &-red::after {
         content: "";
-        padding-top: 1.15rem;
+        padding-top: .5rem;
         display: block;
-        width: 3.4rem;
-        border-bottom: 5px solid $col-red2;
-        margin-bottom: 2rem;
+        width: 100%;
+        border-bottom: 2px solid $col-red2;
+        margin-bottom: 1.05rem;
     } 
   
 }

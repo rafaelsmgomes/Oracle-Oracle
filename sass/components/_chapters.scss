@@ -1,0 +1,31 @@
+.chapters{
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+
+    }
+    &__container{
+        height: 13.5rem;
+        width: 13.5rem;
+
+        background-color: $col-white;
+        border-radius: .2rem;
+        padding: 0 .8rem;
+
+    }
+    &__title{
+        height: 3.2rem;
+
+        border-bottom: 1px solid $col-light-gray3;
+    }
+    &__symbol{
+        height: 8.25rem;
+
+    }
+    &__cta{
+        height: 2.0rem;
+
+        border-top: 1px solid $col-light-gray3;
+    }
+}

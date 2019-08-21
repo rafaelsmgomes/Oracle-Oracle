@@ -10,10 +10,12 @@
 @import 'components/arrows';
 @import 'components/buttons';
 @import 'components/callout';
+@import 'components/chapters';
 @import 'components/citation';
 @import 'components/copyright';
 @import 'components/cta';
 @import 'components/dropdown-toc';
+@import 'components/flex';
 @import 'components/footr';
 @import 'components/images';
 @import 'components/list';
@@ -214,4 +216,4 @@
   button:active{
     background-color: unset;
   }
-}
+} 

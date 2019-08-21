@@ -109,6 +109,14 @@ textarea {
   }  
 }
 
+.heading{
+
+  &__home{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5rem;
+  }
+}
 .header{
   
   &__primary{
@@ -116,8 +124,8 @@ textarea {
     color: $col-white;
 
     &--1{
-      display: inline-block;
-      
+      display: block;
+      font-size: 1.6rem;
     }
   }
   &__secondary{
@@ -161,10 +169,16 @@ textarea {
 .pg{
   @include Body-2;
   margin-bottom: 1rem; 
+
+  &--white{
+    color: $col-white; 
+    font-size: .8rem;
+  }
 }
 
 .bold{
   @include Body-1--Bold;
+  color: inherit;
 }
 .vid_text{
   color: #00758f;
