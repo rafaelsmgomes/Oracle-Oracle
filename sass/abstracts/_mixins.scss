@@ -74,7 +74,7 @@
   color: $col-dark-gray13;
 }
 
-@mixin Body-2-Italic {
+@mixin Body-2--Italic {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   font-weight: normal;
@@ -96,7 +96,7 @@
   color: $col-dark-gray9;
 }
 
-@mixin Caption-Bold {
+@mixin Caption--Bold {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .60rem;
   font-weight: bold;
@@ -107,7 +107,7 @@
   color: $col-dark-gray13;
 }
 
-@mixin Caption-Regular {
+@mixin Caption--Regular {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .60rem;
   font-weight: normal;
