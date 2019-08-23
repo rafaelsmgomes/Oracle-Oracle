@@ -203,24 +203,6 @@ textarea {
   }
 }
 
-.txt-color{
-  &--white{
-    color: $col-white; 
-  }
-  &--blue{
-    &-1{
-      color: $color-blue-2;
-    }
-  }
-  &--red{
-    color: $col-red-1;
-  }
-  &--orange{
-    &-1{
-      color: $color-orange-1;
-    }
-  }
-}
 
 .callout{
 
@@ -357,6 +339,50 @@ textarea {
       @include Body-2--Italic;
       color: $col-dark-gray8;
       display: block;
+    }
+  }
+}
+
+.quote{
+
+  &__txt{
+    @include Body-2--Bold;
+    color: $col-dark-gray9;
+
+
+  }
+  &__user{
+
+    &-name{
+      @include Caption--Bold;
+      color: $col-dark-gray9;
+
+    }
+    &-job{
+      @include Caption;
+      color: $col-dark-gray9;
+    }
+  }
+}
+
+
+
+
+.txt-color{
+  &--white{
+    color: $col-white; 
+  }
+  &--blue{
+    &-1{
+      color: $color-blue-2;
+    }
+  }
+  &--red{
+    color: $col-red-1;
+  }
+  &--orange{
+    &-1{
+      color: $color-orange-1;
     }
   }
 }
