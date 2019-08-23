@@ -21,11 +21,17 @@
     }
     &__symbol{
         height: 8.25rem;
-
+        padding: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     &__cta{
         height: 2.0rem;
-
         border-top: 1px solid $col-light-gray3;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

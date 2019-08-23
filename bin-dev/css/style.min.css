@@ -11,9 +11,6 @@ $Breakpoint argument choices:
 -land
 -desk
 */
-* {
-  outline: hotpink solid 1px; }
-
 *,
 *::after,
 *::before {
@@ -134,11 +131,7 @@ body {
 p {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #645b54;
   -webkit-margin-before: 0px;
   display: block;
@@ -163,21 +156,16 @@ h1 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.35;
-  letter-spacing: normal;
   color: #383330; }
 
 h3 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.32;
-  letter-spacing: normal;
-  color: #383330; }
+  color: #383330;
+  color: #D1350F; }
 
 h4 {
   font-weight: 700; }
@@ -205,10 +193,7 @@ textarea {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.35;
-  letter-spacing: normal;
   color: #383330;
   font-family: OracleSans_Bd;
   line-height: normal;
@@ -219,10 +204,7 @@ textarea {
     font-family: OracleSans, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.32;
-    letter-spacing: normal;
     color: #383330;
     display: block;
     color: #fff; }
@@ -236,10 +218,7 @@ textarea {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.35;
-  letter-spacing: normal;
   color: #383330;
   color: #fff; }
   .header__primary--1 {
@@ -250,12 +229,11 @@ textarea {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.31;
-  letter-spacing: normal;
   color: #383330;
   margin-top: 1.6rem; }
+  .header__secondary--8 {
+    width: 22rem; }
   .header__secondary::after {
     content: "";
     display: block;
@@ -265,13 +243,10 @@ textarea {
     margin-bottom: 2rem; }
 
 .header__tertiary {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #383330;
   color: #D1350F;
   position: relative; }
@@ -291,11 +266,7 @@ textarea {
 .pg {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #645b54;
   margin-bottom: 1rem; }
   .pg--white {
@@ -303,15 +274,18 @@ textarea {
     font-size: .8rem; }
 
 .bold {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #383330;
   color: inherit; }
+  .bold--2 {
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .80rem;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #383330; }
 
 .vid_text {
   color: #00758f;
@@ -324,13 +298,10 @@ textarea {
 
 .btn-txt {
   margin-right: auto;
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.38;
-  letter-spacing: normal;
   color: #383330; }
   .btn-txt--1 {
     color: white; }
@@ -348,24 +319,18 @@ textarea {
   color: #f29111; }
 
 .callout__txt__header {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.38;
-  letter-spacing: normal;
   color: #383330;
   color: #fff; }
 
 .callout__txt__description {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Lt, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: normal;
   font-style: italic;
-  font-stretch: normal;
   line-height: 1.5;
-  letter-spacing: normal;
   color: #645b54;
   font-size: .6rem;
   color: #fff; }
@@ -373,24 +338,127 @@ textarea {
 .callout__flex__txt {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #645b54;
   color: #fff; }
   .callout__flex__txt--bold {
-    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #383330;
     font-size: 1.1rem;
     color: #fff; }
+
+.chapters__title--main {
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #383330;
+  font-size: .85rem;
+  color: #575049;
+  display: block;
+  padding-top: .8rem; }
+
+.chapters__title--sub {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
+  line-height: 1.33;
+  color: #645b54;
+  line-height: 1.25;
+  color: #71665e;
+  display: block; }
+
+.chapters__symbol {
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #383330;
+  font-size: 2.75rem;
+  color: #e55845;
+  display: block;
+  text-shadow: -0.1rem 0.3rem rgba(229, 88, 69, 0.1); }
+
+.chapters__cta {
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #383330;
+  color: #D1350F;
+  font-size: .6rem; }
+
+.overview__txt--header {
+  margin-bottom: .5rem; }
+
+.overview__txt--footer {
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.33;
+  color: #383330;
+  color: #D1350F;
+  font-size: .6rem;
+  margin-left: auto;
+  display: flex;
+  align-items: center; }
+  .overview__txt--footer img {
+    display: inline-block;
+    width: 2rem;
+    height: 1rem;
+    transition: all .5s; }
+  .overview__txt--footer:hover img {
+    padding-left: .5rem; }
+
+.overview__subchapters__textbox {
+  color: #D1350F;
+  position: relative;
+  width: 9.8rem;
+  margin-bottom: 2.4rem;
+  font-size: .8rem; }
+  .overview__subchapters__textbox--main {
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .80rem;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #383330;
+    line-height: 1.44;
+    display: block; }
+  .overview__subchapters__textbox--sub {
+    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-size: .60rem;
+    line-height: 1.33;
+    color: #645b54;
+    color: #D1350F;
+    line-height: 1.25;
+    display: block; }
+  .overview__subchapters__textbox--num {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: -1rem;
+    transform: translateY(-5%); }
+
+.metrics__container--main {
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
+  font-weight: bold;
+  line-height: 1.38;
+  color: #383330;
+  color: #D1350F;
+  display: block;
+  line-height: 1.38; }
+
+.metrics__container--sub {
+  font-family: OracleSans_Lt, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: #645b54;
+  color: #71665e;
+  display: block; }
 
 .slick-prev, .slick-next {
   font-size: 0;
@@ -561,13 +629,10 @@ input {
   margin-left: .6rem;
   margin-right: 1.4rem;
   width: 2.5rem;
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.33;
-  letter-spacing: normal;
   color: #383330;
   color: #fff;
   font-size: 1.1rem; }
@@ -594,11 +659,18 @@ input {
   border-bottom: 1px solid #f0f0ea; }
 
 .chapters__symbol {
-  height: 8.25rem; }
+  height: 8.25rem;
+  padding: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .chapters__cta {
   height: 2.0rem;
-  border-top: 1px solid #f0f0ea; }
+  border-top: 1px solid #f0f0ea;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .citation__container {
   display: flex;
@@ -648,6 +720,7 @@ input {
 
 .flex-wrapper {
   height: 13.5rem;
+  margin-bottom: 2.5rem;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
@@ -843,13 +916,10 @@ ul.no-dots-ul {
   padding-bottom: 0.90rem;
   position: relative; }
   .bullet__item__header {
-    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
     font-weight: bold;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.33;
-    letter-spacing: normal;
     color: #383330;
     color: #fcfbfa;
     display: block;
@@ -859,11 +929,7 @@ ul.no-dots-ul {
   .bullet__item__description {
     font-family: OracleSans, Arial, Helvetica, sans-serif;
     font-size: .80rem;
-    font-weight: normal;
-    font-style: normal;
-    font-stretch: normal;
     line-height: 1.5;
-    letter-spacing: normal;
     color: #645b54;
     color: #fcfbfa;
     display: block; }
@@ -883,6 +949,14 @@ ul.no-dots-ul {
     top: .8rem; }
   .bullet__item__connected:last-of-type:before {
     height: .8rem; }
+
+.metrics__wrapper {
+  border-left: 2px solid #D1350F;
+  margin-bottom: 1.2rem; }
+
+.metrics__container {
+  padding-left: .85rem;
+  width: 20.4rem; }
 
 .nav-bar {
   display: flex;
@@ -1033,6 +1107,38 @@ ul.no-dots-ul {
   padding: 0.75rem 0.2 0.5rem;
   width: 10.00rem; }
 
+.overview {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  margin: 0 1rem 0 0;
+  margin-top: -4.8rem;
+  padding: 10rem 3.6rem 0 3.6rem;
+  display: flex;
+  flex-direction: column; }
+  .overview__header {
+    margin-bottom: .5rem;
+    border-bottom: 2px solid #f8f7f4;
+    display: block;
+    flex-shrink: 0; }
+  .overview__subchapters {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .overview__footer {
+    height: 2.2rem;
+    width: 22.7rem;
+    border-top: 2px solid #f8f7f4;
+    margin-left: -3.6rem;
+    margin-right: -3.6rem;
+    align-self: flex-end;
+    display: flex;
+    align-items: center; }
+  .overview__cta {
+    margin-left: auto;
+    margin-right: 1rem; }
+
 .close-bttn-holder {
   width: 100%;
   height: 2.00rem;
@@ -1173,6 +1279,27 @@ table {
 .b-modal {
   mix-blend-mode: multiply; }
 
+.bg__group {
+  float: left;
+  position: absolute;
+  height: 40.00rem;
+  width: 70.00rem;
+  z-index: -1; }
+
+.bg-container {
+  float: left;
+  height: 40.00rem; }
+  .bg-container__left {
+    width: 50%; }
+  .bg-container__right {
+    width: 50%; }
+
+.bg-red {
+  background-color: #D1350F; }
+
+.bg-gray {
+  background-color: #f8f7f4; }
+
 .container {
   position: relative;
   width: 100%;
@@ -1212,6 +1339,10 @@ table {
     padding: 4.8rem 6.15rem  0 6.15rem;
     width: 50%;
     float: left; }
+    .container-right-2-col--8 {
+      padding-left: .3rem;
+      padding-right: 12rem;
+      padding-top: 8.1rem; }
   .container-left-2-col {
     height: 40.00rem;
     padding: 4.8rem 6.15rem  0 6.15rem;
@@ -1409,6 +1540,8 @@ table {
     background-color: #D1350F; }
   .page--6 {
     background-color: #D1350F; }
+  .page--7 {
+    background-color: #f8f7f4; }
 
 .chap-name {
   line-height: 1em; }
@@ -1832,7 +1965,7 @@ img.inline {
   .filler--4 {
     height: 1rem; }
   .filler--5 {
-    height: 2.5rem; }
+    height: 2rem; }
 
 /**********Tablet Landscape***************/
 @media only screen and (max-width: 1024px) {

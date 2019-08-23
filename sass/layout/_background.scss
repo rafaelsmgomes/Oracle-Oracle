@@ -1,0 +1,26 @@
+.bg{
+
+    &__group{
+        float: left;
+        position: absolute;
+        height: 40.00rem; 
+        width: 70.00rem;
+        z-index: -1;
+    }
+    &-container{
+        float: left;
+        height: 40.00rem;
+        &__left{
+            width: 50%;
+        }
+        &__right{            
+            width: 50%;
+        }
+    }
+    &-red{
+        background-color: $col-red-1;
+    }
+    &-gray{
+        background-color: $col-light-gray2;
+    }
+}

@@ -65,6 +65,7 @@ h2{
 
 h3{
   @include H3;
+  color: $col-red-1;
 }
 h4{    
   font-weight: 700;
@@ -132,6 +133,10 @@ textarea {
     @include H2;
     margin-top: 1.6rem;
 
+    &--8{
+      width: 22rem;
+    }
+
     &::after {
       content: "";
       display: block;
@@ -162,10 +167,8 @@ textarea {
       top: 0;
       left: -1rem;
     }
-
   }
 }
-
 .pg{
   @include Body-2;
   margin-bottom: 1rem; 
@@ -179,6 +182,7 @@ textarea {
 .bold{
   @include Body-1--Bold;
   color: inherit;
+  &--2{ @include Body-2--Bold; }
 }
 .vid_text{
   color: #00758f;
@@ -249,4 +253,110 @@ textarea {
   }
 
 }
+.chapters{
+  
+  &__title{
 
+    &--main{
+      @include Body-1--Bold;
+      font-size: .85rem;
+      color: $col-dark-gray10;
+      display: block;
+      padding-top: .8rem;
+    }
+    &--sub{
+      @include Caption;
+      line-height: 1.25;
+      color: $col-dark-gray8;
+      display: block;
+    }
+  }
+
+  &__symbol{
+    @include Body-1--Bold;
+    font-size: 2.75rem;
+    color: $col-red0;
+    display: block;
+    text-shadow: -.1rem .3rem rgba($color: $col-red0, $alpha: .10);
+  }
+
+  &__cta{
+    @include Body-1--Bold;
+    color: $col-red-1;
+    font-size: .6rem;
+  }
+}
+.overview{
+  &__txt{
+    &--header{
+      margin-bottom: .5rem;
+    }
+  
+  
+    &--footer{
+      @include Body-1--Bold;
+      color: $col-red-1;
+      font-size: .6rem;
+      margin-left: auto;
+  
+      display: flex;
+      align-items: center;
+      
+      & img{
+        display: inline-block;
+        width: 2rem;
+        height: 1rem;
+        transition: all .5s; 
+      }
+      &:hover img{
+        padding-left: .5rem;
+      }
+    }
+  }
+
+  &__subchapters{
+
+    &__textbox{
+      color: $col-red-1;
+      position: relative; 
+      width: 9.8rem;
+      margin-bottom: 2.4rem;
+      font-size: .8rem; 
+
+      &--main{
+        @include Body-2--Bold;
+        line-height: 1.44;
+        display: block;
+      }
+      &--sub{
+        @include Caption;
+        color: $col-red-1;
+        line-height: 1.25;
+        display: block;
+      }
+      &--num{
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: -1rem;
+        transform: translateY(-5%);
+      }
+    }
+  }
+}
+
+.metrics{
+  &__container{
+    &--main{
+      @include Body-2--Bold;
+      color: $col-red-1;
+      display: block;
+      line-height: 1.38;
+    }
+    &--sub{
+      @include Body-2--Italic;
+      color: $col-dark-gray8;
+      display: block;
+    }
+  }
+}
