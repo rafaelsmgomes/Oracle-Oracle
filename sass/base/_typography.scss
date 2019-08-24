@@ -131,7 +131,6 @@ textarea {
   }
   &__secondary{
     @include H2;
-    margin-top: 1.6rem;
 
     &--8{
       width: 22rem;
@@ -362,6 +361,22 @@ textarea {
       @include Caption;
       color: $col-dark-gray9;
     }
+  }
+}
+
+.results{
+  &__item{
+    color: $col-red-1;
+
+    &--main{
+      @include Body-1--Bold;
+      color: $col-red-1;
+    }
+    &--sub{
+      @include Body-2;
+      color: $col-dark-gray9;
+    }
+
   }
 }
 

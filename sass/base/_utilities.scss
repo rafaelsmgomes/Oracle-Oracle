@@ -28,17 +28,28 @@ img.inline{display: inline-block;}
 .vert-top{vertical-align: top;}
 .bot-none{margin-bottom: 0px;}
 .width-1{width: 91%;};
-.marg-top-15{margin-top: 1.5rem;}
-.marg-top-32{margin-top: 3.2rem;}
-.marg-bot-1{margin-bottom: 0.60rem;}
+.marg-top-1{ margin-top: 2rem; }
+.marg-top-2{ margin-top: 3rem; } 
+.marg-bot-1{ margin-bottom: 3.2rem;}
+.minus-marg--1{ margin-top: -1.6rem;} 
 
 .filler{
     content: "";
     &--1{ height: 1.6rem; }
     &--2{ height: 5.75rem; }
-    &--3{ height: 4.4rem; }
+    &--3{ height: 2.8rem; }
     &--4{ height: 1rem; }
     &--5{ height: 2rem; }
     &--6{ height: 4.8rem; }
+    &--7{ height: 4.5rem; }
+    &--8{ height: 6.4rem; }
+    &--9{ height: 0; }
 }
 
+.placeholder{
+    width: 22.7rem;
+    margin-bottom: 1.2rem;
+    background-color: $col-light-gray4;
+
+    &--1{ height: 12.15rem; }
+}
