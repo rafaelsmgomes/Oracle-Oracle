@@ -1,5 +1,14 @@
 .cover{
 
+  &__wrapper{
+    padding-left: 5.85rem;
+    padding-top: 3rem;
+    height: 27.8rem;
+    width: 47.6rem;
+    background-color: $col-white;
+    position: relative;
+  }
+
   &__text-box{
 
     width: 24.6rem;
@@ -14,6 +23,12 @@
       padding-left: 5vw;
       padding-right: 5vw;
     }
+  }
+
+  &__pg-box{
+    width: 18.1rem;
+    margin-bottom: 4.5rem;
+    margin-top: 1.6rem;
   }
 
   &-logo-oracle {

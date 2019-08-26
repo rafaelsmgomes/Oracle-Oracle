@@ -61,7 +61,7 @@ ul.no-dots-ul{
 			display: block;
 			margin-bottom: .2rem;
 
-			&--3{color: $col-secondary-yellow;}
+			&--3{color: $col-secondary-orange;}
 		}
 	
 		&__description{
@@ -69,7 +69,7 @@ ul.no-dots-ul{
 			color: $col-white;
 			display: block;
 
-			&--3{ color: hotpink; }
+			&--3{ color: $col-signature-black; }
 		}
 	
 		&__connected{

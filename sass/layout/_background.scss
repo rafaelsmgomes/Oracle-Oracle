@@ -9,6 +9,12 @@
 
         &--cover{
             background-color: $col-signature-black;
+            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+            background-size: cover;
+        }
+        &--home{
+            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+            background-size: 100%;
         }
     }
     &-container{
@@ -20,6 +26,28 @@
         &__right{            
             width: 50%;
         }
+    }
+
+    &__block{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+        &--left{
+            height: 100%;
+            width: 23.6rem;
+            background-color: $col-secondary-orange;
+        }
+        &--top{
+            background-color: $col-signature-black;
+            height: 33rem;
+        }
+    }
+
+    &-white{
+        background-color: $col-white;
+
     }
     &-black{
         background-color: $col-signature-black;

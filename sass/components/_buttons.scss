@@ -60,16 +60,10 @@ input {
   
   &--1{
     height: 1.80rem;
-
-    padding-right: 0.55rem;
-    padding-left: 0.55rem; 
-    border: 1px solid white;
-    border-radius: .2rem;
-
+    border: none;
 
     &:hover{
-      background-color: #fff;
-      color: $col-signature-red;
+
       & > *{
         color: $col-signature-red;
       }

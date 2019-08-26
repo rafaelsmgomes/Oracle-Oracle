@@ -7,12 +7,28 @@
         border-bottom: 5px solid white;
         margin-bottom: 2rem;
     } 
-    &-red::after {
+    &-orange--short::after {
+        content: "";
+        padding-top: 1.15rem;
+        display: block;
+        width: 3.4rem; 
+        border-bottom: 5px solid $col-secondary-orange;
+        margin-bottom: 1rem;
+    } 
+    &-yellow::after {
+        content: "";
+        padding-top: .5rem;
+        display: block;
+        width: 100%; 
+        border-bottom: 4px solid $col-secondary-yellow;
+        margin-bottom: 1rem;
+    } 
+    &-red--long::after {
         content: "";
         padding-top: .5rem;
         display: block;
         width: 100%;
-        border-bottom: 2px solid $col-secondary-orange;
+        border-bottom: 2px solid $col-signature-red;
         margin-bottom: 1.05rem;
     } 
   

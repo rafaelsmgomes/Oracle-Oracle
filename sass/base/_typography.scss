@@ -93,22 +93,33 @@ textarea {
   overflow: auto;
 }
 
-.cover__title{
-  @include H1;
-  font-family: OracleSans_Bd;
-  line-height: normal;
-  color: $col-white;
-   
-  &--main{
-    display: block;
-  }
-  &--sub{
-    @include H3;
-    display: block;
-    color: $col_white;
-  }  
-}
+.cover{
 
+  &__short-name{
+    color: $col-supporting-gray4;
+    font-size: .8rem;
+    margin-bottom: 1.2rem;
+  }
+  &__title{
+    @include H1;
+    font-family: OracleSans_Bd;
+    line-height: normal;
+    color: $col-signature-black;
+    
+    &--main{
+      display: block;
+      line-height: 1.35;
+    }
+    &--sub{
+      @include H3;
+      display: block;
+      color: $col-signature-black;
+    }  
+  }
+  &__pg{
+    color: $col-signature-black; 
+  }
+}
 .heading{
 
   &__home{
@@ -164,6 +175,7 @@ textarea {
       position: absolute;
       top: 0;
       left: -1rem;
+      color: $col-secondary-orange;
     }
   }
 }
@@ -175,12 +187,21 @@ textarea {
     color: $col-white; 
     font-size: .8rem;
   }
+  &--yellow{
+    color: $col-secondary-yellow; 
+    font-size: .8rem;
+  }
 }
 
 .bold{
   @include Body-1--Bold;
+  font-family: $font-bold;
+  font-size: .9rem;
+  font-weight: bold;
+  line-height: 1.33;
   color: inherit;
-  &--2{ @include Body-2--Bold; }
+
+  &--2{ font-size: .8rem; }
 }
 .vid_text{
   color: #00758f;
@@ -197,7 +218,7 @@ textarea {
   @include Body-2--Bold;
  
   &--1{
-    color: $col-white;
+    color: $col-signature-red;
   }
 }
 
@@ -209,6 +230,7 @@ textarea {
     &__header{
       @include Body-2--Bold;
       color: $col-secondary-yellow; 
+      &--2{ color: $col-white; }
     }
     &__description{
       @include Body-2--Italic;
@@ -222,12 +244,12 @@ textarea {
     
     &__txt{
       @include Body-1;
-      color: $col-white;
+      color: $col-secondary-yellow;
 
       &--bold{
         @include Body-1--Bold;
         font-size: 1.1rem;
-        color: $col-white;
+        color: $col-secondary-yellow;
       }
     }
   }
@@ -255,7 +277,7 @@ textarea {
   &__symbol{
     @include Body-1--Bold;
     font-size: 2.75rem;
-    color: $col-signature-red;
+    color: $col-signature-black;
     display: block;
   }
 

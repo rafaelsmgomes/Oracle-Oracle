@@ -10,6 +10,7 @@
 
         &--1{
             height: 100%;
+            margin-top: 2.7rem;
         }
 
         &--2{
@@ -50,7 +51,7 @@
         margin-right: 1.4rem;
         width: 2.5rem;
         @include Body-1--Bold;
-        color: $col-white;
+        color: $col-secondary-yellow; 
         font-size: 1.1rem;
     }
     &__description{
