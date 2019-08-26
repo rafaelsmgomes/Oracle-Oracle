@@ -13,7 +13,7 @@
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.35;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin H2 {
@@ -21,7 +21,7 @@
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.31;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin H3 {
@@ -29,7 +29,7 @@
   font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.32;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin Body-1--Bold {
@@ -37,14 +37,14 @@
   font-size: .9rem;
   font-weight: bold;
   line-height: 1.33;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin Body-1 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   line-height: 1.33;
-  color: $col-dark-gray9;
+  color: $col-txt-default;
 }
 
 @mixin Body-2--Bold {
@@ -52,7 +52,7 @@
   font-size: .80rem;
   font-weight: bold;
   line-height: 1.38;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin Body-2--Italic {
@@ -60,14 +60,14 @@
   font-size: .80rem;
   font-style: italic;
   line-height: 1.5;
-  color: $col-dark-gray9; 
+  color: $col-txt-default; 
 }
 
 @mixin Body-2 {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .80rem;
   line-height: 1.5;
-  color: $col-dark-gray9;
+  color: $col-txt-default;
 }
 
 @mixin Caption--Bold {
@@ -75,14 +75,14 @@
   font-size: .60rem;
   font-weight: bold;
   line-height: 1.33;
-  color: $col-dark-gray13;
+  color: $col-txt-default;
 }
 
 @mixin Caption {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .60rem;
   line-height: 1.33;
-  color: $col-dark-gray9;
+  color: $col-txt-default;
 }
 
 

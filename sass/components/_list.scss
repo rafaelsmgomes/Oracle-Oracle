@@ -44,10 +44,10 @@ ul.no-dots-ul{
 			
 		&--1,
 		&--2{
-			color: $col-white;
+			color: $col-secondary-yellow;
 		}
 		&--3{
-			color: $col-red-1;
+			color: $col-secondary-orange;
 		}
 		
 	}
@@ -57,24 +57,24 @@ ul.no-dots-ul{
 	
 		&__header{
 			@include Body-1--Bold;
-			color: $col-light-gray1;
+			color: $col-secondary-yellow;
 			display: block;
 			margin-bottom: .2rem;
 
-			&--3{color: $col-red-1;}
+			&--3{color: $col-secondary-yellow;}
 		}
 	
 		&__description{
 			@include Body-2;
-			color: $col-light-gray1;
+			color: $col-white;
 			display: block;
 
-			&--3{ color: $col-dark-gray9; }
+			&--3{ color: hotpink; }
 		}
 	
 		&__connected{
 			&:before{
-				background-color: rgba($color: #fff, $alpha: .15);
+				background-color: rgba($color: $col-supporting-beige, $alpha: .15);
 				width: 2px;
 				content: "";
 				position: absolute;
@@ -82,7 +82,7 @@ ul.no-dots-ul{
 				bottom: 0;
 				left: -.85rem;
 			}
-			&--3:before{background-color: rgba($col-dark-gray9, $alpha: .15);}
+			&--3:before{background-color: rgba($col-secondary-orange, $alpha: .15);}
 	
 			&:first-of-type:before{
 				top: .8rem;

@@ -69,9 +69,9 @@ input {
 
     &:hover{
       background-color: #fff;
-      color: $col-red1;
+      color: $col-signature-red;
       & > *{
-        color: $col-red1;
+        color: $col-signature-red;
       }
       & > .arrow--2{
         background-image: url('../assets/graphics/icons/arrow_blue_lt.svg');

@@ -6,6 +6,10 @@
         height: 40.00rem; 
         width: 70.00rem;
         z-index: -1;
+
+        &--cover{
+            background-color: $col-signature-black;
+        }
     }
     &-container{
         float: left;
@@ -17,10 +21,10 @@
             width: 50%;
         }
     }
-    &-red{
-        background-color: $col-red-1;
+    &-black{
+        background-color: $col-signature-black;
     }
     &-gray{
-        background-color: $col-light-gray2;
+        background-color: $col-supporting-gray2;
     }
 }
