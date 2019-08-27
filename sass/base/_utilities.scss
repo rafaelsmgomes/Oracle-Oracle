@@ -56,11 +56,10 @@ img.inline{display: inline-block;}
 
     &__box{
         display: flex;
-        
+        justify-content: space-between;
     }
     &--1{ 
         height: 5.95rem; 
-        width: 10.8rem;
-        margin-right: .5rem;
+        width: 11.1rem;
     } 
 }

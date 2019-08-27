@@ -2150,11 +2150,11 @@ img.inline {
   margin-bottom: 1.2rem;
   background-color: #56504b; }
   .placeholder__box {
-    display: flex; }
+    display: flex;
+    justify-content: space-between; }
   .placeholder--1 {
     height: 5.95rem;
-    width: 10.8rem;
-    margin-right: .5rem; }
+    width: 11.1rem; }
 
 /**********Tablet Landscape***************/
 @media only screen and (max-width: 1024px) {
