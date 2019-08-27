@@ -510,14 +510,14 @@ textarea {
 .txt-color--white {
   color: #fcfbfa; }
 
-.txt-color--blue-1 {
-  color: #00758f; }
-
 .txt-color--red {
   color: #d1350f; }
 
 .txt-color--orange {
   color: #ae562c; }
+
+.txt-color--yellow {
+  color: #e6ac58; }
 
 .slick-prev, .slick-next {
   font-size: 0;
@@ -1237,11 +1237,11 @@ ul.no-dots-ul {
       font-size: 10rem;
       color: rgba(121, 114, 109, 0.5);
       font-family: OracleSans;
-      z-index: -1; }
+      z-index: 0; }
     .quote__txt--white {
       color: #fcfbfa; }
       .quote__txt--white:before {
-        color: rgba(252, 251, 250, 0.15); }
+        color: rgba(230, 172, 88, 0.2); }
 
 .results {
   width: 45.1rem;
@@ -1403,7 +1403,8 @@ table {
 
 .bg-container {
   float: left;
-  height: 40.00rem; }
+  height: 40.00rem;
+  position: relative; }
   .bg-container__left {
     width: 50%; }
   .bg-container__right {
@@ -1425,6 +1426,12 @@ table {
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }
+  .bg__block--center {
+    background-color: #282623;
+    height: 34.4rem;
+    width: 29.4rem;
+    top: 2.8rem;
+    left: 2.8rem; }
 
 .bg-pattern--1 {
   background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
@@ -2142,8 +2149,12 @@ img.inline {
   width: 22.7rem;
   margin-bottom: 1.2rem;
   background-color: #56504b; }
+  .placeholder__box {
+    display: flex; }
   .placeholder--1 {
-    height: 12.15rem; }
+    height: 5.95rem;
+    width: 10.8rem;
+    margin-right: .5rem; }
 
 /**********Tablet Landscape***************/
 @media only screen and (max-width: 1024px) {

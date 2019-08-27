@@ -20,6 +20,7 @@
     &-container{
         float: left;
         height: 40.00rem;
+        position: relative;
         &__left{
             width: 50%;
         }
@@ -47,6 +48,13 @@
         &--top{
             background-color: $col-signature-black;
             height: 33rem;
+        }
+        &--center{
+            background-color: $col-signature-black;
+            height: 34.4rem;
+            width: 29.4rem;
+            top: 2.8rem;
+            left: 2.8rem;
         }
     }
 

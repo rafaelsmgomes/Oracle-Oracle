@@ -53,5 +53,14 @@ img.inline{display: inline-block;}
     margin-bottom: 1.2rem;
     background-color: $col-supporting-gray4;
 
-    &--1{ height: 12.15rem; } 
+
+    &__box{
+        display: flex;
+        
+    }
+    &--1{ 
+        height: 5.95rem; 
+        width: 10.8rem;
+        margin-right: .5rem;
+    } 
 }

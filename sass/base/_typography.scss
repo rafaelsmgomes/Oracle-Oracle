@@ -370,8 +370,6 @@ textarea {
   &__txt{
     @include Body-2--Bold;
     color: $col-signature-black;
-
-
   }
   &__user{
 
@@ -410,15 +408,13 @@ textarea {
   &--white{
     color: $col-white; 
   }
-  &--blue{
-    &-1{
-      color: $color-blue-2;
-    }
-  }
   &--red{
     color: $col-signature-red;
   }
   &--orange{
     color: $col-secondary-orange;
+  }
+  &--yellow{
+    color: $col-secondary-yellow;
   }
 }
