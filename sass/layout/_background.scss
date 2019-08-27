@@ -38,6 +38,11 @@
             height: 100%;
             width: 23.6rem;
             background-color: $col-secondary-orange;
+            &--1{
+                height: 100%;
+                width: 62.3rem;
+                background-color: $col-signature-black;
+            }
         }
         &--top{
             background-color: $col-signature-black;
@@ -45,6 +50,17 @@
         }
     }
 
+    &-pattern{
+
+        &--1{
+            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+            background-size: cover;
+        }
+        &--2{
+            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
+            background-size: cover;
+        }
+    }
     &-white{
         background-color: $col-white;
 

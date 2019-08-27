@@ -186,6 +186,7 @@ textarea {
   &--white{
     color: $col-white; 
     font-size: .8rem;
+    margin-bottom: 1rem;
   }
   &--yellow{
     color: $col-secondary-yellow; 
@@ -203,15 +204,17 @@ textarea {
 
   &--2{ font-size: .8rem; }
 }
-.vid_text{
-  color: #00758f;
-  font-size: $reg-font-size-1;
-  font-family: Arial, Helvetica, sans-serif;
-  &--1{
-    margin-top: 0.25rem;
-    margin-bottom: .5rem;  
-    letter-spacing: -.01em;
+.caption{
+  @include Caption;
+  font-size: .6rem; 
+
+  &--white{
+    color: $col-white;
   }
+}
+.vid_text{
+  @include Body-2;
+  color: $col-white;
 }
 .btn-txt{
   margin-right: auto;

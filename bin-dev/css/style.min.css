@@ -279,7 +279,8 @@ textarea {
   margin-bottom: 1rem; }
   .pg--white {
     color: #fcfbfa;
-    font-size: .8rem; }
+    font-size: .8rem;
+    margin-bottom: 1rem; }
   .pg--yellow {
     color: #e6ac58;
     font-size: .8rem; }
@@ -298,14 +299,21 @@ textarea {
   .bold--2 {
     font-size: .8rem; }
 
+.caption {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
+  line-height: 1.33;
+  color: #383330;
+  font-size: .6rem; }
+  .caption--white {
+    color: #fcfbfa; }
+
 .vid_text {
-  color: #00758f;
-  font-size: 0.8rem;
-  font-family: Arial, Helvetica, sans-serif; }
-  .vid_text--1 {
-    margin-top: 0.25rem;
-    margin-bottom: .5rem;
-    letter-spacing: -.01em; }
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .80rem;
+  line-height: 1.5;
+  color: #383330;
+  color: #fcfbfa; }
 
 .btn-txt {
   margin-right: auto;
@@ -1153,8 +1161,8 @@ ul.no-dots-ul {
   width: 100%;
   background-color: #fcfbfa;
   margin: 0 1rem 0 0;
-  margin-top: -6.4rem;
-  padding: 10rem 3.6rem 0 3.6rem;
+  margin-top: -2.6rem;
+  padding: 5.45rem 3.6rem 0 3.9rem;
   display: flex;
   flex-direction: column; }
   .overview__header {
@@ -1167,10 +1175,10 @@ ul.no-dots-ul {
     flex-direction: column;
     justify-content: center; }
   .overview__footer {
-    height: 2.2rem;
+    height: 5rem;
     width: 22.7rem;
     margin-left: -3.6rem;
-    margin-right: -3.6rem;
+    margin-right: -2.8rem;
     align-self: flex-end;
     display: flex;
     align-items: center; }
@@ -1301,8 +1309,10 @@ table {
   position: relative;
   background-color: orangered; }
   .video-thumbnail--1 {
-    width: 8.00rem;
-    height: 4.50rem; }
+    width: 9.90rem;
+    height: 5.9rem;
+    margin-left: -.85rem;
+    margin-bottom: -1.1rem; }
   .video-thumbnail img {
     width: 100%; }
   .video-thumbnail .video-play-bttn {
@@ -1358,6 +1368,25 @@ table {
 .b-modal {
   mix-blend-mode: multiply; }
 
+.video__wrapper {
+  margin-left: .85rem;
+  margin-bottom: 1.2rem;
+  height: 7.05rem;
+  width: 15rem;
+  height: 7rem;
+  position: relative;
+  background-color: #56504b; }
+
+.video__container {
+  float: left;
+  padding-top: .6rem; }
+
+.video__info {
+  float: left;
+  margin-left: .5rem;
+  margin-top: .5rem;
+  width: 5.1rem; }
+
 .bg__group {
   float: left;
   position: absolute;
@@ -1389,9 +1418,21 @@ table {
     height: 100%;
     width: 23.6rem;
     background-color: #ae562c; }
+    .bg__block--left--1 {
+      height: 100%;
+      width: 62.3rem;
+      background-color: #282623; }
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }
+
+.bg-pattern--1 {
+  background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+  background-size: cover; }
+
+.bg-pattern--2 {
+  background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
+  background-size: cover; }
 
 .bg-white {
   background-color: #fcfbfa; }
@@ -1424,19 +1465,19 @@ table {
     .container-1-col--3 {
       padding: 6.4rem 6.2rem 0 6.2rem; }
   .container-left-3-col {
-    padding: 4.60rem 2.25rem 0 2.20rem;
+    padding: 4.60rem 1.2rem 0 6.1rem;
     float: left;
-    width: 34%;
+    width: 33%;
     height: 40.00rem; }
   .container-mid-3-col {
-    padding: 4.60rem 1.25rem 0 1.60rem;
+    padding: 4.60rem 3.55rem 0 1.2rem;
     float: left;
-    width: 32%;
+    width: 31%;
     height: 40.00rem; }
   .container-right-3-col {
-    padding: 4.60rem 2.65rem 0 1.80rem;
+    padding: 4.60rem 2.65rem 0 0;
     float: left;
-    width: 34%;
+    width: 36%;
     height: 40.00rem; }
   .container-right-2-col {
     height: 40.00rem;
@@ -1445,9 +1486,8 @@ table {
     float: left; }
     .container-right-2-col--1 {
       padding: 4.8rem 6.15rem  0 6.15rem; }
-    .container-right-2-col--8 {
-      padding-left: .3rem;
-      padding-right: 12rem; }
+    .container-right-2-col--2 {
+      padding: 6.4rem 11.95rem  0 .35rem; }
   .container-left-2-col {
     height: 40.00rem;
     padding: 6.4rem 6.15rem 0 6.15rem;
@@ -2067,6 +2107,9 @@ img.inline {
 
 .marg-top-32 {
   margin-top: 3.2rem; }
+
+.marg-top-7 {
+  margin-top: 7rem; }
 
 .marg-bot-1 {
   margin-bottom: 3.2rem; }

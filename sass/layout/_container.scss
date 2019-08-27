@@ -23,21 +23,21 @@
 		}
 	}
 	&-left-3-col{
-	    padding: 4.60rem 2.25rem 0 2.20rem;
+	    padding: 4.60rem 1.2rem 0 6.1rem;
 	    float: left;
-	    width: 34%;
-	    height:40.00rem;
+	    width: 33%;
+	    height:40.00rem; 
 	}
 	&-mid-3-col{
-	    padding: 4.60rem 1.25rem 0 1.60rem;
+	    padding: 4.60rem 3.55rem 0 1.2rem;
 	    float: left;
-	    width: 32%;
+	    width: 31%;
 	    height:40.00rem;
 	}
 	&-right-3-col{
-	    padding: 4.60rem 2.65rem 0 1.80rem;
+	    padding: 4.60rem 2.65rem 0 0;
 	    float: left;
-	    width: 34%;
+	    width: 36%;
 	    height:40.00rem;
 	}
 	&-right-2-col{
@@ -49,11 +49,10 @@
 		&--1{
 			padding: 4.8rem 6.15rem  0 6.15rem;
 		}
-		
-		&--8{
-			padding-left: .3rem;
-			padding-right: 12rem;
+		&--2{
+			padding: 6.4rem 11.95rem  0 .35rem;
 		}
+		
 	}
 	&-left-2-col{
 	  height:40.00rem;

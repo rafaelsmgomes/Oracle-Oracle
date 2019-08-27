@@ -4,8 +4,10 @@
   background-color: orangered;
 
   &--1{
-    width: 8.00rem;
-    height: 4.50rem;
+    width: 9.90rem;
+    height: 5.9rem;
+    margin-left: -.85rem; 
+    margin-bottom: -1.1rem;
   }
 
   img{
@@ -75,4 +77,28 @@
 .b-modal {
     mix-blend-mode: multiply;
 
+}
+
+.video{
+
+  &__wrapper{
+    margin-left: .85rem;
+    margin-bottom: 1.2rem;
+    height: 7.05rem;
+    width: 15rem;
+    height: 7rem;
+    position: relative;
+    background-color: $col-supporting-gray4;
+  }
+
+  &__container{
+    float: left;
+    padding-top: .6rem;
+  }
+  &__info{
+    float: left;
+    margin-left: .5rem;
+    margin-top: .5rem;
+    width: 5.1rem;
+  }
 }
