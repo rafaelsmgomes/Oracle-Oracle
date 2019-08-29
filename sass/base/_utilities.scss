@@ -32,6 +32,7 @@ img.inline{display: inline-block;}
 .marg-top-2{ margin-top: 2rem; } 
 .marg-top-32{ margin-top: 3.2rem; } 
 .marg-top-7{ margin-top: 7rem; } 
+.marg-bot-0{ margin-bottom: 0rem;}
 .marg-bot-1{ margin-bottom: 3.2rem;}
 .minus-marg--1{ margin-top: -1.6rem;} 
 
@@ -45,7 +46,8 @@ img.inline{display: inline-block;}
     &--6{ height: 4.8rem; }
     &--7{ height: 4.5rem; }
     &--8{ height: 6.4rem; }
-    &--9{ height: 0; }
+    &--9{ height: 6.2rem; }
+    &--10{ height: 3.45rem; }
 }
 
 .placeholder{

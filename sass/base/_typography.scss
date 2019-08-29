@@ -192,6 +192,11 @@ textarea {
     color: $col-secondary-yellow; 
     font-size: .8rem;
   }
+  &--flex{
+    @include Body-2;
+    margin: 0;
+    color: $col-white;
+  }
 }
 
 .bold{
@@ -202,7 +207,13 @@ textarea {
   line-height: 1.33;
   color: inherit;
 
-  &--2{ font-size: .8rem; }
+  &--2{ 
+    @include Body-2--Bold;  
+    font-family: $font-bold;
+    font-size: .8rem; 
+    font-weight: bold;
+    color: inherit;
+  }
 }
 .caption{
   @include Caption;
@@ -218,8 +229,8 @@ textarea {
 }
 .btn-txt{
   margin-right: auto;
-  @include Body-2--Bold;
- 
+  @include Body-1--Bold;
+  font-size: .95rem;
   &--1{
     color: $col-signature-red;
   }
@@ -405,16 +416,9 @@ textarea {
 
 
 .txt-color{
-  &--white{
-    color: $col-white; 
-  }
-  &--red{
-    color: $col-signature-red;
-  }
-  &--orange{
-    color: $col-secondary-orange;
-  }
-  &--yellow{
-    color: $col-secondary-yellow;
-  }
+  &--white{ color: $col-white; }
+  &--red{ color: $col-signature-red; }
+  &--orange{ color: $col-secondary-orange; }
+  &--yellow{ color: $col-secondary-yellow; }
+  &--pink{ color: hotpink; } 
 }

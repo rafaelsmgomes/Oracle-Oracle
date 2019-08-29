@@ -11,6 +11,9 @@ $Breakpoint argument choices:
 -land
 -desk
 */
+* {
+  outline: hotpink solid 1px; }
+
 *,
 *::after,
 *::before {
@@ -284,6 +287,13 @@ textarea {
   .pg--yellow {
     color: #e6ac58;
     font-size: .8rem; }
+  .pg--flex {
+    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-size: .80rem;
+    line-height: 1.5;
+    color: #383330;
+    margin: 0;
+    color: #fcfbfa; }
 
 .bold {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
@@ -297,7 +307,15 @@ textarea {
   line-height: 1.33;
   color: inherit; }
   .bold--2 {
-    font-size: .8rem; }
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .80rem;
+    font-weight: bold;
+    line-height: 1.38;
+    color: #383330;
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .8rem;
+    font-weight: bold;
+    color: inherit; }
 
 .caption {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -318,10 +336,11 @@ textarea {
 .btn-txt {
   margin-right: auto;
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-  font-size: .80rem;
+  font-size: .9rem;
   font-weight: bold;
-  line-height: 1.38;
-  color: #383330; }
+  line-height: 1.33;
+  color: #383330;
+  font-size: .95rem; }
   .btn-txt--1 {
     color: #d1350f; }
 
@@ -519,6 +538,9 @@ textarea {
 .txt-color--yellow {
   color: #e6ac58; }
 
+.txt-color--pink {
+  color: hotpink; }
+
 .slick-prev, .slick-next {
   font-size: 0;
   line-height: 0;
@@ -637,15 +659,17 @@ input {
   color: white;
   cursor: pointer;
   align-items: center;
-  transition: all 500ms; }
+  transition: all 500ms;
+  border: none; }
   .btn--1 {
-    height: 1.80rem;
-    border: none; }
+    height: 1.80rem; }
     .btn--1:hover > * {
       color: #d1350f; }
     .btn--1:hover > .arrow--2 {
       background-image: url("../assets/graphics/icons/arrow_blue_lt.svg");
       transform: translateX(0.2rem); }
+  .btn--2 {
+    margin-top: 2rem; }
 
 .callout__slider {
   background-color: #282623;
@@ -675,6 +699,17 @@ input {
     padding: .6rem;
     display: flex;
     align-items: center; }
+  .callout__slider--5 {
+    margin: -7rem 0 0 -4.4rem;
+    padding: 7rem 4.2rem 2.2rem 5.2rem;
+    height: 35.8rem;
+    width: 29.4rem;
+    top: 2.8rem;
+    left: 2.8rem;
+    background-color: #fcfbfa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
 
 .callout__flex--2 {
   padding-right: 3rem; }
@@ -961,9 +996,14 @@ ul.no-dots-ul {
 .bullet__list--3 {
   color: #ae562c; }
 
+.bullet__list--4 {
+  color: #8b8580; }
+
 .bullet__item {
   padding-bottom: 0.90rem;
   position: relative; }
+  .bullet__item--4 {
+    padding-bottom: .625rem; }
   .bullet__item__header {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
@@ -975,6 +1015,10 @@ ul.no-dots-ul {
     margin-bottom: .2rem; }
     .bullet__item__header--3 {
       color: #ae562c; }
+    .bullet__item__header--3 {
+      color: #282623; }
+    .bullet__item__header--4 {
+      color: #282623; }
   .bullet__item__description {
     font-family: OracleSans, Arial, Helvetica, sans-serif;
     font-size: .80rem;
@@ -1182,6 +1226,9 @@ ul.no-dots-ul {
     align-self: flex-end;
     display: flex;
     align-items: center; }
+    .overview__footer--2 {
+      height: auto;
+      margin-right: -2.8rem; }
   .overview__cta {
     margin-left: auto;
     margin-right: 1rem; }
@@ -1401,13 +1448,13 @@ table {
     background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
     background-size: 100%; }
 
-.bg-container {
+.bg__container {
   float: left;
   height: 40.00rem;
   position: relative; }
-  .bg-container__left {
+  .bg__container--left {
     width: 50%; }
-  .bg-container__right {
+  .bg__container--right {
     width: 50%; }
 
 .bg__block {
@@ -1432,6 +1479,8 @@ table {
     width: 29.4rem;
     top: 2.8rem;
     left: 2.8rem; }
+    .bg__block--center--1 {
+      background-color: #fcfbfa; }
 
 .bg-pattern--1 {
   background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
@@ -1490,11 +1539,16 @@ table {
     height: 40.00rem;
     padding: 6.4rem 6.15rem 0 6.15rem;
     width: 50%;
-    float: left; }
+    float: left;
+    position: relative; }
     .container-right-2-col--1 {
       padding: 4.8rem 6.15rem  0 6.15rem; }
     .container-right-2-col--2 {
       padding: 6.4rem 11.95rem  0 .35rem; }
+    .container-right-2-col--3 {
+      padding: 9.25rem 7.7rem  0 6.9rem; }
+    .container-right-2-col--chapter {
+      width: 37.5%; }
   .container-left-2-col {
     height: 40.00rem;
     padding: 6.4rem 6.15rem 0 6.15rem;
@@ -1502,6 +1556,9 @@ table {
     float: left; }
     .container-left-2-col--1 {
       padding: 4.8rem 6.15rem  0 6.15rem; }
+    .container-left-2-col--chapter {
+      width: 62.5%;
+      padding: 6.4rem 5rem 0 6.15rem; }
 
 @media only screen and (max-width: 1053px) {
   .container-right-3-col, .container-right-2-col, .container-left-2-col, .container-left-3-col, .container-mid-3-col, .container-left-2-col, .container-left-3-col, .container-left-2-col, .container-mid-3-col, .TOC-left, .TOC-right, .container-1-col {
@@ -2118,6 +2175,9 @@ img.inline {
 .marg-top-7 {
   margin-top: 7rem; }
 
+.marg-bot-0 {
+  margin-bottom: 0rem; }
+
 .marg-bot-1 {
   margin-bottom: 3.2rem; }
 
@@ -2143,7 +2203,9 @@ img.inline {
   .filler--8 {
     height: 6.4rem; }
   .filler--9 {
-    height: 0; }
+    height: 6.2rem; }
+  .filler--10 {
+    height: 3.45rem; }
 
 .placeholder {
   width: 22.7rem;

@@ -37,6 +37,20 @@
             display: flex;
             align-items: center;
         }
+
+        &--5{
+            margin: -7rem 0 0 -4.4rem;
+            padding: 7rem 4.2rem 2.2rem 5.2rem;
+            height: 35.8rem;
+            width: 29.4rem;
+            top: 2.8rem;
+            left: 2.8rem;
+            background-color: $col-white;
+            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     }
 
     &__flex{

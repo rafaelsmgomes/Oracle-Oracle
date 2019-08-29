@@ -43,17 +43,16 @@ ul.no-dots-ul{
 	&__list{
 			
 		&--1,
-		&--2{
-			color: $col-secondary-yellow;
-		}
-		&--3{
-			color: $col-secondary-orange;
-		}
+		&--2{ color: $col-secondary-yellow; }
+		&--3{ color: $col-secondary-orange; }
+		&--4{ color: $col-supporting-gray1; }
 		
 	}
 	&__item{
 		padding-bottom: 0.90rem;
 		position: relative;
+
+		&--4{ padding-bottom: .625rem; }
 	
 		&__header{
 			@include Body-1--Bold;
@@ -62,6 +61,8 @@ ul.no-dots-ul{
 			margin-bottom: .2rem;
 
 			&--3{color: $col-secondary-orange;}
+			&--3{color: $col-signature-black;}
+			&--4{color: $col-signature-black;}
 		}
 	
 		&__description{

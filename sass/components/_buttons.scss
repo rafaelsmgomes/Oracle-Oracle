@@ -57,10 +57,10 @@ input {
   cursor: pointer;
   align-items: center;  
   transition: all 500ms; 
+  border: none;
   
   &--1{
     height: 1.80rem;
-    border: none;
 
     &:hover{
 
@@ -72,5 +72,8 @@ input {
         transform: translateX(0.20rem);
       }
     }  
+  }
+  &--2{
+    margin-top: 2rem;
   }
 }
