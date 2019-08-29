@@ -193,7 +193,6 @@ textarea {
     font-size: .8rem;
   }
   &--flex{
-    @include Body-2;
     margin: 0;
     color: $col-white;
   }
@@ -224,8 +223,11 @@ textarea {
   }
 }
 .vid_text{
-  @include Body-2;
+  @include Body-2--Bold;
   color: $col-white;
+  &--1{
+    font-size: .6rem;
+  }
 }
 .btn-txt{
   margin-right: auto;
@@ -303,10 +305,6 @@ textarea {
 }
 .overview{
   &__txt{
-    &--header{
-      margin-bottom: .5rem;
-    }
-  
   
     &--footer{
       @include Body-1--Bold;

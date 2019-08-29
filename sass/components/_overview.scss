@@ -2,7 +2,6 @@
     height: 100%;
     width: 100%;
     background-color: $col-white;
-    margin: 0 1rem 0 0;
     margin-top: -2.6rem; 
     padding: 5.45rem 3.6rem 0 3.9rem;
 
@@ -10,18 +9,13 @@
     flex-direction: column;
 
     &__header{
-        margin-bottom: .5rem;
+        margin-bottom: 2rem; 
 
         display: block;
         flex-shrink: 0
     }
     &__subchapters{
         flex-grow: 1;
-        
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-
     }
     &__footer{
         height: 5rem;
