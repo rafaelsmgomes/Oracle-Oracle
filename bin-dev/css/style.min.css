@@ -153,14 +153,14 @@ strong {
   font-weight: 700; }
 
 h1 {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.35;
   color: #383330; }
 
 h3 {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
   font-weight: bold;
   line-height: 1.32;
@@ -189,12 +189,13 @@ textarea {
   overflow: auto; }
 
 .cover__short-name {
+  position: relative;
   color: #56504b;
   font-size: .8rem;
   margin-bottom: 1.2rem; }
 
 .cover__title {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.35;
@@ -206,7 +207,7 @@ textarea {
     display: block;
     line-height: 1.35; }
   .cover__title--sub {
-    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
     font-weight: bold;
     line-height: 1.32;
@@ -223,7 +224,7 @@ textarea {
   margin-bottom: 2.5rem; }
 
 .header__primary {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
   font-weight: bold;
   line-height: 1.35;
@@ -234,7 +235,7 @@ textarea {
     font-size: 1.6rem; }
 
 .header__secondary {
-  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
   font-weight: bold;
   line-height: 1.31;
@@ -705,6 +706,8 @@ input {
     justify-content: space-between; }
     .callout__slider--5--hr {
       padding-top: 4rem; }
+    .callout__slider--5--sc {
+      padding-top: 12rem; }
 
 .callout__flex--2 {
   padding-right: 3rem; }
@@ -1560,7 +1563,8 @@ table {
     height: 40.00rem;
     padding: 6.4rem 6.15rem 0 6.15rem;
     width: 50%;
-    float: left; }
+    float: left;
+    position: relative; }
     .container-left-2-col--1 {
       padding: 4.8rem 6.15rem  0 6.15rem; }
     .container-left-2-col--chapter {
@@ -1576,17 +1580,19 @@ table {
     margin: 0 auto; } }
 
 .cover__wrapper {
+  position: relative;
   padding-left: 5.85rem;
   padding-top: 3rem;
   height: 27.8rem;
   width: 47.6rem;
   background-color: #fcfbfa;
-  position: relative; }
+  overflow: hidden; }
 
 .cover__text-box {
   width: 24.6rem;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  position: relative; }
   @media only screen and (max-width: 1053px) {
     .cover__text-box {
       padding-left: 5.46vw;
@@ -1600,7 +1606,8 @@ table {
 .cover__pg-box {
   width: 18.1rem;
   margin-bottom: 4.5rem;
-  margin-top: 1.6rem; }
+  margin-top: 1.6rem;
+  position: relative; }
 
 .cover-logo-oracle {
   display: block;
@@ -1707,6 +1714,50 @@ table {
     width: calc(2*(100% - 3 * 0.5rem)/4 + 0.5rem); }
   .row .col-3-of-4 {
     width: calc(100% - (100% - 3 * 0.5rem)/4 - 0.5rem); }
+
+.racetrack {
+  position: absolute;
+  opacity: .2;
+  max-width: none;
+  max-height: none; }
+  .racetrack--1 {
+    fill: aqua;
+    opacity: 1; }
+  .racetrack__big {
+    width: 110rem; }
+    .racetrack__big--top-right {
+      bottom: 25.25rem;
+      left: 18.35rem; }
+  .racetrack__mid {
+    width: 85rem; }
+    .racetrack__mid--bot-right {
+      top: 27.3rem;
+      left: 18.35rem; }
+    .racetrack__mid--bot-left {
+      top: 21.65rem;
+      right: 31.9rem; }
+  .racetrack__small {
+    width: 70rem; }
+    .racetrack__small--bot-right {
+      top: 20.25rem;
+      left: 25.25rem; }
+    .racetrack__small--bot-left {
+      width: 40rem;
+      top: 32.35rem;
+      right: 7.35rem; }
+    .racetrack__small--top-right {
+      bottom: 34.3rem;
+      left: 46.4rem; }
+  .racetrack__start {
+    width: 85rem;
+    transform: translateY(-100%);
+    top: 40rem;
+    left: 6.15rem; }
+  .racetrack__end {
+    width: 85rem;
+    transform: translateY(-100%);
+    top: 40rem;
+    right: 6.15rem; }
 
 .main_container {
   width: 70.00rem;

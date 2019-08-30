@@ -94,8 +94,8 @@ textarea {
 }
 
 .cover{
-
   &__short-name{
+    position: relative;
     color: $col-supporting-gray4;
     font-size: .8rem;
     margin-bottom: 1.2rem;

@@ -1,0 +1,68 @@
+.racetrack{
+    position: absolute;
+    opacity: .2;
+    max-width: none; 
+    max-height: none;
+// top: 0;
+    // left: 0;
+    // width: 40rem; 
+
+    &--1{
+        fill: aqua;
+        opacity: 1;
+    }
+
+    &__big{
+        width: 110rem;
+            &--top-right{
+            bottom: 25.25rem;
+            left: 18.35rem;
+        }    
+    }
+
+    &__mid{
+        width: 85rem;
+        &--bot-right{
+            top: 27.3rem;
+            left: 18.35rem;
+        }
+        &--bot-left{
+            top: 21.65rem;
+            right: 31.9rem;
+        }
+    }
+
+    &__small{
+        width: 70rem;
+        // transform: scale(2); 
+        &--bot-right{
+            top: 20.25rem;
+            left: 25.25rem;
+        }
+        &--bot-left{
+            width: 40rem;
+            top: 32.35rem;
+            right: 7.35rem;
+        }
+        &--top-right{
+            bottom: 34.3rem;
+            left: 46.4rem;
+        }
+    } 
+
+    &__start{
+        width: 85rem;
+        transform: translateY(-100%);
+        top: 40rem;
+        left: 6.15rem;
+
+    }
+    &__end{
+        width: 85rem;
+        transform: translateY(-100%);
+        top: 40rem;
+        right: 6.15rem;
+    }
+
+
+}
