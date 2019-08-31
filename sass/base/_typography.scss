@@ -98,7 +98,7 @@ textarea {
     position: relative;
     color: $col-supporting-gray4;
     font-size: .8rem;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.4rem;
   }
   &__title{
     @include H1;
@@ -177,6 +177,10 @@ textarea {
       left: -1rem;
       color: $col-secondary-orange;
     }
+    &--1::after{
+      margin-bottom: .8rem;
+    }
+
   }
 }
 .pg{
@@ -225,6 +229,7 @@ textarea {
 .vid_text{
   @include Body-2--Bold;
   color: $col-white;
+  margin-bottom: .6rem;
   &--1{
     font-size: .6rem;
   }
@@ -335,6 +340,9 @@ textarea {
       width: 9.8rem;
       margin-bottom: 2.4rem;
       font-size: .8rem; 
+      &--4{
+        width: 13.1rem;
+      }
 
       &--main{
         @include Body-2--Bold;

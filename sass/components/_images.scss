@@ -18,12 +18,17 @@ svg:not(:root) {
 	}
 }
 
-.home-icon{
-  
+.logo-tag{
+  position: absolute; 
+  bottom: 0.4rem;
+  right: 2.6rem;
+}
+
+.home-icon{  
   &--2{
     display: block;
-    width: 1.6rem;
-    height: 1.6rem; 
+    width: 2rem;
+    height: 2rem;
     margin-right: .7rem;
   }
 }

@@ -44,7 +44,10 @@ ul.no-dots-ul{
 			
 		&--1,
 		&--2{ color: $col-secondary-yellow; }
-		&--3{ color: $col-secondary-orange; }
+		&--3{ 
+			color: $col-secondary-orange; 
+			margin-bottom: 1.6rem;
+		}
 		&--4{ color: $col-supporting-gray1; }
 		
 	}
@@ -61,7 +64,6 @@ ul.no-dots-ul{
 			margin-bottom: .2rem;
 
 			&--3{color: $col-secondary-orange;}
-			&--3{color: $col-signature-black;}
 			&--4{color: $col-signature-black;}
 		}
 	

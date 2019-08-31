@@ -3,7 +3,7 @@
     opacity: .2;
     max-width: none; 
     max-height: none;
-// top: 0;
+    // top: 0;
     // left: 0;
     // width: 40rem; 
 
@@ -27,6 +27,7 @@
             left: 18.35rem;
         }
         &--bot-left{
+            width: 70rem;
             top: 21.65rem;
             right: 31.9rem;
         }
@@ -36,6 +37,7 @@
         width: 70rem;
         // transform: scale(2); 
         &--bot-right{
+            width: 40rem;
             top: 20.25rem;
             left: 25.25rem;
         }
@@ -44,12 +46,15 @@
             top: 32.35rem;
             right: 7.35rem;
         }
-        &--top-right{
-            bottom: 34.3rem;
-            left: 46.4rem;
-        }
     } 
 
+    &__smallest{
+        width: 40rem;
+        &--top-right{
+            bottom: 34.5rem;
+            left: 46.4rem;
+        } 
+    }
     &__start{
         width: 85rem;
         transform: translateY(-100%);

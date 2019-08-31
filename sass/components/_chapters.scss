@@ -17,7 +17,7 @@
     &__title{
         height: 3.2rem;
 
-        border-bottom: 1px solid $col-supporting-beige;
+        border-bottom: 2px solid rgba($color: $col-supporting-beige, $alpha: .2);
     }
     &__symbol{
         height: 8.25rem;
@@ -28,7 +28,7 @@
     }
     &__cta{
         height: 2.0rem;
-        border-top: 1px solid $col-supporting-beige;
+        border-top: 2px solid rgba($color: $col-supporting-beige, $alpha: .2);
 
         display: flex;
         align-items: center;
