@@ -47,18 +47,11 @@
 		float: left;
 		position: relative;
 		
-		&--1{
-			padding: 4.8rem 6.15rem  0 6.15rem; 
-		}
-		&--2{
-			padding: 6.4rem 11.95rem  0 .35rem;
-		}
-		&--3{
-			padding: 9.25rem 7.7rem  0 6.9rem;
-		}
-		&--4{
-			padding: 9.8rem 6.15rem  0 6.15rem;
-		}
+		&--0{ padding: 0;  }
+		&--1{ padding: 4.8rem 6.15rem  0 6.15rem;  }
+		&--2{ padding: 6.4rem 11.95rem  0 .35rem; }
+		&--3{ padding: 9.25rem 7.7rem  0 6.9rem; }
+		&--4{ padding: 9.8rem 6.15rem  0 6.15rem; }
   
 		&--chapter{
 			width: 37.5%;
@@ -73,12 +66,9 @@
 	  float: left;
 	  position: relative;
 	  
-	  	&--1{
-		  padding: 4.8rem 6.15rem  0 6.15rem;
-		}
-	  	&--4{
-		  padding: 9.8rem 6.15rem  0 6.15rem;
-		}
+		&--0{ padding: 0;  }
+	  	&--1{ padding: 4.8rem 6.15rem  0 6.15rem; }
+	  	&--4{ padding: 9.8rem 6.15rem  0 6.15rem; }
 		&--chapter{
 			width: 62.5%;
 			padding: 6.4rem 5rem 0 6.15rem;

@@ -54,6 +54,19 @@
             &--hr{ padding-top: 4rem; }
             &--sc{ padding-top: 12rem; }
         }
+
+        &--6{
+            width: 29.2rem;
+            height: 36.9rem;
+            margin: 0 2.7rem 3.1rem 3.1rem;
+            padding: 6.4rem 5.25rem 0 3rem;
+        }
+        &--7{
+            width: 29.2rem;
+            height: 100%;
+            margin: 3rem 2.7rem 0 3.1rem;
+            padding: 3.4rem 5.25rem 0 3rem;
+        }
     }
 
     &__flex{
