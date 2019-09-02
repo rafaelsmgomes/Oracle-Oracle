@@ -70,10 +70,17 @@
     }
 
     &__flex{
+        width: 100%;
 
-        &--2{
-            padding-right: 3rem;
-        }
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1.6rem;
+
+        &--2{ padding-right: 3rem; }
+    }
+
+    &__box{
+        width: 9.05rem;
     }
 
     &__symb{

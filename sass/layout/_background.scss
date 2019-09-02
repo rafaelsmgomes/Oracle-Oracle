@@ -48,6 +48,10 @@
         &--top{
             background-color: $col-signature-black;
             height: 33rem;
+            &--2{
+                background-color: $col-white;
+                height: 37.3rem;
+            }
         }
         &--center{
             background-color: $col-signature-black;
@@ -66,10 +70,22 @@
         &--1{
             background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
             background-size: cover;
+
         }
         &--2{
             background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
             background-size: cover;
+        }
+        &--bot{
+            position: absolute;
+            width: 100%;
+            height: 2.7rem;
+            bottom: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            &--1{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-1.jpg); }
+            &--2{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-2.jpg); }
+            &--3{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-3.jpg); }
         }
     }
     &-white{ background-color: $col-white; }

@@ -296,12 +296,7 @@ textarea {
   font-size: .9rem;
   font-weight: bold;
   line-height: 1.33;
-  color: #383330;
-  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-  font-size: .9rem;
-  font-weight: bold;
-  line-height: 1.33;
-  color: inherit; }
+  color: #383330; }
   .bold--2 {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .80rem;
@@ -312,6 +307,8 @@ textarea {
     font-size: .8rem;
     font-weight: bold;
     color: inherit; }
+  .bold--3 {
+    margin-bottom: 1.2rem; }
 
 .caption {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -377,6 +374,12 @@ textarea {
     color: #383330;
     font-size: 1.1rem;
     color: #e6ac58; }
+
+.callout__flex__description {
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
+  line-height: 1.33;
+  color: #383330; }
 
 .chapters__title--main {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
@@ -727,8 +730,16 @@ input {
     margin: 3rem 2.7rem 0 3.1rem;
     padding: 3.4rem 5.25rem 0 3rem; }
 
-.callout__flex--2 {
-  padding-right: 3rem; }
+.callout__flex {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem; }
+  .callout__flex--2 {
+    padding-right: 3rem; }
+
+.callout__box {
+  width: 9.05rem; }
 
 .callout__symb {
   margin-left: .6rem;
@@ -776,6 +787,52 @@ input {
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.circular-chart {
+  display: block;
+  width: 4rem;
+  margin-bottom: .6rem; }
+  .circular-chart .circle--0 {
+    stroke-dasharray: 0, 100; }
+  .circular-chart .circle--10 {
+    stroke-dasharray: 10, 100; }
+  .circular-chart .circle--25 {
+    stroke-dasharray: 25, 100; }
+  .circular-chart .circle--39 {
+    stroke-dasharray: 39, 100; }
+  .circular-chart .circle--50 {
+    stroke-dasharray: 50, 100; }
+  .circular-chart .circle--70 {
+    stroke-dasharray: 70, 100; }
+  .circular-chart .circle--100 {
+    stroke-dasharray: 100, 100; }
+
+.circle-bg {
+  fill: none;
+  stroke: #e5dbbe;
+  stroke-width: .5;
+  opacity: .2; }
+
+.circle {
+  fill: none;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards; }
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100; } }
+
+.circular-chart .circle {
+  stroke: #e5dbbe; }
+
+.percentage {
+  fill: #666;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-anchor: middle;
+  fill: #e6ac58; }
 
 .citation__container {
   display: flex;
@@ -1325,10 +1382,7 @@ ul.no-dots-ul {
 
 .results {
   width: 45.1rem;
-  height: 20rem;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; }
+  height: 20rem; }
   .results__box {
     height: 100%;
     display: flex;
@@ -1508,6 +1562,9 @@ table {
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }
+    .bg__block--top--2 {
+      background-color: #fcfbfa;
+      height: 37.3rem; }
   .bg__block--center {
     background-color: #282623;
     height: 34.4rem;
@@ -1524,6 +1581,20 @@ table {
 .bg-pattern--2 {
   background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
   background-size: cover; }
+
+.bg-pattern--bot {
+  position: absolute;
+  width: 100%;
+  height: 2.7rem;
+  bottom: 0;
+  left: 0;
+  background-repeat: no-repeat; }
+  .bg-pattern--bot--1 {
+    background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-1.jpg); }
+  .bg-pattern--bot--2 {
+    background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-2.jpg); }
+  .bg-pattern--bot--3 {
+    background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-3.jpg); }
 
 .bg-white {
   background-color: #fcfbfa; }
@@ -1755,7 +1826,6 @@ table {
   max-width: none;
   max-height: none; }
   .racetrack--1 {
-    fill: aqua;
     opacity: 1; }
   .racetrack__big {
     width: 110rem; }
@@ -2277,6 +2347,9 @@ img.inline {
 .marg-bot-1 {
   margin-bottom: 3.2rem; }
 
+.marg-bot-2 {
+  margin-bottom: 2rem; }
+
 .minus-marg--1 {
   margin-top: -1.6rem; }
 
@@ -2316,6 +2389,8 @@ img.inline {
     height: 11.6rem; }
   .filler--17 {
     height: 6rem; }
+  .filler--18 {
+    height: 3.45rem; }
 
 .placeholder {
   width: 22.7rem;

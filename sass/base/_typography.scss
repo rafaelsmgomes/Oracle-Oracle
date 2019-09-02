@@ -204,11 +204,6 @@ textarea {
 
 .bold{
   @include Body-1--Bold;
-  font-family: $font-bold;
-  font-size: .9rem;
-  font-weight: bold;
-  line-height: 1.33;
-  color: inherit;
 
   &--2{ 
     @include Body-2--Bold;  
@@ -216,6 +211,9 @@ textarea {
     font-size: .8rem; 
     font-weight: bold;
     color: inherit;
+  }
+  &--3{
+    margin-bottom: 1.2rem;
   }
 }
 .caption{
@@ -272,6 +270,9 @@ textarea {
         font-size: 1.1rem;
         color: $col-secondary-yellow;
       }
+    }
+    &__description{
+      @include Caption;
     }
   }
 
