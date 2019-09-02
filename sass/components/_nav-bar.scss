@@ -1,13 +1,14 @@
 .nav-bar {
     display: flex;
     width: 100%;
+    padding-left: 6.15rem;
     height: 2.90rem;
     position: absolute;
     top: 0;
     z-index: 1;
     transition-delay: 5s;
     transition: .25s all ease-in-out;
-    background-color: rgba(123,44,54,.051);
+
     a {
       text-decoration: none;
         letter-spacing: -.04em;

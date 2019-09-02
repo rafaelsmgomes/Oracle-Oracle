@@ -867,6 +867,7 @@ input {
   fill: none;
   stroke-width: 1.5;
   stroke-linecap: round;
+  transition-delay: 5s;
   animation: progress 1s ease-out forwards; }
 
 @keyframes progress {
@@ -1202,13 +1203,13 @@ ul.no-dots-ul {
 .nav-bar {
   display: flex;
   width: 100%;
+  padding-left: 6.15rem;
   height: 2.90rem;
   position: absolute;
   top: 0;
   z-index: 1;
   transition-delay: 5s;
-  transition: .25s all ease-in-out;
-  background-color: rgba(123, 44, 54, 0.051); }
+  transition: .25s all ease-in-out; }
   .nav-bar a {
     text-decoration: none;
     letter-spacing: -.04em; }
