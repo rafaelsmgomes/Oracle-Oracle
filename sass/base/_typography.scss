@@ -60,7 +60,7 @@ h1 {
     @include H1;
 }
 h2{
-
+  @include H2;
 }
 
 h3{
@@ -234,10 +234,20 @@ textarea {
 }
 .btn-txt{
   margin-right: auto;
+  display: flex;
+  align-items: center;
   @include Body-1--Bold;
   font-size: .95rem;
-  &--1{
+  &--1{ color: $col-signature-red; }
+  &--3{ 
     color: $col-signature-red;
+    align-self: flex-end;
+  }
+  &:hover{
+    text-decoration: none;
+    & img{
+      padding-left: .5rem;
+    }
   }
 }
 
@@ -416,6 +426,18 @@ textarea {
       color: $col-signature-black;
     }
 
+  }
+}
+
+.cases{
+  &__header{
+    @include H2;
+    margin-bottom: .4rem;
+  }
+  &__sub{
+    @include Body-1--Bold;
+    color: $col-secondary-orange;
+    margin-bottom: 1.2rem;
   }
 }
 

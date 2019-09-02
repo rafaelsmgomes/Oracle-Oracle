@@ -3,10 +3,13 @@
     &__wrapper{
         border-left: 2px solid $col-secondary-darkgreen;
         margin-bottom: 1.2rem; 
+
+        &--cases{ margin-left: -.85rem; }
     }
     &__container{
         padding-left: .85rem;
         width: 20.4rem;
+        &--cases{ width: 22.7rem; }
     }
 
 

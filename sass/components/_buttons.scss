@@ -58,6 +58,17 @@ input {
   align-items: center;  
   transition: all 500ms; 
   border: none;
+
+  & img{
+    display: inline-block;
+    width: 2rem;
+    height: 1.5rem;
+    transition: all .5s; 
+    &:hover img{
+      padding-left: .5rem;
+    }
+
+  }
   
   &--1{
     height: 1.80rem;
@@ -73,7 +84,10 @@ input {
       }
     }  
   }
-  &--2{
-    margin-top: 2rem;
+  &--2{ margin-top: 2rem; }
+  &--3{ 
+    width: 9rem;
+    margin-top: 2.7rem;
+    margin-left: auto;
   }
 }
