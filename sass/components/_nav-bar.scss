@@ -74,3 +74,8 @@
 .chap-sub{
 	@include Body-1--Bold;
 }
+
+.white{
+  fill: $col-white;
+  color: $col-white;
+}

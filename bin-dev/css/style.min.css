@@ -1267,6 +1267,10 @@ ul.no-dots-ul {
   line-height: 1.33;
   color: #383330; }
 
+.white {
+  fill: #fcfbfa;
+  color: #fcfbfa; }
+
 .overview {
   height: 100%;
   width: 100%;

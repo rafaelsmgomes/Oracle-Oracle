@@ -6,11 +6,18 @@
 var context='large';
 var $window = $(window);
 var isTouchDevice = 'ontouchstart' in document.documentElement;
+var intro=1;
+var approach=2;
 var homePage=5;
-var chapter1=2;
-var chapter2=4;
-var chapter3=8;
-var chapter4=14;
+var finance=6;
+var finance1=7;
+var finance2=12;
+var finance3=16;
+var humanResources=21;
+var humanResources1=22;
+var humanResources2=26;
+var supplyChain=31;
+var customerExperience=42;
 // var chapter5=12;
 // var chapter6=13;
 // var chapter7=14;
@@ -295,6 +302,8 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     $('html, body').animate({ scrollTop: 0}, 200);
     var lastSlide = $('section.slick-slide:not(.slick-cloned)').length - 1;
 
+    console.log(currentSlide);
+
 	//set URL bar
     if(flag==false){
     	flag=true;
@@ -305,35 +314,27 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     $('.footer').fadeIn();
 
 	//controls nav display
-    switch(currentSlide) {
-        case 0:
-            $('.footer').hide();
-            $('.nav-bar').hide();
-            // $('.footer-phone').hide();
-            $('.nav-bar').removeClass('nav-flex');
-            break;
-        case lastSlide:
-            $('.nav-bar').hide();
-            $('.footer').hide();
-            // $('.footer-phone').hide();
-            break;
-        default:
-    }
+    if(currentSlide === 0 || currentSlide === 5){
+        // $('.trail-bttn').hide();
+        $('.footer').addClass('txt-black');
+        $('.footer-book-title').hide();
+        $('.nav-bar').hide();
+        $('.footer-phone').hide();
+    }else if (currentSlide > 0 && currentSlide < lastSlide){
+        $('.nav-bar').show();
+    }else{
+        $('.nav-bar').hide();
+        $('.footer').removeClass('footer-show');
+        $('.footer-phone').hide();        
+    }    
 
 	//arrow display
 	$('.slick-arrow').show();
     
-    if (currentSlide === 0 ) {
+    if (currentSlide === 0 || currentSlide === 5 ) {
      $('.slick-prev.slick-arrow').hide();
      $('.slick-next.slick-arrow').hide();
-     if($('body').width() < 1025){
-        $('.footer-phone').hide();   
-     }     
-    }else{
-     if($('body').width() < 1025){
-        $('.footer-phone').show();
-     }                
-    };      
+    };
 
     if (currentSlide === lastSlide ) { $('.slick-next.slick-arrow').hide(); }  
      
@@ -346,22 +347,34 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
      //    [ [,5,6,7,8,9,10,11,12,13,14,15] , ""],
     ];
 
+        //display footer text & visibility 
+    var navItem2 = [
+         [ [1,2,3,4] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name">Intro</span></a>'],
+         [ [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "><span class="chap-name">Finance</span></a>'],
+         [ [21,22,23,24,25,26,27,28,29,30] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name">HR</span></a>'],
+         [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
+         [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
+         [[0], 'test']
+    ];
 
-    var footer = $('.footer');
-    var slideNum=('0' + currentSlide).slice(-2);
-    var pageNum =(slideNum/1)+1;
-    $('#footNum').text(pageNum);
 
 
 if(context=='large'){
-        $.each(footerText, function( i, arr2 ){
+        $.each(navItem2, function( i, arr2 ){
             $.each( arr2[0], function( i, v ){
                 if(currentSlide == v ) {
-                    $('.footer-chap-title').html(arr2[1]);
+                    $('.nav__item--2').html(arr2[1]);
                 }
             });
         });
     }
+
+    // var footer = $('.footer');
+    // var slideNum=('0' + currentSlide).slice(-2);
+    // var pageNum =(slideNum/1)+1;
+    // $('#footNum').text(pageNum);
+
+
 
 });
 
