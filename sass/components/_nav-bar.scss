@@ -32,6 +32,9 @@
       margin-left: .2rem;
       margin-right: .2rem;
     }
+    &--4{
+      transform: translateY(10%);
+    }
   }
 }
 
@@ -66,13 +69,26 @@
 
   &--path{
     fill: $col-supporting-gray4;
+    &--2{
+      opacity: .5;
+      transform: translateY(-10%);
+    }
   }
 }
 .chap-name{
 	@include Body-1;
+  line-height: 1.3333;
+
+  &.bold{
+    @include Body-1--Bold;
+  }
 }
 .chap-sub{
-	@include Body-1--Bold;
+  @include Body-1--Bold;
+  line-height: 1.3333;
+}
+.dividing-bar{
+  line-height: 1.3333;
 }
 
 .white{

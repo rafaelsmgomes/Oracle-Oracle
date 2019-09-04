@@ -1228,6 +1228,8 @@ ul.no-dots-ul {
   .nav__item > * {
     margin-left: .2rem;
     margin-right: .2rem; }
+  .nav__item--4 {
+    transform: translateY(10%); }
 
 .company-logo {
   opacity: 1;
@@ -1253,19 +1255,33 @@ ul.no-dots-ul {
   align-self: center; }
   .logo-home--path {
     fill: #56504b; }
+    .logo-home--path--2 {
+      opacity: .5;
+      transform: translateY(-10%); }
 
 .chap-name {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   line-height: 1.33;
-  color: #383330; }
+  color: #383330;
+  line-height: 1.3333; }
+  .chap-name.bold {
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #383330; }
 
 .chap-sub {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
   font-weight: bold;
   line-height: 1.33;
-  color: #383330; }
+  color: #383330;
+  line-height: 1.3333; }
+
+.dividing-bar {
+  line-height: 1.3333; }
 
 .white {
   fill: #fcfbfa;

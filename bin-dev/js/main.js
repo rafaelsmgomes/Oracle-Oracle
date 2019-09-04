@@ -316,17 +316,25 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 	//controls nav display
     if(currentSlide === 0 || currentSlide === 5){
         // $('.trail-bttn').hide();
-        $('.footer').addClass('txt-black');
-        $('.footer-book-title').hide();
+        // $('.footer').addClass('txt-black');
+        // $('.footer-book-title').hide();
         $('.nav-bar').hide();
         $('.footer-phone').hide();
     }else if (currentSlide > 0 && currentSlide < lastSlide){
         $('.nav-bar').show();
     }else{
         $('.nav-bar').hide();
-        $('.footer').removeClass('footer-show');
-        $('.footer-phone').hide();        
-    }    
+        // $('.footer').removeClass('footer-show');
+        // $('.footer-phone').hide();        
+    }
+
+    if (currentSlide < 5){
+        $('.nav__item--1').hide();
+        $('.nav__item--4').show();
+    } else {
+        $('.nav__item--1').show();
+        $('.nav__item--4').hide();
+    }
 
 	//arrow display
 	$('.slick-arrow').show();
@@ -338,28 +346,18 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 
     if (currentSlide === lastSlide ) { $('.slick-next.slick-arrow').hide(); }  
      
-    //display footer text & visibility
 
-    var footerText = [
-    	// [ [0,1,2] , ""],
-    	// [ [3] , "<p class='pgraph--7'><sup class='sup--2'>1</sup>Accenture, “Technology Vision 2017.”</p>"],
-     //    [ [4] , "<p class='pgraph--7 pgraph--7-1'><sup class='sup--2'>1</sup> Jeff Schwartz et al., “The future of work: The augmented workforce” (Deloitte University Press, 2017).”</p>"],
-     //    [ [,5,6,7,8,9,10,11,12,13,14,15] , ""],
-    ];
-
-        //display footer text & visibility 
+    //display navigation item--2 & visibility 
     var navItem2 = [
-         [ [1,2,3,4] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name">Intro</span></a>'],
+         [ [1] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name bold">Intro</span></a>'],
+         [ [2,3,4] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name">Intro</span></a>'],
          [ [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "><span class="chap-name">Finance</span></a>'],
          [ [21,22,23,24,25,26,27,28,29,30] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name">HR</span></a>'],
          [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
-         [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
+         [ [42,43,44,45,46,47,48,49,50,51,52,53,54,55] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "><span class="chap-name">CX</span></a>'],
          [[0], 'test']
     ];
-
-
-
-if(context=='large'){
+    if(context=='large'){
         $.each(navItem2, function( i, arr2 ){
             $.each( arr2[0], function( i, v ){
                 if(currentSlide == v ) {
@@ -368,6 +366,53 @@ if(context=='large'){
             });
         });
     }
+
+    var navItem3 = [
+         [ [1] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name">Approach</span></a>'],
+         [ [2,3,4] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name bold">Approach</span></a>'],
+         [ [6] , ''],
+         [ [7] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 1/5</span> '],
+         [ [8] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 2/5</span> '],
+         [ [9] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 3/5</span> '],
+         [ [10] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 4/5</span> '],
+         [ [11] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 5/5</span> '],
+         [ [12] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Planning 1/4</span> '],
+         [ [13] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Planning 2/4</span> '],
+         [ [14] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Planning 3/4</span> '],
+         [ [15] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Planning 4/4</span> '],
+         [ [16] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 1/4</span> '],
+         [ [17] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 2/4</span> '],
+         [ [18] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 3/4</span> '],
+         [ [19] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 4/4</span> '],
+         [ [20,21] , ''],
+         [ [22] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 1/5</span> '],
+         [ [23] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 2/5</span> '],
+         [ [24] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 3/5</span> '],
+         [ [25] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 4/5</span> '],
+         [ [26] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 5/5</span> '],
+         [ [27] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 1/4</span> '],
+         [ [28] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 2/4</span> '],
+         [ [29] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 3/4</span> '],
+         [ [30] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 4/4</span> '],
+         [ [31,32] , ''],
+         [ [33] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 1/5</span> '],
+         [ [34] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 2/5</span> '],
+         [ [35] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 3/5</span> '],
+         [ [36] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 4/5</span> '],
+         [ [37] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 5/5</span> '],
+    ];
+    if(context=='large'){
+        $.each(navItem3, function( i, arr2 ){
+            $.each( arr2[0], function( i, v ){
+                if(currentSlide == v ) {
+                    $('.nav__item--3').html(arr2[1]);
+                }
+            });
+        });
+    }
+
+
+
 
     // var footer = $('.footer');
     // var slideNum=('0' + currentSlide).slice(-2);
