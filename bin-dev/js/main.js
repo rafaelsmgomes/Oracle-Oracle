@@ -6,7 +6,7 @@
 var context='large';
 var $window = $(window);
 var isTouchDevice = 'ontouchstart' in document.documentElement;
-var chapter0=1;
+var homePage=5;
 var chapter1=2;
 var chapter2=4;
 var chapter3=8;
@@ -17,7 +17,7 @@ var chapter4=14;
 // run this right away to set context
 if ( $window.width() <= 1024) {
     context = 'medium';
-    var chapter2=4;
+    var homePage=5;
     var chapter3=5;
     var chapter4=6;
     var chapter5=7;
@@ -72,8 +72,8 @@ $(document).ready(function() {
     });
 
 
-    $('.icon-wrap').click(function(){
-        $('.icon-wrap').toggleClass('hoverish');
+    $('.nav-bar').click(function(){
+        $('.nav-bar').toggleClass('hoverish');
         if(toggle_icon === false){
             toggle_icon = true;
         }else{
@@ -83,7 +83,7 @@ $(document).ready(function() {
 
     $('.page, .nav-left, .footer, .slick-next, .slick-prev').click(function(){
         if(toggle_icon === true){
-            $('.icon-wrap').toggleClass('hoverish');
+            $('.nav-bar').toggleClass('hoverish');
             $('.footer-phone').removeClass('up'); 
             toggle_icon = false;
         }
