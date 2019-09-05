@@ -140,17 +140,16 @@ p {
 a {
   background-color: transparent;
   cursor: pointer;
-  color: #00758f;
   text-decoration: none; }
   a:active {
     outline: 0; }
   a:hover {
-    outline: 0;
-    text-decoration: underline; }
+    outline: 0; }
 
 b,
 strong {
-  font-weight: 700; }
+  font-weight: 700;
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif; }
 
 h1 {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
@@ -300,10 +299,7 @@ textarea {
 
 .bold {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-  font-size: .9rem;
-  font-weight: bold;
-  line-height: 1.33;
-  color: #383330; }
+  font-weight: 700; }
   .bold--2 {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .80rem;
@@ -443,14 +439,14 @@ textarea {
   line-height: 1.33;
   color: #383330;
   color: #d1350f;
-  font-size: .6rem;
+  font-size: .9rem;
   margin-left: auto;
   display: flex;
   align-items: center; }
   .overview__txt--footer img {
     display: inline-block;
-    width: 2rem;
-    height: 1rem;
+    width: 2.5rem;
+    height: 1.15rem;
     transition: all .5s; }
   .overview__txt--footer:hover img {
     padding-left: .5rem; }
@@ -940,9 +936,6 @@ input {
 .social-dd li {
   display: inline; }
 
-.toc-link:hover {
-  text-decoration: underline; }
-
 .flex-wrapper {
   height: 13.5rem;
   margin-bottom: 2.5rem;
@@ -1253,11 +1246,10 @@ ul.no-dots-ul {
 .logo-home {
   transform: translateY(10%);
   align-self: center; }
-  .logo-home--path {
+  .logo-home__path {
     fill: #56504b; }
-    .logo-home--path--2 {
-      opacity: .5;
-      transform: translateY(-10%); }
+  .logo-home--2 {
+    opacity: .5; }
 
 .chap-name {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -1267,10 +1259,7 @@ ul.no-dots-ul {
   line-height: 1.3333; }
   .chap-name.bold {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-    font-size: .9rem;
-    font-weight: bold;
-    line-height: 1.33;
-    color: #383330; }
+    font-weight: 700; }
 
 .chap-sub {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
@@ -1283,7 +1272,7 @@ ul.no-dots-ul {
 .dividing-bar {
   line-height: 1.3333; }
 
-.white {
+.nav-white {
   fill: #fcfbfa;
   color: #fcfbfa; }
 
@@ -1560,6 +1549,10 @@ table {
       height: 100%;
       width: 62.3rem;
       background-color: #282623; }
+    .bg__block--left--2 {
+      width: 31.9rem;
+      background-color: #282623;
+      padding: 4.35rem 3rem 0 6rem; }
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }

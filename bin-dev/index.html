@@ -44,7 +44,7 @@
         <div class="nav__item nav__item--1">
             <a class='toc-link' onclick=" $('.book-slider').slick('slickGoTo', homePage); " >
                 <svg class='logo-home' xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'>
-                    <path class='logo-home--path' fill='#645B54' fill-rule='nonzero' d='M12.265 4.147l.087.074 8.416 8.258c.305.299.31.789.012 1.095a.77.77 0 0 1-1.003.086l-.088-.074-1.775-1.743v7.383c0 .392-.29.716-.666.767l-.105.007H6.857a.773.773 0 0 1-.764-.67l-.007-.104-.001-7.462-1.762 1.81a.77.77 0 0 1-1.003.086l-.088-.074a.776.776 0 0 1-.086-1.007l.074-.088 8.041-8.258a.77.77 0 0 1 1.004-.086zm-.44 1.722l-4.197 4.31v8.273l1.286-.001v-4.903c0-.57.46-1.032 1.029-1.032h4.114a1.03 1.03 0 0 1 1.029 1.032l-.001 4.903h1.286V10.33l-4.546-4.46zm1.718 8.196h-3.086v4.129h3.086v-4.13z'/>
+                    <path class='logo-home__path' fill='#645B54' fill-rule='nonzero' d='M12.265 4.147l.087.074 8.416 8.258c.305.299.31.789.012 1.095a.77.77 0 0 1-1.003.086l-.088-.074-1.775-1.743v7.383c0 .392-.29.716-.666.767l-.105.007H6.857a.773.773 0 0 1-.764-.67l-.007-.104-.001-7.462-1.762 1.81a.77.77 0 0 1-1.003.086l-.088-.074a.776.776 0 0 1-.086-1.007l.074-.088 8.041-8.258a.77.77 0 0 1 1.004-.086zm-.44 1.722l-4.197 4.31v8.273l1.286-.001v-4.903c0-.57.46-1.032 1.029-1.032h4.114a1.03 1.03 0 0 1 1.029 1.032l-.001 4.903h1.286V10.33l-4.546-4.46zm1.718 8.196h-3.086v4.129h3.086v-4.13z'/>
                 </svg>
             </a>
         </div>
@@ -120,9 +120,11 @@
                             <p class="cover__pg">Move your entire business to the cloud with someone who’s done it</p>
                         </div>
                         <button class="btn btn--1">
-                            <div class="btn-txt btn-txt--1">
-                                Start Reading
-                            </div>    
+                            <a onclick=" $('.book-slider').slick('slickNext'); " >
+                                <div class="btn-txt btn-txt--1">
+                                    Start Reading
+                                </div>    
+                            </a>
                         </button>
                     </div>
                 </div>
@@ -355,50 +357,74 @@
                     <div class="chapters__wrapper chapters__wrapper--1">
                         <div class="chapters__container chapters__container--1">
                             <div class="chapters__title chapter__title--1">
-                                <span class="chapters__title--main">Finance</span>
-                                <span class="chapters__title--sub">Oracle EPM and ERP Cloud</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance);" >
+                                    <span class="chapters__title--main">Finance</span>
+                                    <span class="chapters__title--sub">Oracle EPM and ERP Cloud</span>
+                                </a>
                             </div>
                             <div class="chapters__symbol chapters__symbol--1">
-                                <span class="chapters__symbol">$</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance);" >
+                                    <span class="chapters__symbol">$</span>
+                                </a>
                             </div>
                             <div class="chapters__cta chapters__cta--1">
-                                <span class="chapters__cta--txt">Start Chapter</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance);" >
+                                    <span class="chapters__cta--txt">Start Chapter</span>
+                                </a>
                             </div>
                         </div>
                         <div class="chapters__container chapters__container--2">
                             <div class="chapters__title chapter__title--2">
-                                <span class="chapters__title--main">Human Resources</span>
-                                <span class="chapters__title--sub">Oracle HCM Cloud</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', humanResources);" >
+                                    <span class="chapters__title--main">Human Resources</span>
+                                    <span class="chapters__title--sub">Oracle HCM Cloud</span>
+                                </a>
                             </div>
                             <div class="chapters__symbol chapters__symbol--2">
-                                <span class="chapters__symbol">HR</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', humanResources);" >
+                                    <span class="chapters__symbol">HR</span>
+                                </a>
                             </div>
                             <div class="chapters__cta chapters__cta--2">
-                                <span class="chapters__cta--txt">Start Chapter</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', humanResources);" >
+                                    <span class="chapters__cta--txt">Start Chapter</span>
+                                </a>
                             </div>
                         </div>
                         <div class="chapters__container chapters__container--3">
                             <div class="chapters__title chapter__title--3">
-                                <span class="chapters__title--main">Supply Chain</span>
-                                <span class="chapters__title--sub">Oracle SCM Cloud</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', supplyChain);" >
+                                    <span class="chapters__title--main">Supply Chain</span>
+                                    <span class="chapters__title--sub">Oracle SCM Cloud</span>
+                                </a>
                             </div>
                             <div class="chapters__symbol chapters__symbol--3">
-                                <span class="chapters__symbol">SC</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', supplyChain);" >
+                                    <span class="chapters__symbol">SC</span>
+                                </a>
                             </div>
                             <div class="chapters__cta chapters__cta--3">
-                                <span class="chapters__cta--txt">Start Chapter</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', supplyChain);" >
+                                    <span class="chapters__cta--txt">Start Chapter</span>
+                                </a>
                             </div>
                         </div>
                         <div class="chapters__container chapters__container--4">
                             <div class="chapters__title chapter__title--4">
-                                <span class="chapters__title--main">Customer Experience</span>
-                                <span class="chapters__title--sub">Oracle CX Cloud</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience);" >
+                                    <span class="chapters__title--main">Customer Experience</span>
+                                    <span class="chapters__title--sub">Oracle CX Cloud</span>
+                                </a>
                             </div>
                             <div class="chapters__symbol chapters__symbol--4">
-                                <span class="chapters__symbol">CX</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience);" >
+                                    <span class="chapters__symbol">CX</span>
+                                </a>
                             </div>
                             <div class="chapters__cta chapters__cta--4">
-                                <span class="chapters__cta--txt">Start Chapter</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience);" >
+                                    <span class="chapters__cta--txt">Start Chapter</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -441,21 +467,27 @@
                         </div>
                         <div class="overview__subchapters overview__subchapters--1">
                             <div class="overview__subchapters__textbox">
-                                <span class="overview__subchapters__textbox--main">Financial Reporting with Oracle ERP Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance1);" >
+                                    <span class="overview__subchapters__textbox--main">Financial Reporting with Oracle ERP Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox">
-                                <span class="overview__subchapters__textbox--main">Financial Planning with Oracle EPM Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance2);" >
+                                    <span class="overview__subchapters__textbox--main">Financial Planning with Oracle EPM Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox">
-                                <span class="overview__subchapters__textbox--main">Expense Submission with Oracle ERP Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', finance3);" >
+                                    <span class="overview__subchapters__textbox--main">Expense Submission with Oracle ERP Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                         </div>
                         <div class="overview__footer overview__footer--1">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Continue to Financial Reporting <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext');" class="overview__txt--footer">Continue to Financial Reporting <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -1073,8 +1105,8 @@
                             </div>
                         </div>
                         </div>
-                        <div class="description__container">
-                                <p class="pg pg--flex">In the video above, Oracle CHRO Joyce Westerdahl shares how Oracle is leveraging HCM Cloud to enable exceptional employee experiences by streamlining and automating processes and empowering and delighting users.</p>
+                        <div class="description__container">    
+                            <p class="pg pg--flex">In the video above, Oracle CHRO Joyce Westerdahl shares how Oracle is leveraging HCM Cloud to enable exceptional employee experiences by streamlining and automating processes and empowering and delighting users.</p>
                         </div>
                     </div>
                 </div>
@@ -1085,17 +1117,21 @@
                         </div>
                         <div class="overview__subchapters overview__subchapters--1">
                             <div class="overview__subchapters__textbox">
-                                <p class="overview__subchapters__textbox--main">Career Development with Oracle HCM Cloud</p>
-                                <p class="overview__subchapters__textbox--sub">Jump to section</p>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', humanResources1);" >
+                                    <p class="overview__subchapters__textbox--main">Career Development with Oracle HCM Cloud</p>
+                                    <p class="overview__subchapters__textbox--sub">Jump to section</p>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox">
-                                <p class="overview__subchapters__textbox--main">The Hiring Experience with Oracle HCM Cloud</p>
-                                <p class="overview__subchapters__textbox--sub">Jump to section</p>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', humanResources2);" >
+                                    <p class="overview__subchapters__textbox--main">The Hiring Experience with Oracle HCM Cloud</p>
+                                    <p class="overview__subchapters__textbox--sub">Jump to section</p>
+                                </a>
                             </div>
                         </div>
                         <div class="overview__footer overview__footer--1">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Continue to Financial Reporting <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a class="overview__txt--footer" onclick=" $('.book-slider').slick('slickNext');" >Continue to Carreer Development <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -1449,7 +1485,7 @@
                         </ul>
                         <div class="overview__footer overview__footer--2">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Chapter 3: Supply Chain<img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext');" class="overview__txt--footer">Chapter 3: Supply Chain<img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -1499,17 +1535,21 @@
                         </div>
                         <div class="overview__subchapters overview__subchapters--1">
                             <div class="overview__subchapters__textbox">
-                                <span class="overview__subchapters__textbox--main">Optimization with Oracle SCM Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', supplyChain1);">
+                                    <span class="overview__subchapters__textbox--main">Optimization with Oracle SCM Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox">
-                                <span class="overview__subchapters__textbox--main">Product Management with Oracle SCM Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', supplyChain2);">
+                                    <span class="overview__subchapters__textbox--main">Product Management with Oracle SCM Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                         </div>
                         <div class="overview__footer overview__footer--1">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Continue to Optimization <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext');" class="overview__txt--footer">Continue to Optimization <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -1913,7 +1953,7 @@
                         </ul>
                         <div class="overview__footer overview__footer--2">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Continue to Financial Reporting <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext');" class="overview__txt--footer">Continue to Customer Experience <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -1947,25 +1987,33 @@
                         </div>
                         <div class="overview__subchapters overview__subchapters--4">
                             <div class="overview__subchapters__textbox overview__subchapters__textbox--4">
-                                <span class="overview__subchapters__textbox--main">Customer Discovery with Oracle CX Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience1);">
+                                    <span class="overview__subchapters__textbox--main">Marketing Experience with Oracle CX Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox overview__subchapters__textbox--4">
-                                <span class="overview__subchapters__textbox--main">Customer Purchasing with Oracle CX Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience2);">
+                                    <span class="overview__subchapters__textbox--main">Customer Purchasing with Oracle CX Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox overview__subchapters__textbox--4">
-                                <span class="overview__subchapters__textbox--main">The Sales Experience with Oracle CX Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience3);">
+                                    <span class="overview__subchapters__textbox--main">The Sales Experience with Oracle CX Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                             <div class="overview__subchapters__textbox overview__subchapters__textbox--4">
-                                <span class="overview__subchapters__textbox--main">The Employee Service Experience with Oracle CX Cloud</span>
-                                <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                <a onclick=" $('.book-slider').slick('slickGoTo', customerExperience4);">
+                                    <span class="overview__subchapters__textbox--main">The Employee Service Experience with Oracle CX Cloud</span>
+                                    <span class="overview__subchapters__textbox--sub">Jump to section</span>
+                                </a>
                             </div>
                         </div>
                         <div class="overview__footer overview__footer--1">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">Continue to Optimization <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext')" class="overview__txt--footer">Continue to Optimization <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -2538,7 +2586,7 @@
             <div class="bg__group bg-white"></div>
             <div class="content-holder">
                 <div class="container-left-2-col">
-                    <h2 class="header header__secondary marg-bot-1">The Sales Experience with Oracle CX Cloud</h2>
+                    <h2 class="header header__secondary marg-bot-1">The Employee Service Experience with Oracle CX</h2>
                     <p class="pg">Oracle SVP Jennifer Birk shares how her team reimagined the service experience with Oracle CX Cloud to enable sales and solution engineers to maximize customer success.</p>
                     <div class="video__wrapper video__wrapper--1">
                         <div class="video__container">
@@ -2755,7 +2803,7 @@
                     <p class="pg--white marg-bot-1">We’ve learned along the way…</p>
                     <button class="btn btn--2">
                         <div class="btn-txt btn-txt--1">
-                            Back to Home
+                            <a onclick=" $('.book-slider').slick('slickGoTo', homePage); ">Back to Home</a>
                         </div>    
                     </button>
                 </div>
@@ -2783,7 +2831,7 @@
                         </ul>
                         <div class="overview__footer overview__footer--2">
                             <div class="overview__cta">
-                                <a class="overview__txt--footer">NEED CONTENT <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
+                                <a onclick=" $('.book-slider').slick('slickNext');" class="overview__txt--footer">NEED CONTENT <img src="../bin-dev/assets/graphics/icon-next.svg" alt="" class="arrow__right"></a>
                             </div>
                         </div>
                     </div>
@@ -2795,9 +2843,41 @@
     <section class="page page--64">
         <div class="container">
             <div class="content-holder">
-                <div class="container-left-2-col">           
+                <div class="container-left-2-col bg-white">
+                    <h2 class="header header__secondary">Becoming an End-to-End Cloud Enterprise—What It Looks Like</h2>
+                    <p class="pg">We’ve shown you the process for our four lines of business and the value we’ve gained from each. Now see how it all adds up.</p>
+                    <p class="pg">There isn’t a component of the Oracle Cloud stack that we haven’t put to work. From the applications layer down through the infrastructure layer, we are leveraging the power of the entire Oracle Cloud platform to transform our business. We built seamless and integrated business processes with the user at the center of our efforts—and the results speak for themselves.</p>
+                    <p class="pg">The analysts have also taken notice.</p>
                 </div>
-                <div class="container-right-2-col" >
+                <div class="container-right-2-col container-right-2-col--0 bg-pattern--1">
+                    <div class="bg__block bg__block--left bg__block--left--2 ">
+                        <ul class="bullet__list bullet__list--1">
+                            <li class="bullet__item bullet__item__connected bullet__item__connected--1">
+                                <span class="bullet__item__header bullet__item__header--1">Market Share</span>
+                                <span class="bullet__item__description bullet__item__description--1">Oracle gained the most market share globally out of all enterprise SaaS vendors the past three years in a row, according to the IDC Public Cloud Services Tracker</span>
+                            </li>
+                            <li class="bullet__item bullet__item__connected bullet__item__connected--1">
+                                <span class="bullet__item__header bullet__item__header--1">Magic Quadrent Leader</span>
+                                <span class="bullet__item__description bullet__item__description--1">Gartner has positioned Oracle ERP Cloud as a Magic Quadrant leader for three consecutive years.</span>
+                            </li>
+                            <li class="bullet__item bullet__item__connected bullet__item__connected--1">
+                                <span class="bullet__item__header bullet__item__header--1">LinkedIn top 10</span>
+                                <span class="bullet__item__description bullet__item__description--1 rewidow">Oracle has been ranked by LinkedIn as a top 10 company to work for the last two years in a row.</span>
+                            </li>
+                        </ul>
+                        <p class="pg--white marg-top-2 marg-bot-2">As one of the largest customers of Oracle Cloud in the world, Oracle is leveraging the cloud to create exceptional employee and customer experiences. Oracle EVP Douglas Kehring shares the benefits of accelerated growth and new cost savings.</p>
+                        <div class="video__wrapper video__wrapper--1">
+                            <div class="video__container">
+                                <div class="modal-trigger video-thumbnail video-thumbnail--1" onclick="openVideoOverlay('5779518313001')">
+                                    <div class="video-play-bttn video-play-bttn--1"></div>
+                                </div>
+                            </div>
+                            <div class="video__info">
+                                <p class="vid_text vid_text--1 rewidow"><b>Oracle's Journey to the Cloud—Business Transformation</b></p>
+                                <p class="caption caption--white">0:32</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -2806,9 +2886,38 @@
     <section class="page page--65">
         <div class="container">
             <div class="content-holder">
-                <div class="container-left-2-col">           
+                <div class="container-left-2-col bg-white">
+                    <p class="pg">The analysts have also taken notice.</p>
+                    <div class="filler filler--18"></div>
+                    <ul class="bullet__list bullet__list--3">
+                        <li class="bullet__item bullet__item__connected bullet__item__connected--3">
+                            <span class="bullet__item__header bullet__item__header--3">Market Share</span>
+                            <span class="bullet__item__description bullet__item__description--3">Oracle gained the most market share globally out of all enterprise SaaS vendors the past three years in a row, according to the IDC Public Cloud Services Tracker</span>
+                        </li>
+                        <li class="bullet__item bullet__item__connected bullet__item__connected--3">
+                                <span class="bullet__item__header bullet__item__header--3">Magic Quadrent Leader</span>
+                                <span class="bullet__item__description bullet__item__description--3">Gartner has positioned Oracle ERP Cloud as a Magic Quadrant leader for three consecutive years.</span>
+                        </li>
+                        <li class="bullet__item bullet__item__connected bullet__item__connected--3">
+                                <span class="bullet__item__header bullet__item__header--3">LinkedIn top 10</span>
+                                <span class="bullet__item__description bullet__item__description--3">Oracle has been ranked by LinkedIn as a top 10 company to work for the last two years in a row.</span>
+                        </li>
+                    </ul>
                 </div>
-                <div class="container-right-2-col" >
+                <div class="container-right-2-col bg-pattern--2">
+                    <div class="filler filler--8"></div>
+                    <p class="pg">As one of the largest customers of Oracle Cloud in the world, Oracle is leveraging the cloud to create exceptional employee and customer experiences. Oracle EVP Douglas Kehring shares the benefits of accelerated growth and new cost savings.</p>
+                    <div class="video__wrapper video__wrapper--1">
+                        <div class="video__container">
+                            <div class="modal-trigger video-thumbnail video-thumbnail--1" onclick="openVideoOverlay('5779518313001')">
+                                <div class="video-play-bttn video-play-bttn--1"></div>
+                            </div>
+                        </div>
+                        <div class="video__info">
+                            <p class="vid_text vid_text--1 rewidow"><b>Oracle's Journey to the Cloud—Business Transformation</b></p>
+                            <p class="caption caption--white">0:32</p>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </div>

@@ -41,20 +41,20 @@ p {
 a {
   background-color: transparent;
   cursor: pointer;
-  color: #00758f;
   text-decoration: none;    
   &:active{
     outline: 0;  
   }
   &:hover{
     outline: 0; 
-    text-decoration: underline;
+    // text-decoration: underline;
   }
 }
 
 b,
 strong {
   font-weight: 700;
+  font-family: $font-bold;
 }
 h1 {
     @include H1;
@@ -203,7 +203,8 @@ textarea {
 }
 
 .bold{
-  @include Body-1--Bold;
+  font-family: $font-bold;
+  font-weight: 700;
 
   &--2{ 
     @include Body-2--Bold;  
@@ -325,7 +326,7 @@ textarea {
     &--footer{
       @include Body-1--Bold;
       color: $col-signature-red;
-      font-size: .6rem;
+      font-size: .9rem;
       margin-left: auto;
   
       display: flex;
@@ -333,8 +334,8 @@ textarea {
       
       & img{
         display: inline-block;
-        width: 2rem;
-        height: 1rem;
+        width: 2.5rem;
+        height: 1.15rem;
         transition: all .5s; 
       }
       &:hover img{
@@ -451,3 +452,4 @@ textarea {
   &--yellow{ color: $col-secondary-yellow; }
   &--pink{ color: hotpink; } 
 }
+

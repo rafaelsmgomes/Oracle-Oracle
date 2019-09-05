@@ -17,7 +17,14 @@ var humanResources=21;
 var humanResources1=22;
 var humanResources2=26;
 var supplyChain=31;
+var supplyChain1=32;
+var supplyChain2=37;
 var customerExperience=42;
+var customerExperience1=43;
+var customerExperience2=48;
+var customerExperience3=52;
+var customerExperience4=57;
+var conclusionSlide=63;
 // var chapter5=12;
 // var chapter6=13;
 // var chapter7=14;
@@ -351,8 +358,11 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     var navItem2 = [
          [ [1] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name bold">Intro</span></a>'],
          [ [2,3,4] , '            <a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', intro); "><span class="chap-name">Intro</span></a>'],
-         [ [6,7,8,9,10,11,12,13,14,15,16,17,18,19,20] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "><span class="chap-name">Finance</span></a>'],
+         [ [6] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "><span class="chap-name nav-white"><b>Finance</b></span></a>'],
+         [ [7,8,9,10,11,12,13,14,15,16,17,18,19,20] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "><span class="chap-name">Finance</span></a>'],
+         [ [21] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name"><b>HR</b></span></a>'],
          [ [21,22,23,24,25,26,27,28,29,30] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name">HR</span></a>'],
+         [ [31] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name"><b>Supply Chain</b></span></a>'],
          [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
          [ [42,43,44,45,46,47,48,49,50,51,52,53,54,55] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "><span class="chap-name">CX</span></a>'],
          [[0], 'test']
@@ -385,21 +395,45 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
          [ [18] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 3/4</span> '],
          [ [19] , '            <span class="dividing-bar">/</span><span class="chap-sub">Expense Submission 4/4</span> '],
          [ [20,21] , ''],
-         [ [22] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 1/5</span> '],
-         [ [23] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 2/5</span> '],
-         [ [24] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 3/5</span> '],
-         [ [25] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 4/5</span> '],
-         [ [26] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 5/5</span> '],
-         [ [27] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 1/4</span> '],
-         [ [28] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 2/4</span> '],
-         [ [29] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 3/4</span> '],
-         [ [30] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 4/4</span> '],
-         [ [31,32] , ''],
-         [ [33] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 1/5</span> '],
-         [ [34] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 2/5</span> '],
-         [ [35] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 3/5</span> '],
-         [ [36] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 4/5</span> '],
-         [ [37] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 5/5</span> '],
+         [ [22] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 1/4</span> '],
+         [ [23] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 2/4</span> '],
+         [ [24] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 3/4</span> '],
+         [ [25] , '            <span class="dividing-bar">/</span><span class="chap-sub">Carreer Development 4/4</span> '],
+         [ [26] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 1/4</span> '],
+         [ [27] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 2/4</span> '],
+         [ [28] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 3/4</span> '],
+         [ [29] , '            <span class="dividing-bar">/</span><span class="chap-sub">Hiring Experience 4/4</span> '],
+         [ [30,31] , ''],
+         [ [32] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 1/5</span> '],
+         [ [33] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 2/5</span> '],
+         [ [34] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 3/5</span> '],
+         [ [35] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 4/5</span> '],
+         [ [36] , '            <span class="dividing-bar">/</span><span class="chap-sub">Optimization 5/5</span> '],
+         [ [37] , '            <span class="dividing-bar">/</span><span class="chap-sub">Product Management 1/4</span> '],
+         [ [38] , '            <span class="dividing-bar">/</span><span class="chap-sub">Product Management 2/4</span> '],
+         [ [39] , '            <span class="dividing-bar">/</span><span class="chap-sub">Product Management 3/4</span> '],
+         [ [40] , '            <span class="dividing-bar">/</span><span class="chap-sub">Product Management 4/4</span> '],
+         [ [41,42] , ''],
+         [ [43] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 1/5</span> '],
+         [ [44] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 2/5</span> '],
+         [ [45] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 3/5</span> '],
+         [ [46] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 4/5</span> '],
+         [ [47] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 5/5</span> '],
+         [ [48] , '            <span class="dividing-bar">/</span><span class="chap-sub">Customer Purchasing 1/4</span> '],
+         [ [49] , '            <span class="dividing-bar">/</span><span class="chap-sub">Customer Purchasing 2/4</span> '],
+         [ [50] , '            <span class="dividing-bar">/</span><span class="chap-sub">Customer Purchasing 3/4</span> '],
+         [ [51] , '            <span class="dividing-bar">/</span><span class="chap-sub">Customer Purchasing 4/4</span> '],
+         [ [52] , '            <span class="dividing-bar">/</span><span class="chap-sub">Sales Experience 1/5</span> '],
+         [ [53] , '            <span class="dividing-bar">/</span><span class="chap-sub">Sales Experience 2/5</span> '],
+         [ [54] , '            <span class="dividing-bar">/</span><span class="chap-sub">Sales Experience 3/5</span> '],
+         [ [55] , '            <span class="dividing-bar">/</span><span class="chap-sub">Sales Experience 4/5</span> '],
+         [ [56] , '            <span class="dividing-bar">/</span><span class="chap-sub">Sales Experience 5/5</span> '],
+         [ [57] , '            <span class="dividing-bar">/</span><span class="chap-sub">Employee Experience 1/5</span> '],
+         [ [58] , '            <span class="dividing-bar">/</span><span class="chap-sub">Employee Experience 2/5</span> '],
+         [ [59] , '            <span class="dividing-bar">/</span><span class="chap-sub">Employee Experience 3/5</span> '],
+         [ [60] , '            <span class="dividing-bar">/</span><span class="chap-sub">Employee Experience 4/5</span> '],
+         [ [61] , '            <span class="dividing-bar">/</span><span class="chap-sub">Employee Experience 5/5</span> '],
+         [ [62,63] , ''],
     ];
     if(context=='large'){
         $.each(navItem3, function( i, arr2 ){
@@ -409,6 +443,38 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
                 }
             });
         });
+    }
+
+    if(currentSlide == finance ||
+    currentSlide == finance || 
+    currentSlide == humanResources -1 || 
+    currentSlide == humanResources || 
+    currentSlide == supplyChain - 1 ||
+    currentSlide == supplyChain ||
+    currentSlide == customerExperience - 1 ||
+    currentSlide == customerExperience || 
+    currentSlide == conclusionSlide - 1 ) {
+        $('.logo-home__path').css('fill', '#fcfbfa');
+        $('.dividing-bar').addClass('nav-white');
+        $('.chap-name').addClass('bold nav-white');
+    } else if (currentSlide == 18 ||
+        currentSlide == 14 || 
+        currentSlide == 28 || 
+        currentSlide == 50 || 
+        currentSlide == 54 || 
+        currentSlide == 60 || 
+        currentSlide == 39 ) {
+        $('.logo-home__path').css('fill', '#fcfbfa');
+        $('.dividing-bar').addClass('nav-white');
+        $('.chap-name').addClass('nav-white');
+        $('.chap-sub').addClass('bold nav-white')
+    } else if (currentSlide > 6 ){
+        $('.logo-home__path').css('fill', '#56504b');
+        $('.chap-name').removeClass('bold nav-white');
+        $('.chap-sub').removeClass('bold nav-white')
+        $('.dividing-bar').removeClass('nav-white');
+    } else {
+        $('.dividing-bar').removeClass('nav-white');
     }
 
 

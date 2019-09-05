@@ -64,15 +64,14 @@
 .logo-home{
   // height: 1rem;
   // width: 1rem;
-  transform: translateY(10%);  
+  transform: translateY(10%);
   align-self: center; 
 
-  &--path{
+  &__path{
     fill: $col-supporting-gray4;
-    &--2{
-      opacity: .5;
-      transform: translateY(-10%);
-    }
+  }
+  &--2{
+    opacity: .5;
   }
 }
 .chap-name{
@@ -80,7 +79,8 @@
   line-height: 1.3333;
 
   &.bold{
-    @include Body-1--Bold;
+    font-family: $font-bold;
+    font-weight: 700;
   }
 }
 .chap-sub{
@@ -91,7 +91,7 @@
   line-height: 1.3333;
 }
 
-.white{
+.nav-white{
   fill: $col-white;
   color: $col-white;
-}
+} 
