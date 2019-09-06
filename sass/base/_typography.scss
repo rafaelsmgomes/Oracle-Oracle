@@ -239,7 +239,10 @@ textarea {
   align-items: center;
   @include Body-1--Bold;
   font-size: .95rem;
-  &--1{ color: $col-signature-red; }
+  &--1{ 
+    color: $col-signature-red; 
+    font-size: 1rem;
+  }
   &--3{ 
     color: $col-signature-red;
     align-self: flex-end;

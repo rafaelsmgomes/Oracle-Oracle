@@ -327,7 +327,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         // $('.footer-book-title').hide();
         $('.nav-bar').hide();
         $('.footer-phone').hide();
-    }else if (currentSlide > 0 && currentSlide < lastSlide){
+    }else if (currentSlide > 0){
         $('.nav-bar').show();
     }else{
         $('.nav-bar').hide();
@@ -338,6 +338,10 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     if (currentSlide < 5){
         $('.nav__item--1').hide();
         $('.nav__item--4').show();
+    } else if(currentSlide >= 63) {
+        $('.nav__item--3').hide();
+        $('.nav__item--1').show();
+        $('.nav__item--4').hide();
     } else {
         $('.nav__item--1').show();
         $('.nav__item--4').hide();
@@ -346,12 +350,81 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 	//arrow display
 	$('.slick-arrow').show();
     
-    if (currentSlide === 0 || currentSlide === 5 ) {
-     $('.slick-prev.slick-arrow').hide();
-     $('.slick-next.slick-arrow').hide();
-    };
+    if (context == 'large') {
+        if (currentSlide === 0 || 
+            currentSlide === 5 || 
+            currentSlide === finance || 
+            currentSlide === finance-1 || 
+            currentSlide === humanResources || 
+            currentSlide === humanResources-1 || 
+            currentSlide === supplyChain || 
+            currentSlide === supplyChain-1 || 
+            currentSlide === customerExperience ||
+            currentSlide === customerExperience-1 ||
+            currentSlide === conclusionSlide-1 ) {
+                $('.slick-prev.slick-arrow').hide();
+                $('.slick-next.slick-arrow').hide();
+        } else if(currentSlide === conclusionSlide) {
+            $('.slick-prev.slick-arrow').hide();
+        } else if(currentSlide === lastSlide) {
+            $('.slick-next.slick-arrow').hide();
+        };
+    }
 
-    if (currentSlide === lastSlide ) { $('.slick-next.slick-arrow').hide(); }  
+    // Arrow modifiers
+
+    $('.slick-arrow.slick-next').removeClass('next--up next--up2 next--white next--back');
+    $('.slick-arrow.slick-prev').removeClass('prev--up prev--up2 prev--white');
+    $('.slick-arrow').removeClass('arrows__conclusion');
+
+
+    var arrayArrow = [
+        [9,23,34,45,59], // next: up, white
+        [14,18,28,39,50,54,60,65], // prev: up, white
+        [63,65], // next: back, white
+        [66,67,68], // both: up to conclusion 
+        [69,70], // next: up2
+        [70], // prev: up2 
+        [1], // prev: up2 
+    ];
+    if (context=='large'){
+        $.each(arrayArrow[0], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-next').addClass('next--up next--white');
+            } 
+        });
+        $.each(arrayArrow[1], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-prev').addClass('prev--up prev--white');
+            }
+        });
+        $.each(arrayArrow[2], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-next').addClass('next--back next--white');
+            }
+        });
+        $.each(arrayArrow[3], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow').addClass('arrows__conclusion');
+            }
+        });
+        $.each(arrayArrow[4], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-next').addClass('next--up2');
+            }
+        });
+        $.each(arrayArrow[5], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-prev').addClass('prev--up2');
+            }
+        });
+        $.each(arrayArrow[6], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-next').addClass('next--white');
+            }
+        });
+    }
+
      
 
     //display navigation item--2 & visibility 
@@ -364,8 +437,8 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
          [ [21,22,23,24,25,26,27,28,29,30] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name">HR</span></a>'],
          [ [31] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name"><b>Supply Chain</b></span></a>'],
          [ [31,32,33,34,35,36,37,38,39,40,41] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">Supply Chain</span></a>'],
-         [ [42,43,44,45,46,47,48,49,50,51,52,53,54,55] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "><span class="chap-name">CX</span></a>'],
-         [[0], 'test']
+         [ [42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "><span class="chap-name">CX</span></a>'],
+         [ [63,64,65,66,67,68,69,70,71] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', conclusionSlide); "><span class="chap-name"><b>Conclusion</b></span></a>'],
     ];
     if(context=='large'){
         $.each(navItem2, function( i, arr2 ){
@@ -463,6 +536,8 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         currentSlide == 50 || 
         currentSlide == 54 || 
         currentSlide == 60 || 
+        currentSlide == 65 || 
+        currentSlide == 70 || 
         currentSlide == 39 ) {
         $('.logo-home__path').css('fill', '#fcfbfa');
         $('.dividing-bar').addClass('nav-white');

@@ -5,26 +5,57 @@
     &:first-child{
         margin-top: 0; 
     }
+    &--1{
+        width: 30.95rem;
+        height: 14.5rem;
+        margin-left: -3.5rem;
+    }
 
     &__box{
         position: relative;
         width: 22.65;
         height: 10rem;
     }
+
     &__double{
-        height: 10.75;
-        width: 22.65;
-        &--1{
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 75%;
-        }
+        height: 17rem;
+        width: 22.65rem;
+        position: relative;
+
         &--2{
+            height: 14.5rem;
+        }
+        
+        &:hover &item:not(:hover){
+            transform: scale(.975);
             position: absolute;
-            bottom: 0;
-            right: 0;
-            height: 75%;
+        }
+        &item{
+            position: absolute;
+            width: 17.85rem;
+            height: 11.45rem;
+            transition: all .1s;
+            z-index: 10;
+            &--a{
+                width: 16rem;
+                height: 9.2rem;
+            }
+
+            &:hover{
+                transform: scale(1.025);
+                box-shadow: 0 .75rem 1.5rem rgba($color: $col-signature-black, $alpha: .3);
+                z-index: 11;
+            }
+            &--1{
+                top: 0;
+                left: 0;
+                position: absolute;
+            }
+            &--2{
+                bottom: 0;
+                right: 0;
+                position: absolute;
+            }
         }
     }
 

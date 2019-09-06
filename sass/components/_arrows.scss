@@ -79,12 +79,67 @@
   right: auto;
 }
 
-.arrow{
-  &--1{
-    height: 0.90rem;
-    width: 1.05rem;
-    background-image: url('../assets/graphics/icons/arrow_blue_lt.svg');
-    background-size: cover;
-    transition: transform 500ms;
+.next{
+  &--up{
+    bottom: 1rem;
+    right: 4.5rem; 
+  }
+  &--up2{
+    bottom: 0rem;
+    right: 4.5rem; 
+  }
+  &--white{
+    background-image: url("../assets/graphics/icon-next-white.svg");
+  }
+  &--back{
+    right: 3.5rem; 
   }
 }
+
+.prev{
+  &--up{
+    bottom: 1rem;
+    left: 4.5rem;
+  }
+  &--up2{
+    bottom: 0rem;
+    left: 4.5rem;
+  }
+  &--white{
+    background-image: url("../assets/graphics/icon-back-white.svg");
+  }
+}
+.arrows{
+  &__conclusion{
+    bottom: .5rem;
+  }
+}
+
+
+.new{
+  &__arrow{
+    position: absolute;
+    bottom: 5rem;
+    width: 1.60rem;
+    height: 1.60rem;
+    background-repeat: no-repeat;
+    transform: translate(50%,50%);
+      
+    &-next{ 
+      right: 5rem; 
+      background-image: url('../assets/graphics/icon-next-white.svg');
+      &--1{ 
+        bottom: 1.4rem;
+        right: 4.5rem;
+      }
+    }
+    &-prev{ 
+      left: 5rem; 
+      background-image: url('../assets/graphics/icon-back-white.svg');
+    }
+    &:hover{
+      opacity: .8;
+    }
+  }
+}
+

@@ -32,8 +32,12 @@
       margin-left: .2rem;
       margin-right: .2rem;
     }
-    &--4{
-      transform: translateY(10%);
+    &--1{
+      padding-top: .15rem; 
+      transition: all .1s;
+      &:hover {
+        transform: scale(1.2);
+      }
     }
   }
 }
@@ -77,6 +81,10 @@
 .chap-name{
 	@include Body-1;
   line-height: 1.3333;
+  &:hover{
+    font-family: $font-bold;
+    font-weight: 700;
+  }
 
   &.bold{
     font-family: $font-bold;
