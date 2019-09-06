@@ -123,8 +123,9 @@ function openOverlay(pop){
         modalclose:'true',
         appendTo:'html',
 
-    },
-        function(){alert('CALLBACK') })
+        },
+        // function(){alert('CALLBACK') }
+    )
 }
 
 function is_touch_device() {

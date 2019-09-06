@@ -3,7 +3,10 @@ img {
   max-width: 100%;
   max-height: 100%;	
 }
-
+.popup{
+  max-width: 70rem;
+  max-height: 40rem;
+}
 svg:not(:root) {
   overflow: hidden;
 }

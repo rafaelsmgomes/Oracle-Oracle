@@ -1,3 +1,56 @@
+.composition{
+    cursor: pointer;
+    margin-bottom: 1.2rem;
+    margin-top: 2rem;
+    &:first-child{
+        margin-top: 0; 
+    }
+
+    &__box{
+        position: relative;
+        width: 22.65;
+        height: 10rem;
+    }
+    &__double{
+        height: 10.75;
+        width: 22.65;
+        &--1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 75%;
+        }
+        &--2{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            height: 75%;
+        }
+    }
+
+    &__single{
+        width: 22.65;
+        max-height: 10.75;
+        &--2{
+            height: 13.75rem;
+        }
+        &--7{ 
+            width: 10rem;
+            height: auto; 
+        }
+    }
+
+    &__flex{
+        display: flex;
+        justify-content: space-between;
+        
+        &item{
+            &--1{ height: 5.9rem; }
+            &--2{ height: 5.9rem; }
+        }
+    }
+}
+
 .close-bttn-holder{
     width: 100%;
     height: 2.00rem;
@@ -23,7 +76,7 @@
     margin-top: 0.70rem;
     cursor: pointer;
     position: relative;
-    top: -.1.50rem;
+    top: -1.0rem;
 }
 .b-close.pop-close{
     margin-right: .3.50rem;
