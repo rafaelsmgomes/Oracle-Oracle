@@ -344,6 +344,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         $('.nav__item--4').hide();
     } else {
         $('.nav__item--1').show();
+        $('.nav__item--3').show();
         $('.nav__item--4').hide();
     }
 
@@ -451,8 +452,8 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     }
 
     var navItem3 = [
-         [ [1] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name">Approach</span></a>'],
-         [ [2,3,4] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name bold">Approach</span></a>'],
+         [ [1] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name">Approach</span></a><span class="dividing-bar">/</span>'],
+         [ [2,3,4] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', approach); "><span class="chap-name bold">Approach</span></a><span class="dividing-bar">/</span>'],
          [ [6] , ''],
          [ [7] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 1/5</span> '],
          [ [8] , '            <span class="dividing-bar">/</span><span class="chap-sub">Financial Reporting 2/5</span> '],
