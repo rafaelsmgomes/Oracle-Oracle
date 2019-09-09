@@ -11,11 +11,24 @@
         &--1{
             height: 100%;
             margin-top: 2.7rem;
+            
+            @include bp(1053){
+                height: auto;
+                margin-bottom: 4rem;
+                padding-bottom: 1rem;
+            }
         }
 
         &--2{
             margin-top: -6.4rem;
             height: 36.9rem;
+
+            @include bp(1053){
+                height: auto;
+                margin-top: 3rem;
+                margin-bottom: 4rem;
+                padding-bottom: 1rem;
+            }
         }
         
         &--3{

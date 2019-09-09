@@ -29,7 +29,7 @@ var conclusionSlide=63;
 // var chapter6=13;
 // var chapter7=14;
 // run this right away to set context
-if ( $window.width() <= 1024) {
+if ( $window.width() <= 1053) {
     context = 'medium';
     var homePage=5;
     var chapter3=5;
@@ -105,7 +105,7 @@ $(document).ready(function() {
 
 
 
-    if ($('body').width() < 1025 ) {
+    if ($('body').width() < 1053 ) {
         var st = $(this).scrollTop();
         var lastScrollTop = 0;
         var delta = 5;
@@ -115,6 +115,8 @@ $(document).ready(function() {
             $('.page').animate({ scrollTop: 0 }, 'fast');
             $(".footer-phone").removeClass('up');
         } );
+
+        $('.minus-marg--1').removeClass('minus-marg--1');
 
         setInterval(function() {
             if (didScroll) {
@@ -164,7 +166,8 @@ $(document).ready(function() {
         $(".sup__change-3--1").text(5);
         $(".sup__change-3--2").text(6);
                 
-        $("#mobile-page-1").detach().appendTo('.page--p3 .content-holder');
+        $(".page--3 .content-holder").detach().appendTo('.page--2 .content-holder');
+        $(".page--3").remove();
 
         $("#mobile-page-2").detach().appendTo('.page--p5 .content-holder');
         $("#mobile-page-3").detach().appendTo('.page--p5 .content-holder');
@@ -219,7 +222,6 @@ $(document).ready(function() {
         }
 
     }
-
 
 
     $('.scrollbar-inner').scrollbar();

@@ -89,6 +89,10 @@
     height: 7.1rem;
     position: relative;
     background-color: $col-supporting-gray4;
+
+    @include bp(1053){
+      margin: 0 auto;
+    }
     
     &--1{
       margin-bottom: 3.2rem;

@@ -35,6 +35,7 @@
   background-repeat: no-repeat;
   background-size: cover !important;
 	@include bp(1053){
+		background-color: $col-white;
 		@include platformMobile;
     padding-top: 2.90rem;
 	}
@@ -106,7 +107,7 @@ a{
     width: auto;
     z-index: 0;
     @include bp(1053){
-    	padding: 2.00rem 4.50rem 5.00rem 2.20rem;
+    	padding: 3.50rem 4.50rem 5.00rem 2.20rem;
     	width: auto;
     	margin: 0;
     	// margin-left: 4.465%;
