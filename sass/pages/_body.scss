@@ -37,13 +37,21 @@
 	@include bp(1053){
 		background-color: $col-white;
 		@include platformMobile;
-    padding-top: 2.90rem;
+		padding-top: 2.90rem;
 	}
 	@include bp(800){
 		padding-top: 2.07rem;
 	}
 	@include bp(767){
 	 	@include platformPhone;
+	}
+
+	&--7,
+	&--21,
+	&--22{
+		@include bp(1053){
+			background-color: $col-signature-black;
+		}
 	}
 
 }
@@ -107,7 +115,7 @@ a{
     width: auto;
     z-index: 0;
     @include bp(1053){
-    	padding: 3.50rem 4.50rem 5.00rem 2.20rem;
+    	padding: 3.50rem 0rem 00rem -2.20rem;
     	width: auto;
     	margin: 0;
     	// margin-left: 4.465%;

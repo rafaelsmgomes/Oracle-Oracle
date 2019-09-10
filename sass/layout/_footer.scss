@@ -23,7 +23,7 @@
   &-phone{
     display: none;
     @include bp(1053){
-      display: block;   
+      // display: block; 
     }
   }
 }

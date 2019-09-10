@@ -5,6 +5,11 @@
         margin-bottom: 1.2rem; 
 
         &--cases{ margin-left: -.85rem; }
+
+        @include bp(1053){
+            width: 29.8rem;
+            margin: 0 auto 1rem auto; 
+        }      
     }
     &__container{
         padding-left: .85rem;

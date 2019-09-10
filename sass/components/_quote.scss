@@ -1,15 +1,36 @@
 .quote{
-	position: relative;
-	margin-left: -1.5rem;
-	width: 24.2rem;
-	padding-left: 1.5rem;
-	margin-bottom: 2.5rem;
+	&--blackboard{
+		height: 34.4rem;
 
+		background-color: $col-signature-black;
+		padding-left: 3.4rem;
+		padding-right: 3.4rem;
+		padding-top: 6.8rem; 
+
+		@include bp(1053){
+			padding-top: 3rem;
+			height: auto;
+		}
+	}
+
+	&__wrapper{
+		position: relative;
+		margin-left: -1.5rem;
+		padding-left: 1.5rem;
+		padding-bottom: 2.5rem;
+		margin-bottom: 2.5rem;
+
+		@include bp(1053){
+			margin: 0 auto 1.2rem auto;
+			width: 29.8rem;
+			padding-left: 0;
+		}
+	}
 
 	&__txt{
 		position: relative;
 	    margin-bottom: 1.2rem;
-		padding-top: 4.4rem;
+		padding-top: 4.4rem; 
 		
 		&:before{
 			content: "\201C";
@@ -32,10 +53,23 @@
 
 		&--white { 
 			color: $col-white; 
+			width: 22.7rem;
 			&:before{
 				color: rgba($color: $col-secondary-yellow, $alpha: .2);
 			}
+
+			@include bp(1053){
+				width: 29.8rem;
+			}
+		}
+
+	}
+	
+	&__user{
+		margin-bottom: 3rem; 
+
+		&-box{
+			margin-bottom: 3rem; 
 		}
 	}
-
 }

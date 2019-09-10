@@ -166,35 +166,37 @@ $(document).ready(function() {
         $(".sup__change-3--1").text(5);
         $(".sup__change-3--2").text(6);
                 
+        $(".page--5 .content-holder").detach().appendTo('.page--4 .content-holder');
+        $(".page--4 .content-holder").detach().appendTo('.page--3 .content-holder');
         $(".page--3 .content-holder").detach().appendTo('.page--2 .content-holder');
         $(".page--3").remove();
+        $(".page--4").remove();
+        $(".page--5").remove();
 
-        $("#mobile-page-2").detach().appendTo('.page--p5 .content-holder');
-        $("#mobile-page-3").detach().appendTo('.page--p5 .content-holder');
-        $("#mobile-page-4").detach().appendTo('.page--p5 .content-holder');
+        $(".page--12 .content-holder").detach().appendTo('.page--11 .content-holder');
+        $(".page--11 .content-holder").detach().appendTo('.page--10 .content-holder');
+        $(".page--10 .content-holder").detach().appendTo('.page--9 .content-holder');
+        $(".page--9 .content-holder").detach().appendTo('.page--8 .content-holder');
+        $(".page--9").remove();
+        $(".page--10").remove();
+        $(".page--11").remove();
+        $(".page--12").remove();
 
-        $("#mobile-page-5").detach().appendTo('.page--p9 .content-holder');
-        $("#mobile-page-6").detach().appendTo('.page--p9 .content-holder');
-        $("#mobile-page-7").detach().appendTo('.page--p9 .content-holder');
-        $("#mobile-page-8").detach().appendTo('.page--p9 .content-holder');
-        $("#mobile-page-9").detach().appendTo('.page--p9 .content-holder');
 
-        $("#mobile-page-10").detach().appendTo('.page--p15 .content-holder');
+        $(".page--16 .content-holder").detach().appendTo('.page--15 .content-holder');
+        $(".page--15 .content-holder").detach().appendTo('.page--14 .content-holder');
+        $(".page--14 .content-holder").detach().appendTo('.page--13 .content-holder');
+        $(".page--14").remove();
+        $(".page--15").remove();
+        $(".page--16").remove();
 
-        $(".page--p4").remove();
-
-        $(".page--p6").remove();
-        $(".page--p7").remove(); 
-        $(".page--p8").remove();
-
-        $(".page--p10").remove();
-        $(".page--p11").remove();
-        $(".page--p12").remove();
-        $(".page--p13").remove();
-        $(".page--p14").remove();   
-
-        $(".page--p16").remove();               
-
+        $(".page--20 .content-holder").detach().appendTo('.page--19 .content-holder');
+        $(".page--19 .content-holder").detach().appendTo('.page--18 .content-holder');
+        $(".page--18 .content-holder").detach().appendTo('.page--17 .content-holder');
+        $(".page--18").remove();
+        $(".page--19").remove();
+        $(".page--20").remove();
+        
         $('.book-slider').slick({
             infinite: false,
             responsive: [
@@ -383,7 +385,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 
     var arrayArrow = [
         [9,23,34,45,59], // next: up, white
-        [14,18,28,39,50,54,60,65], // prev: up, white
+        [14,18,28,39,50,54,65], // prev: up, white
         [63,65], // next: back, white
         [66,67,68], // both: up to conclusion 
         [69,70], // next: up2
@@ -538,7 +540,6 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         currentSlide == 28 || 
         currentSlide == 50 || 
         currentSlide == 54 || 
-        currentSlide == 60 || 
         currentSlide == 65 || 
         currentSlide == 70 || 
         currentSlide == 39 ) {

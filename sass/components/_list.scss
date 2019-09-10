@@ -47,15 +47,32 @@ ul.no-dots-ul{
 		&--3{ 
 			color: $col-secondary-orange; 
 			margin-bottom: 1.6rem;
+
+			@include bp(1053){
+				margin-top: 3.1rem;
+				margin-bottom: 4rem;
+			}
 		}
-		&--4{ color: $col-supporting-gray1; }
+		&--4{ 
+			color: $col-supporting-gray1; 
+		}
 		
 	}
 	&__item{
 		padding-bottom: 0.90rem;
 		position: relative;
 
-		&--4{ padding-bottom: .625rem; }
+		@include bp(1053){
+			width: 29.8rem;
+			margin: 0 auto; 
+		}
+
+		&--4{ 
+			padding-bottom: .625rem; 
+			@include bp(1053){
+				width: 20.8rem;
+			} 
+		}
 	
 		&__header{
 			@include Body-1--Bold;
@@ -95,10 +112,7 @@ ul.no-dots-ul{
 			}
 		}
 
-		@include bp(1053){
-			width: 29.8rem;
-			margin: 0 auto; 
-		}
+		
 	  
 	}
 

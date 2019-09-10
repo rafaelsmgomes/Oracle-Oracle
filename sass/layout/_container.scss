@@ -83,6 +83,36 @@
     height: auto;
     padding: 0;
     float: unset;
-    margin: 0 auto;
+	margin: 0 auto;
   }
 }
+
+.bg{
+
+	&-pattern{
+
+		&--3{
+			background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+			background-size: cover;
+			padding: 3.4rem;
+			@include bp(1053){
+				display: none;
+			}
+		}
+
+		&--1{
+			background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+			background-size: cover;
+			padding: 3.4rem;
+
+			@include bp(1053){
+				height: auto;
+			}
+
+		}
+	}
+
+
+}
+
+
