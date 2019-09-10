@@ -59,6 +59,13 @@
             display: flex;
             align-items: center;
 
+            transition: all .2s;
+
+            &:hover{
+                transform: scale(1.025);
+                box-shadow: .1rem .2rem rgba($color: $col-signature-black, $alpha: .2);
+            }
+
             @include bp(1053){
                 width: 29.8rem;
                 margin: 0 auto .6rem auto;
@@ -78,7 +85,7 @@
             flex-direction: column;
             justify-content: space-between;
 
-            &--hr{ padding-top: 4rem; }
+            &--hr{ padding-top: 8rem; } 
             &--sc{ padding-top: 12rem; }
             @include bp(1053){
                 margin: 0 auto 2rem auto;

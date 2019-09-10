@@ -99,4 +99,14 @@ input {
     margin-top: 2.7rem;
     margin-left: auto;
   }
+
+  &__section{
+    position: absolute;
+    bottom: 1.1rem;
+    right: 5rem;
+
+    &--flex{
+      bottom: 1.5rem;
+    }
+  }
 }

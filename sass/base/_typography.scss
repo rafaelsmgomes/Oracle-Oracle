@@ -267,6 +267,11 @@ textarea {
     color: $col-signature-red;
     align-self: flex-end;
   }
+  &__section{ 
+    color: $col-signature-red;
+    align-self: flex-end;
+    font-size: .8rem;
+  }
   &:hover{
     text-decoration: none;
     & img{
@@ -349,7 +354,7 @@ textarea {
     &--footer{
       @include Body-1--Bold;
       color: $col-signature-red;
-      font-size: .9rem;
+      font-size: .8rem;
       margin-left: auto;
   
       display: flex;

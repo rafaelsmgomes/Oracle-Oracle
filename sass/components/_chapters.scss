@@ -25,6 +25,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        transition: all .2s;
+        & span:hover{
+            transform: scale(1.045);
+            text-shadow: .1rem .2rem rgba($color: $col-signature-black, $alpha: .2);
+        }
+
     }
     &__cta{
         height: 2.0rem;
@@ -33,5 +40,8 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+
+
     }
 }

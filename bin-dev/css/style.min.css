@@ -365,6 +365,10 @@ textarea {
   .btn-txt--3 {
     color: #d1350f;
     align-self: flex-end; }
+  .btn-txt__section {
+    color: #d1350f;
+    align-self: flex-end;
+    font-size: .8rem; }
   .btn-txt:hover {
     text-decoration: none; }
     .btn-txt:hover img {
@@ -456,7 +460,7 @@ textarea {
   line-height: 1.33;
   color: #383330;
   color: #d1350f;
-  font-size: .9rem;
+  font-size: .8rem;
   margin-left: auto;
   display: flex;
   align-items: center; }
@@ -778,6 +782,12 @@ input {
     width: 9rem;
     margin-top: 2.7rem;
     margin-left: auto; }
+  .btn__section {
+    position: absolute;
+    bottom: 1.1rem;
+    right: 5rem; }
+    .btn__section--flex {
+      bottom: 1.5rem; }
 
 .callout__slider {
   background-color: #282623;
@@ -825,7 +835,11 @@ input {
     margin-bottom: .6rem;
     padding: .6rem;
     display: flex;
-    align-items: center; }
+    align-items: center;
+    transition: all .2s; }
+    .callout__slider--4:hover {
+      transform: scale(1.025);
+      box-shadow: 0.1rem 0.2rem rgba(40, 38, 35, 0.2); }
     @media only screen and (max-width: 1053px) {
       .callout__slider--4 {
         width: 29.8rem;
@@ -842,7 +856,7 @@ input {
     flex-direction: column;
     justify-content: space-between; }
     .callout__slider--5--hr {
-      padding-top: 4rem; }
+      padding-top: 8rem; }
     .callout__slider--5--sc {
       padding-top: 12rem; }
     @media only screen and (max-width: 1053px) {
@@ -914,7 +928,11 @@ input {
   padding: auto;
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  transition: all .2s; }
+  .chapters__symbol span:hover {
+    transform: scale(1.045);
+    text-shadow: 0.1rem 0.2rem rgba(40, 38, 35, 0.2); }
 
 .chapters__cta {
   height: 2.0rem;
@@ -1600,7 +1618,7 @@ ul.no-dots-ul {
       width: auto;
       height: auto; } }
   .results__flexbox {
-    height: 100%;
+    height: 17rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap; }
@@ -1612,6 +1630,10 @@ ul.no-dots-ul {
     width: 16.75rem;
     margin-right: 6.5rem;
     margin-bottom: 1.2rem; }
+    @media only screen and (max-width: 1053px) {
+      .results__flexitem {
+        width: 29.8rem;
+        margin: 0 auto 1.2rem auto; } }
   .results__item {
     margin-bottom: 1.2rem; }
     @media only screen and (max-width: 1053px) {
@@ -1751,6 +1773,12 @@ table {
   margin-left: .5rem;
   margin-top: .5rem;
   width: 6.2rem; }
+
+.bc-player-SyGHte2Ul_default:hover .vjs-big-play-button {
+  background-color: #e50000 !important; }
+
+.bc-player-SyGHte2Ul_default .vjs-play-progress {
+  background-color: #e50000 !important; }
 
 .bg__group {
   float: left;
