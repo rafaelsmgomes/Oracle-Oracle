@@ -61,6 +61,7 @@ img.inline{display: inline-block;}
     &--18{ height: 3.45rem; }
     &--19{ height: 5rem; }
     &--20{ height: 4.3rem; }
+    &--21{ height: 4.1rem; }
 
     @include bp(1053){
         display: none;
