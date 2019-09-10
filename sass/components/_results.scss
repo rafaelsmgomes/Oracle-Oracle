@@ -1,12 +1,11 @@
 .results{
-    width: 45.1rem;
-    height: 20rem;
 
     @include bp(1053){
         width: auto;
         height: auto;
     }
     &__flexbox{
+        width: 45.1rem; 
         height: 17rem;
 
         display: flex;

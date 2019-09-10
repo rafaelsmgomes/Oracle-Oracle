@@ -779,8 +779,8 @@ input {
         width: 29.8rem;
         cursor: auto; } }
   .btn--3 {
-    width: 9rem;
-    margin-top: 2.7rem;
+    width: auto;
+    margin-top: 1.3rem;
     margin-left: auto; }
   .btn__section {
     position: absolute;
@@ -859,6 +859,8 @@ input {
       padding-top: 8rem; }
     .callout__slider--5--sc {
       padding-top: 12rem; }
+    .callout__slider--5--cx {
+      padding-top: 4rem; }
     @media only screen and (max-width: 1053px) {
       .callout__slider--5 {
         margin: 0 auto 2rem auto; } }
@@ -1610,36 +1612,37 @@ ul.no-dots-ul {
   .quote__user-box {
     margin-bottom: 3rem; }
 
-.results {
+@media only screen and (max-width: 1053px) {
+  .results {
+    width: auto;
+    height: auto; } }
+
+.results__flexbox {
   width: 45.1rem;
-  height: 20rem; }
+  height: 17rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
   @media only screen and (max-width: 1053px) {
-    .results {
-      width: auto;
-      height: auto; } }
-  .results__flexbox {
-    height: 17rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap; }
-    @media only screen and (max-width: 1053px) {
-      .results__flexbox {
-        flex-wrap: nowrap;
-        margin: 0 auto 2rem auto; } }
-  .results__flexitem {
-    width: 16.75rem;
-    margin-right: 6.5rem;
-    margin-bottom: 1.2rem; }
-    @media only screen and (max-width: 1053px) {
-      .results__flexitem {
-        width: 29.8rem;
-        margin: 0 auto 1.2rem auto; } }
-  .results__item {
-    margin-bottom: 1.2rem; }
-    @media only screen and (max-width: 1053px) {
-      .results__item {
-        width: 29.8rem;
-        margin: 0 auto 1.2rem auto; } }
+    .results__flexbox {
+      flex-wrap: nowrap;
+      margin: 0 auto 2rem auto; } }
+
+.results__flexitem {
+  width: 16.75rem;
+  margin-right: 6.5rem;
+  margin-bottom: 1.2rem; }
+  @media only screen and (max-width: 1053px) {
+    .results__flexitem {
+      width: 29.8rem;
+      margin: 0 auto 1.2rem auto; } }
+
+.results__item {
+  margin-bottom: 1.2rem; }
+  @media only screen and (max-width: 1053px) {
+    .results__item {
+      width: 29.8rem;
+      margin: 0 auto 1.2rem auto; } }
 
 table {
   border-collapse: collapse;

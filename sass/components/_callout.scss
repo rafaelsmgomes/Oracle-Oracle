@@ -87,6 +87,7 @@
 
             &--hr{ padding-top: 8rem; } 
             &--sc{ padding-top: 12rem; }
+            &--cx{ padding-top: 4rem; }
             @include bp(1053){
                 margin: 0 auto 2rem auto;
             }
