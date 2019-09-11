@@ -55,10 +55,13 @@
             margin: 0;
             margin-bottom: .6rem;
             padding: .6rem;
+            @include clearfix;
 
-            display: flex;
-            align-items: center;
-
+            &__link{
+                display: flex;
+                align-items: center; 
+            }
+            
             transition: all .2s;
 
             &:hover{
@@ -144,4 +147,8 @@
 
         width: 16rem;
     }
+}
+
+.oracle-links{
+    display: block;
 }

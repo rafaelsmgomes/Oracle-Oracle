@@ -382,17 +382,17 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     $('.slick-arrow.slick-prev').removeClass('prev--up prev--up2 prev--white');
     $('.slick-arrow').removeClass('arrows__conclusion');
 
+    if (context == 'large') {
 
-    var arrayArrow = [
-        [9,24,28,34,49,57], // next: up, white
-        [14,18,39,45,53,63], // prev: up, white
-        [61,63,70], // next: back, white
-        [64,65,66,71], // both: up to conclusion 
-        [67,68,69], // next: up2
-        [68,69,70], // prev: up2 
-        [1], // prev: up2 
-    ];
-    if (context=='large'){
+        var arrayArrow = [
+            [9,24,28,34,49,57], // next: up, white
+            [14,18,39,45,53,63], // prev: up, white
+            [61,63,70], // next: back, white
+            [64,65,66,71], // both: up to conclusion 
+            [67,68,69], // next: up2
+            [68,69,70], // prev: up2 
+            [2], // prev: up2 
+        ];
         $.each(arrayArrow[0], function( i, v ){
             if (currentSlide == v) {
                 $('.slick-arrow.slick-next').addClass('next--up next--white');

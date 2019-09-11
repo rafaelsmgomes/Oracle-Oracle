@@ -7,12 +7,24 @@
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
+
+        @include bp(1053){
+            flex-wrap: nowrap;
+            height: auto;
+            width: 29.8rem;
+            margin: 0 auto 1rem auto;
+        }
     }
 
     &__container{
         margin-right: 6.5rem;
         width: 22.65rem;
         margin-bottom: 1.65rem;
+
+        @include bp(1053){
+            width: auto;
+            margin-right: 0;
+        }
     }
 
     &__direction{

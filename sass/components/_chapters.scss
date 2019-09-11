@@ -4,6 +4,14 @@
         display: flex;
         justify-content: space-between;
 
+        @include bp(1053){
+            flex-direction: column;
+            margin: 0 auto;
+            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+            background-size: cover;
+            padding: 2rem 0;
+        }
+
     }
     &__container{
         height: 13.5rem;
@@ -13,6 +21,10 @@
         border-radius: .2rem;
         padding: 0 .8rem;
 
+        @include bp(1053){
+            flex-direction: column;
+            margin: 0 auto 2rem auto;
+        }
     }
     &__title{
         height: 3.2rem;
