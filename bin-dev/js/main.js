@@ -31,13 +31,25 @@ var conclusionSlide=61;
 // run this right away to set context
 if ( $window.width() <= 1053) {
     context = 'medium';
-    var homePage=5;
-    var chapter3=5;
-    var chapter4=6;
-    var chapter5=7;
-    var chapter6=8;
-    var chapter7=9;
-
+    var intro=1;
+    var homePage=2;
+    var finance=3;
+    var finance1=4;
+    var finance2=5;
+    var finance3=6;
+    var humanResources=8;
+    var humanResources1=9;
+    var humanResources2=10;
+    var supplyChain=12;
+    var supplyChain1=13;
+    var supplyChain2=14;
+    var customerExperience=16;
+    var customerExperience1=17;
+    var customerExperience2=18;
+    var customerExperience3=19;
+    var customerExperience4=20;
+    var conclusionSlide=22;
+    
     if ($window.width() <= 767) {
         context = 'small';
     }
