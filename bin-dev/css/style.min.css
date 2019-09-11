@@ -11,6 +11,9 @@ $Breakpoint argument choices:
 -land
 -desk
 */
+* {
+  outline: hotpink solid 1px; }
+
 *,
 *::after,
 *::before {
@@ -171,10 +174,6 @@ h3 {
   font-weight: bold;
   line-height: 1.32;
   color: #383330; }
-  @media only screen and (max-width: 1053px) {
-    h3 {
-      width: 29.8rem;
-      margin: 2rem auto; } }
 
 h4 {
   font-weight: 700; }
@@ -307,6 +306,10 @@ textarea {
     color: #ae562c; }
   .header__tertiary--1::after {
     margin-bottom: .8rem; }
+  @media only screen and (max-width: 1053px) {
+    .header__tertiary__quaternary {
+      width: 29.8rem;
+      margin: 2rem auto; } }
 
 .pg {
   font-family: OracleSans, Arial, Helvetica, sans-serif;
@@ -1289,8 +1292,10 @@ svg:not(:root) {
 
 .logo-tag {
   position: absolute;
-  bottom: 0.4rem;
-  right: 2.6rem; }
+  bottom: 0rem;
+  right: 2.6rem;
+  display: block;
+  z-index: 100; }
 
 .home-icon--2 {
   display: block;
@@ -1908,6 +1913,10 @@ table {
     background-color: #282623;
     background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
     background-size: cover; }
+    @media only screen and (max-width: 1053px) {
+      .bg__group--cover {
+        margin-top: -3.5rem;
+        height: 100vh; } }
   .bg__group--home {
     background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
     background-size: 100%; }
@@ -1930,6 +1939,10 @@ table {
     height: 100%;
     width: 23.6rem;
     background-color: #ae562c; }
+    @media only screen and (max-width: 1053px) {
+      .bg__block--left--cover {
+        height: 13rem;
+        width: 100%; } }
     .bg__block--left--1 {
       height: 100%;
       width: 62.3rem;
@@ -2127,17 +2140,17 @@ table {
   width: 47.6rem;
   background-color: #fcfbfa;
   overflow: hidden; }
+  @media only screen and (max-width: 1053px) {
+    .cover__wrapper {
+      margin-left: 10%;
+      width: 78%;
+      padding-left: 7.5%; } }
 
 .cover__text-box {
   width: 24.6rem;
   display: flex;
   align-items: center;
   position: relative; }
-  @media only screen and (max-width: 1053px) {
-    .cover__text-box {
-      padding-left: 5.46vw;
-      padding-right: 5.46vw;
-      padding-bottom: 6.45rem; } }
   @media only screen and (max-width: 767px) {
     .cover__text-box {
       padding-left: 5vw;
@@ -2278,7 +2291,7 @@ table {
     .racetrack__small--bot-right {
       width: 40rem;
       top: 20.25rem;
-      left: 25.25rem; }
+      right: -18.25rem; }
     .racetrack__small--bot-left {
       width: 40rem;
       top: 32.35rem;
@@ -2359,6 +2372,8 @@ table {
       width: 100vw;
       max-height: 100vh;
       max-width: 100vw; } }
+  .page--1 {
+    padding-top: 0; }
   @media only screen and (max-width: 1053px) {
     .page--6, .page--7, .page--21, .page--22, .page--32, .page--42, .page--43, .page--61, .page--31 {
       background-color: #282623; } }

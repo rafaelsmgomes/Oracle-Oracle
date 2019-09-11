@@ -11,6 +11,11 @@
             background-color: $col-signature-black;
             background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
             background-size: cover;
+
+            @include bp(1053){
+                margin-top: -3.5rem;
+                height: 100vh;
+            }
         }
         &--home{
             background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
@@ -39,6 +44,12 @@
             height: 100%;
             width: 23.6rem;
             background-color: $col-secondary-orange;
+            &--cover{
+                @include bp(1053){
+                    height: 13rem;
+                    width: 100%;
+                }
+            }
             &--1{
                 height: 100%;
                 width: 62.3rem;

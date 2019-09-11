@@ -45,6 +45,10 @@
 	@include bp(767){
 	 	@include platformPhone;
 	}
+	&--1{
+		padding-top: 0;
+		
+	}
 
 	&--6,
 	&--7,

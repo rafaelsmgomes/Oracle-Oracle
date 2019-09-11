@@ -8,6 +8,12 @@
     width: 47.6rem;
     background-color: $col-white;
     overflow: hidden;
+
+    @include bp(1053){
+      margin-left: 10%;
+      width: 78%;
+      padding-left: 7.5%;
+    }
   }
 
   &__text-box{
@@ -17,9 +23,7 @@
     align-items: center;
     position: relative;
     @include bp(1053){
-      padding-left: 5.46vw;
-      padding-right: 5.46vw;
-      padding-bottom: 6.45rem;
+      
     }
     @include bp(767){
       padding-left: 5vw;
