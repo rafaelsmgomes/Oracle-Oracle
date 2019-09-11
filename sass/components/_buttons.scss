@@ -108,5 +108,14 @@ input {
     &--flex{
       bottom: 1.5rem;
     }
+
+    @include bp(1053){
+      position: relative;
+      margin: 3rem auto;
+      width: 29.8rem;
+      display: block;
+      bottom: auto;
+      right: auto;
+    }
   }
 }

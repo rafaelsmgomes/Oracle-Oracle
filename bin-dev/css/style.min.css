@@ -256,11 +256,18 @@ textarea {
   font-weight: bold;
   line-height: 1.31;
   color: #383330; }
+  @media only screen and (max-width: 1053px) {
+    .header__secondary {
+      width: 29.8rem;
+      margin: 0 auto 2rem; } }
   .header__secondary--8 {
     width: 22rem; }
     @media only screen and (max-width: 1053px) {
       .header__secondary--8 {
         width: 29.8rem; } }
+  @media only screen and (max-width: 1053px) {
+    .header__secondary--results {
+      margin-top: 3rem; } }
   .header__secondary::after {
     content: "";
     display: block;
@@ -799,6 +806,14 @@ input {
     right: 5rem; }
     .btn__section--flex {
       bottom: 1.5rem; }
+    @media only screen and (max-width: 1053px) {
+      .btn__section {
+        position: relative;
+        margin: 3rem auto;
+        width: 29.8rem;
+        display: block;
+        bottom: auto;
+        right: auto; } }
 
 .callout__slider {
   background-color: #282623;
@@ -1246,6 +1261,10 @@ img {
 .popup {
   max-width: 70rem;
   max-height: 40rem; }
+  @media only screen and (max-width: 1053px) {
+    .popup {
+      max-width: 90vw;
+      max-height: 90vh; } }
 
 svg:not(:root) {
   overflow: hidden; }
@@ -1501,6 +1520,9 @@ ul.no-dots-ul {
   cursor: pointer;
   margin-bottom: 1.2rem;
   margin-top: 2rem; }
+  @media only screen and (max-width: 1053px) {
+    .composition {
+      width: 22rem; } }
   .composition:first-child {
     margin-top: 0; }
   .composition--1 {
@@ -1560,6 +1582,9 @@ ul.no-dots-ul {
     position: relative;
     height: 19rem;
     margin-bottom: 3rem; }
+    @media only screen and (max-width: 1053px) {
+      .composition__triple {
+        width: 22rem; } }
     .composition__triple > img {
       border-radius: 3px; }
     .composition__triple:hover .composition__triple__item:not(:hover) {
@@ -1579,7 +1604,6 @@ ul.no-dots-ul {
         right: 0; }
   @media only screen and (max-width: 1053px) {
     .composition {
-      width: 29.8rem;
       margin: 0 auto 2rem auto; } }
 
 .close-bttn-holder {
@@ -1681,13 +1705,15 @@ ul.no-dots-ul {
 .results__flexbox {
   width: 45.1rem;
   height: 17rem;
+  color: #ae562c;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap; }
   @media only screen and (max-width: 1053px) {
     .results__flexbox {
       flex-wrap: nowrap;
-      margin: 0 auto 2rem auto; } }
+      margin: 0 auto 2rem auto;
+      height: auto; } }
 
 .results__flexitem {
   width: 16.75rem;
@@ -1824,7 +1850,7 @@ table {
   background-color: #56504b; }
   @media only screen and (max-width: 1053px) {
     .video__wrapper {
-      margin: 0 auto; } }
+      margin: 0 auto 3rem; } }
   .video__wrapper--1 {
     margin-bottom: 3.2rem; }
 
@@ -2296,7 +2322,7 @@ table {
       max-height: 100vh;
       max-width: 100vw; } }
   @media only screen and (max-width: 1053px) {
-    .page--6, .page--7, .page--21, .page--22 {
+    .page--6, .page--7, .page--21, .page--22, .page--32, .page--42, .page--43, .page--61, .page--31 {
       background-color: #282623; } }
 
 .TOC-right .TOC-wrap {
@@ -2347,7 +2373,7 @@ a.TOC-chap:hover .TOC-chapter-title {
   z-index: 0; }
   @media only screen and (max-width: 1053px) {
     .slick-slide > .container {
-      padding: 3.50rem 0rem 00rem -2.20rem;
+      padding: 3.50rem 0rem 1rem 0rem;
       width: auto;
       margin: 0;
       min-height: calc(100% - 80rem);

@@ -196,6 +196,66 @@ $(document).ready(function() {
         $(".page--18").remove();
         $(".page--19").remove();
         $(".page--20").remove();
+
+        $(".page--26 .content-holder").detach().appendTo('.page--25 .content-holder');
+        $(".page--25 .content-holder").detach().appendTo('.page--24 .content-holder');
+        $(".page--24 .content-holder").detach().appendTo('.page--23 .content-holder');
+        $(".page--24").remove();
+        $(".page--25").remove();
+        $(".page--26").remove();
+        
+        $(".page--30 .content-holder").detach().appendTo('.page--29 .content-holder');
+        $(".page--29 .content-holder").detach().appendTo('.page--28 .content-holder');
+        $(".page--28 .content-holder").detach().appendTo('.page--27 .content-holder');
+        $(".page--28").remove();
+        $(".page--29").remove();
+        $(".page--30").remove();
+        
+        $(".page--37 .content-holder").detach().appendTo('.page--36 .content-holder');
+        $(".page--36 .content-holder").detach().appendTo('.page--35 .content-holder');
+        $(".page--35 .content-holder").detach().appendTo('.page--34 .content-holder');
+        $(".page--34 .content-holder").detach().appendTo('.page--33 .content-holder');
+        $(".page--34").remove();
+        $(".page--35").remove();
+        $(".page--36").remove();
+        $(".page--37").remove();
+        
+        $(".page--41 .content-holder").detach().appendTo('.page--40 .content-holder');
+        $(".page--40 .content-holder").detach().appendTo('.page--39 .content-holder');
+        $(".page--39 .content-holder").detach().appendTo('.page--38 .content-holder');
+        $(".page--39").remove();
+        $(".page--40").remove();
+        $(".page--41").remove();
+        
+        $(".page--47 .content-holder").detach().appendTo('.page--46 .content-holder');
+        $(".page--46 .content-holder").detach().appendTo('.page--45 .content-holder');
+        $(".page--45 .content-holder").detach().appendTo('.page--44 .content-holder');
+        $(".page--45").remove();
+        $(".page--46").remove();
+        $(".page--47").remove();
+        
+        $(".page--51 .content-holder").detach().appendTo('.page--50 .content-holder');
+        $(".page--50 .content-holder").detach().appendTo('.page--49 .content-holder');
+        $(".page--49 .content-holder").detach().appendTo('.page--48 .content-holder');
+        $(".page--49").remove();
+        $(".page--50").remove();
+        $(".page--51").remove();
+        
+        $(".page--55 .content-holder").detach().appendTo('.page--54 .content-holder');
+        $(".page--54 .content-holder").detach().appendTo('.page--53 .content-holder');
+        $(".page--53 .content-holder").detach().appendTo('.page--52 .content-holder');
+        $(".page--53").remove();
+        $(".page--54").remove();
+        $(".page--55").remove();
+        
+        $(".page--60 .content-holder").detach().appendTo('.page--59 .content-holder');
+        $(".page--59 .content-holder").detach().appendTo('.page--58 .content-holder');
+        $(".page--58 .content-holder").detach().appendTo('.page--57 .content-holder');
+        $(".page--57 .content-holder").detach().appendTo('.page--56 .content-holder');
+        $(".page--57").remove();
+        $(".page--58").remove();
+        $(".page--59").remove();
+        $(".page--60").remove();
         
         $('.book-slider').slick({
             infinite: false,

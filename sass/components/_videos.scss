@@ -91,7 +91,7 @@
     background-color: $col-supporting-gray4;
 
     @include bp(1053){
-      margin: 0 auto;
+      margin: 0 auto 3rem;
     }
     
     &--1{

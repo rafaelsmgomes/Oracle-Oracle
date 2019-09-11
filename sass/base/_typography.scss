@@ -152,11 +152,21 @@ textarea {
   }
   &__secondary{
     @include H2;
+    @include bp(1053){
+      width: 29.8rem;
+      margin: 0 auto 2rem;
+    }
+
     &--8{
       width: 22rem;
-
       @include bp(1053){
         width: 29.8rem;
+      }
+    }
+
+    &--results{
+      @include bp(1053){
+        margin-top: 3rem;
       }
     }
 

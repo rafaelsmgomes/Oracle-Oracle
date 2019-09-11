@@ -7,15 +7,17 @@
     &__flexbox{
         width: 45.1rem; 
         height: 17rem;
+        color: $col-secondary-orange;
 
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
 
+
         @include bp(1053){
             flex-wrap: nowrap;
             margin: 0 auto 2rem auto;
-
+            height: auto; 
         }
     }
 
