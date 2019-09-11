@@ -121,7 +121,7 @@ a{
     width: auto;
     z-index: 0;
     @include bp(1053){
-    	padding: 3.50rem 0rem 1rem 0rem;
+    	padding: 3.50rem 0rem 2rem 0rem;
     	width: auto;
     	margin: 0;
     	// margin-left: 4.465%;
@@ -129,12 +129,12 @@ a{
     	min-height: calc(#{100%} - #{80rem});
     	height: unset;
     }
-    @include bp(800){
-	    padding: 2.00rem 4.50rem 5.00rem 5vw;
-	    padding-right: calc(#{5vw} + #{3.25rem}); 
-    }
+    // @include bp(800){
+	//     padding: 2.00rem 4.50rem 5.00rem 5vw;
+	//     padding-right: calc(#{5vw} + #{3.25rem}); 
+    // }
     @include bp(767){
-    	padding-bottom: 15rem;
+    	// padding-bottom: 15rem;
     }        
     @include bp(700){
 	    padding-right: 5vw;

@@ -98,6 +98,15 @@ input {
     width: auto;
     margin-top: 1.3rem;
     margin-left: auto;
+
+    @include bp(1053){
+      margin-bottom: 1.3rem;
+      margin-right: calc((100vw - 29.8rem) / 2);
+
+      &:last-of-type{
+        margin-bottom: 4rem;
+      }
+    }
   }
 
   &__section{

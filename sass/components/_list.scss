@@ -51,6 +51,9 @@ ul.no-dots-ul{
 			@include bp(1053){
 				margin-top: 3.1rem;
 				margin-bottom: 4rem;
+
+				&-x{ margin: 0 auto; }
+				&-y{ margin-top: 0; }
 			}
 		}
 		&--4{ 

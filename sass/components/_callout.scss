@@ -114,6 +114,13 @@
             margin: 2.3rem 2.7rem 0 2.5rem;
             padding: 4.1rem 4rem 0 3.1rem;
             background-color: $col-white;
+
+            @include bp(1053){
+                margin: 2.3rem auto; 
+                & > * {
+                    width: auto;
+                }
+            }
         }
     }
 

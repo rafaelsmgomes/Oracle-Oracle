@@ -171,6 +171,10 @@ h3 {
   font-weight: bold;
   line-height: 1.32;
   color: #383330; }
+  @media only screen and (max-width: 1053px) {
+    h3 {
+      width: 29.8rem;
+      margin: 2rem auto; } }
 
 h4 {
   font-weight: 700; }
@@ -800,6 +804,12 @@ input {
     width: auto;
     margin-top: 1.3rem;
     margin-left: auto; }
+    @media only screen and (max-width: 1053px) {
+      .btn--3 {
+        margin-bottom: 1.3rem;
+        margin-right: calc((100vw - 29.8rem) / 2); }
+        .btn--3:last-of-type {
+          margin-bottom: 4rem; } }
   .btn__section {
     position: absolute;
     bottom: 1.1rem;
@@ -911,6 +921,11 @@ input {
     margin: 2.3rem 2.7rem 0 2.5rem;
     padding: 4.1rem 4rem 0 3.1rem;
     background-color: #fcfbfa; }
+    @media only screen and (max-width: 1053px) {
+      .callout__slider--8 {
+        margin: 2.3rem auto; }
+        .callout__slider--8 > * {
+          width: auto; } }
 
 .callout__flex {
   width: 100%;
@@ -950,7 +965,7 @@ input {
   @media only screen and (max-width: 1053px) {
     .chapters__wrapper {
       flex-direction: column;
-      margin: 0 auto;
+      margin: 0 auto -2rem;
       background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
       background-size: cover;
       padding: 2rem 0; } }
@@ -1319,7 +1334,11 @@ ul.no-dots-ul {
   @media only screen and (max-width: 1053px) {
     .bullet__list--3 {
       margin-top: 3.1rem;
-      margin-bottom: 4rem; } }
+      margin-bottom: 4rem; }
+      .bullet__list--3-x {
+        margin: 0 auto; }
+      .bullet__list--3-y {
+        margin-top: 0; } }
 
 .bullet__list--4 {
   color: #8b8580; }
@@ -1910,6 +1929,10 @@ table {
       width: 31.9rem;
       background-color: #282623;
       padding: 4.35rem 3rem 0 6rem; }
+      @media only screen and (max-width: 1053px) {
+        .bg__block--left--2 {
+          height: auto;
+          width: 100%; } }
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }
@@ -2080,6 +2103,12 @@ table {
   @media only screen and (max-width: 1053px) {
     .bg-pattern--1 {
       height: auto; } }
+  @media only screen and (max-width: 1053px) {
+    .bg-pattern--1-x {
+      background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+      background-size: cover;
+      z-index: 0;
+      display: block; } }
 
 .cover__wrapper {
   position: relative;
@@ -2373,18 +2402,11 @@ a.TOC-chap:hover .TOC-chapter-title {
   z-index: 0; }
   @media only screen and (max-width: 1053px) {
     .slick-slide > .container {
-      padding: 3.50rem 0rem 1rem 0rem;
+      padding: 3.50rem 0rem 2rem 0rem;
       width: auto;
       margin: 0;
       min-height: calc(100% - 80rem);
       height: unset; } }
-  @media only screen and (max-width: 800px) {
-    .slick-slide > .container {
-      padding: 2.00rem 4.50rem 5.00rem 5vw;
-      padding-right: calc(5vw + 3.25rem); } }
-  @media only screen and (max-width: 767px) {
-    .slick-slide > .container {
-      padding-bottom: 15rem; } }
   @media only screen and (max-width: 700px) {
     .slick-slide > .container {
       padding-right: 5vw; } }

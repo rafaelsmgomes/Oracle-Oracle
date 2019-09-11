@@ -108,6 +108,14 @@
 			@include bp(1053){
 				height: auto;
 			}
+			&-x{
+				@include bp(1053){
+					background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+					background-size: cover;
+					z-index: 0;
+					display: block;   
+				}
+			}
 
 		}
 	}
