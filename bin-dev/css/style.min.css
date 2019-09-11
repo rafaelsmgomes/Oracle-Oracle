@@ -11,9 +11,6 @@ $Breakpoint argument choices:
 -land
 -desk
 */
-* {
-  outline: hotpink solid 1px; }
-
 *,
 *::after,
 *::before {
@@ -1519,6 +1516,27 @@ ul.no-dots-ul {
       height: 5.9rem; }
     .composition__flexitem--2 {
       height: 5.9rem; }
+  .composition__triple {
+    position: relative;
+    height: 19rem;
+    margin-bottom: 3rem; }
+    .composition__triple > img {
+      border-radius: 3px; }
+    .composition__triple:hover .composition__triple__item:not(:hover) {
+      transform: scale(0.975);
+      position: absolute; }
+    .composition__triple__item {
+      position: absolute;
+      height: 19rem; }
+      .composition__triple__item:hover {
+        transform: scale(1.025);
+        box-shadow: 0 0.75rem 1.5rem rgba(40, 38, 35, 0.3);
+        z-index: 11; }
+      .composition__triple__item--1 {
+        left: 27.5%;
+        top: 1rem; }
+      .composition__triple__item--3 {
+        right: 0; }
   @media only screen and (max-width: 1053px) {
     .composition {
       width: 29.8rem;
