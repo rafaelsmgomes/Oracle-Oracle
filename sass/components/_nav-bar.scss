@@ -10,6 +10,10 @@
   display: flex;
   align-items: center; 
 
+  @include bp(1053){
+    padding-left: calc(((100vw - 29.8rem) / 2) - .5rem);
+  }
+
   a {
     text-decoration: none;
   }
@@ -110,4 +114,12 @@
 .nav-white{
   fill: $col-white;
   color: $col-white;
-} 
+}
+
+.nav__bg-white {
+  background-color: $col-white;
+}
+
+.nav__bg-black {
+  background-color: $col-signature-black;
+}

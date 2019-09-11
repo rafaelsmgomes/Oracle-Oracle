@@ -1419,6 +1419,9 @@ ul.no-dots-ul {
   transition: .25s all ease-in-out;
   display: flex;
   align-items: center; }
+  @media only screen and (max-width: 1053px) {
+    .nav-bar {
+      padding-left: calc(((100vw - 29.8rem) / 2) - .5rem); } }
   .nav-bar a {
     text-decoration: none; }
   .nav-bar.nav-flex {
@@ -1501,6 +1504,12 @@ ul.no-dots-ul {
 .nav-white {
   fill: #fcfbfa;
   color: #fcfbfa; }
+
+.nav__bg-white {
+  background-color: #fcfbfa; }
+
+.nav__bg-black {
+  background-color: #282623; }
 
 .overview {
   height: 100%;
