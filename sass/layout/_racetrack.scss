@@ -44,6 +44,13 @@
             width: 40rem;
             top: 32.35rem;
             right: 7.35rem;
+            @include bp(1053){
+                z-index: -1;
+                top: auto;
+                bottom: -12rem;
+                right: auto;
+                left: -17.5rem;
+            }
         }
     } 
 

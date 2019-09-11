@@ -8,8 +8,8 @@
 		padding-top: 6.8rem; 
 
 		@include bp(1053){
-			padding-top: 3rem;
 			height: auto;
+			padding: 3rem 0 0;
 		}
 	}
 

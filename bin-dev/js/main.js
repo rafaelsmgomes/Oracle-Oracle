@@ -473,7 +473,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.slick-next.slick-arrow').hide();
         };
     };
-    if (context == 'medium') {
+    if (context == 'medium' || context == 'small') {
         if (currentSlide === 0 ) {
             $('.slick-prev.slick-arrow').hide();
             $('.slick-next.slick-arrow').hide();
@@ -497,7 +497,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             [64,65,66,71], // both: up to conclusion 
             [67,68,69], // next: up2
             [68,69,70], // prev: up2 
-            [2], // prev: up2 
+            [1], // prev: up2 
         ];
         $.each(arrayArrow[0], function( i, v ){
             if (currentSlide == v) {
@@ -657,7 +657,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         }
     }
 
-    if (context === 'medium') {
+    if (context === 'medium' || context == 'small') {
 
         if(currentSlide === 0 || currentSlide === 2){
             $('.nav-bar').hide();

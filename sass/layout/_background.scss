@@ -31,6 +31,9 @@
         }
         &--right{            
             width: 50%;
+            @include bp(1053){
+                display: none;
+            }
         }
     }
 

@@ -73,6 +73,9 @@ input {
   &--1{
     height: 1.80rem;
 
+    @include bp(1053){
+      margin-bottom: 2rem;
+    }
 
     &:hover{
 
@@ -92,6 +95,7 @@ input {
       margin: 2rem auto;
       width: 29.8rem; 
       cursor: auto;
+      margin-bottom: 10rem;
     }
   }
   &--3{ 

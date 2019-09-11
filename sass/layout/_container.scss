@@ -116,6 +116,11 @@
 					display: block;   
 				}
 			}
+			&-z{
+				@include bp(1053){
+					display: none;
+				}
+			}
 
 		}
 	}

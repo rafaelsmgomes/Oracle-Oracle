@@ -14,6 +14,16 @@
       width: 78%;
       padding-left: 7.5%;
     }
+    @include bp(700){
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    @include bp(550){
+      height: auto;
+      margin-left: 5%;
+      margin-right: 5%;
+      width: auto;
+    }
   }
 
   &__text-box{
@@ -25,9 +35,8 @@
     @include bp(1053){
       
     }
-    @include bp(767){
-      padding-left: 5vw;
-      padding-right: 5vw;
+    @include bp(641){
+      width: 100%;
     }
   }
 
