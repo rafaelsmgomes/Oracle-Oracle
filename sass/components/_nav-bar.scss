@@ -93,6 +93,10 @@
 .chap-name{
 	@include Body-1;
   line-height: 1.3333;
+
+  @include bp(650){
+    font-size: .8rem;
+  }
   &:hover{
     font-family: $font-bold;
     font-weight: 700;
@@ -106,6 +110,9 @@
 .chap-sub{
   @include Body-1--Bold;
   line-height: 1.3333;
+  @include bp(650){
+    font-size: .8rem;
+  }
 }
 .dividing-bar{
   align-self: center;

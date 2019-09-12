@@ -75,6 +75,9 @@ input {
 
     @include bp(1053){
       margin-bottom: 2rem;
+      z-index: 100;
+      display: block;
+      position: relative;
     }
 
     &:hover{
@@ -97,6 +100,11 @@ input {
       cursor: auto;
       margin-bottom: 10rem;
     }
+    @include bp(1053){
+      margin: 2rem 1.5rem;
+      width: auto; 
+      margin-bottom: 10rem;
+    }
   }
   &--3{ 
     width: auto;
@@ -110,6 +118,10 @@ input {
       &:last-of-type{
         margin-bottom: 4rem;
       }
+    }
+    @include bp(650){
+      margin-left: auto;
+      margin-right: 1.5rem;
     }
   }
 
@@ -126,6 +138,13 @@ input {
       position: relative;
       margin: 3rem auto;
       width: 29.8rem;
+      display: block;
+      bottom: auto;
+      right: auto;
+    }
+    @include bp(1053){
+      margin: 3rem 3rem -.80rem auto;
+      width: auto;
       display: block;
       bottom: auto;
       right: auto;

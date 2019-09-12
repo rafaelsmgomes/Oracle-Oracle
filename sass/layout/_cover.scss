@@ -17,12 +17,14 @@
     @include bp(700){
       padding-left: 5%;
       padding-right: 5%;
+      margin-bottom: 3rem;
     }
     @include bp(550){
       height: auto;
       margin-left: 5%;
       margin-right: 5%;
       width: auto;
+      padding-top: 2rem;
     }
   }
 
@@ -45,6 +47,11 @@
     margin-bottom: 4.5rem;
     margin-top: 1.6rem;
     position: relative;
+    @include bp(800){
+      margin-bottom: 1.5rem;
+      width: auto;
+      margin-top: 0;
+    }
   }
 
   &-logo-oracle {

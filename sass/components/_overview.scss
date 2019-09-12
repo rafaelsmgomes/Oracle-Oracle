@@ -12,6 +12,11 @@
         width: 29.8rem;
         margin: 2.2rem auto 2rem auto;
     }
+    @include bp(650){
+        width: auto;
+        margin: 2.2rem 1.5rem -1rem 1.5rem;
+        padding: 3rem 1rem 0;
+    }
 
     &__header{
         margin-bottom: 2rem; 
@@ -36,9 +41,13 @@
             height: auto;
             margin-right: -2.8rem;
         }
+        @include bp(650){
+            height: 3rem;
+        }
     }
     &__cta{
         margin-left: auto;
         margin-right: 1rem;
+        @include bp(650){ margin-right: 4rem;}
     }
 }

@@ -269,6 +269,10 @@ $(document).ready(function() {
         $(".page--59").remove();
         $(".page--60").remove();
 
+        $(".page--64 .container-right-2-col .callout__slider > *").detach().appendTo('.page--64 .container-left-2-col .callout__slider');
+        $(".page--64 .content-holder").detach().appendTo('.page--62 .content-holder');
+        $(".page--64 .container-right-2-col").remove();
+
         $(".page--63").remove();
         $(".page--64").remove();
         
@@ -286,8 +290,6 @@ $(document).ready(function() {
         $(".page--71").remove();
 
 
-        // $(".page--64 .container-right-2-col .callout__slider > *").detach().appendTo('.page--64 .container-left-2-col .callout__slider');
-        // $(".page--64 .container-right-2-col").remove();
 
         $('.book-slider').slick({
             infinite: false,
@@ -673,12 +675,12 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
              [ [2] , ''],
              [ [3] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Finance</b></span></a>'],
              [ [4,5,6,7] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "); "><span class="chap-name">Finance</span></a>'],
-             [ [8] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Human Resources</b></span></a>'],
-             [ [9,10,11] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "); "><span class="chap-name">Human Resources</span></a>'],
-             [ [12] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Supply Chain</b></span></a>'],
-             [ [13,14,15] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "); "><span class="chap-name">Supply Chain</span></a>'],
-             [ [16] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Customer Experience</b></span></a>'],
-             [ [17,18,19,20,21] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "); "><span class="chap-name">Customer Experience</span></a>'],
+             [ [8] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>HR</b></span></a>'],
+             [ [9,10,11] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "); "><span class="chap-name">HR</span></a>'],
+             [ [12] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>SC</b></span></a>'],
+             [ [13,14,15] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "); "><span class="chap-name">SC</span></a>'],
+             [ [16] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>CX</b></span></a>'],
+             [ [17,18,19,20,21] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "); "><span class="chap-name">CX</span></a>'],
              [ [22] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Conclusion</b></span></a>'],
              [ [23,24,25,26] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', conclusionSlide); "); "><span class="chap-name bold">Conclusion</span></a>'],
         ];

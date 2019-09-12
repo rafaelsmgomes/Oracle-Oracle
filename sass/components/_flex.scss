@@ -14,6 +14,11 @@
             width: 29.8rem;
             margin: 0 auto 3rem auto;
         }
+        @include bp(1053){
+            height: auto;
+            width: auto;
+            margin: 0 1.5rem 3rem;
+        }
     }
 
     &__container{

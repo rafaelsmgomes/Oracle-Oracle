@@ -4,17 +4,28 @@
         border-left: 2px solid $col-secondary-darkgreen;
         margin-bottom: 1.2rem; 
 
-        &--cases{ margin-left: -.85rem; }
-
         @include bp(1053){
             width: 29.8rem;
             margin: 0 auto 1rem auto; 
         }      
+        @include bp(650){
+            width: auto;
+            margin: 0 1.5rem 1rem 1.5rem; 
+        }      
+        &--cases{ 
+            margin-left: -.85rem; 
+            @include bp(650){
+                margin: 1.2rem 0;
+            }
+        }
     }
     &__container{
         padding-left: .85rem;
         width: 20.4rem;
         &--cases{ width: 22.7rem; }
+        @include bp(650){
+            width: auto;
+        }      
     }
 
 

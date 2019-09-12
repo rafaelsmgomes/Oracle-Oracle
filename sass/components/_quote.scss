@@ -11,6 +11,10 @@
 			height: auto;
 			padding: 3rem 0 0;
 		}
+		@include bp(1053){
+			height: auto;
+			padding: 3rem 0 0;
+		}
 	}
 
 	&__wrapper{
@@ -24,6 +28,11 @@
 			margin: 0 auto 1.2rem auto;
 			width: 29.8rem;
 			padding-left: 0;
+		}
+		@include bp(650){
+			height: auto;
+			width: auto;
+			margin: 0 1.5rem 1.2rem;
 		}
 	}
 
@@ -61,6 +70,10 @@
 			@include bp(1053){
 				width: 29.8rem;
 			}
+			@include bp(650){
+				width: auto;
+				margin: 0 -.5rem 1.2rem;
+			}
 		}
 
 	}
@@ -70,6 +83,9 @@
 
 		&-box{
 			margin-bottom: 3rem; 
+			@include bp(650){
+				margin: 0 -.5rem 3rem;
+			}
 		}
 	}
 }

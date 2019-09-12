@@ -66,6 +66,9 @@
                     height: auto;
                     width: 100%;
                 }
+                @include bp(1053){
+                    padding: 4.35rem 0 0;
+                }
             }
         }
         &--top{

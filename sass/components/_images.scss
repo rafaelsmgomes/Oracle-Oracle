@@ -40,5 +40,9 @@ svg:not(:root) {
     width: 2rem;
     height: 2rem;
     margin-right: .7rem;
+
+    @include bp(650){
+      width: 4rem;
+    }
   }
 }

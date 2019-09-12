@@ -33,5 +33,9 @@
             width: 29.8rem;
             margin: 0 auto 1.2rem auto;
         }
+        @include bp(650){
+            width: auto;
+            margin: 0 1.5rem 2rem;
+        }
     }
 }

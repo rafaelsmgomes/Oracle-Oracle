@@ -58,6 +58,9 @@ ul.no-dots-ul{
 		}
 		&--4{ 
 			color: $col-supporting-gray1; 
+			@include bp(650){
+				margin-bottom: 2rem;
+			}
 		}
 		
 	}
@@ -69,11 +72,20 @@ ul.no-dots-ul{
 			width: 29.8rem;
 			margin: 0 auto; 
 		}
+		@include bp(650){
+			width: auto;
+			margin: 0 1.5rem;
+			
+		}
 
 		&--4{ 
 			padding-bottom: .625rem; 
 			@include bp(1053){
 				width: 20.8rem;
+			} 
+			@include bp(1053){
+				width: auto;
+				margin: 0 0 0 1rem;
 			} 
 		}
 	

@@ -1,6 +1,6 @@
-// *{
-//   outline: hotpink solid 1px; 
-// } 
+*{
+  outline: hotpink solid 1px; 
+} 
  
 *,
 *::after,
@@ -29,7 +29,7 @@ html {
     overflow: hidden;    
   }
   @include bp(767){
-    font-size: 112%; //18px    
+    font-size: 125%; //18px    
   };
 }
 
