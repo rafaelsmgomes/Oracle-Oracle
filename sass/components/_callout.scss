@@ -133,7 +133,16 @@
             margin: 0 2.7rem 3.1rem 3.1rem;
             padding: 6.4rem 5.25rem 0 3rem;
             @include bp(1053){
-                margin: 0 auto 2rem auto;
+                margin: 3rem auto 2rem auto;
+                height: auto;
+                padding-bottom: 3rem;
+                width: 29.8rem;
+            }
+            @include bp(650){
+                margin: 2rem 1rem;
+                height: auto;
+                padding: 2rem .5rem;
+                width: auto;
             }
         }
         &--7{
@@ -186,6 +195,9 @@
 
     &__box{
         width: 9.05rem;
+        @include bp(650){
+            width: 7.3rem
+        }
     }
 
     &__symb{

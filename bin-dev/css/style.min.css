@@ -998,7 +998,16 @@ input {
     padding: 6.4rem 5.25rem 0 3rem; }
     @media only screen and (max-width: 1053px) {
       .callout__slider--6 {
-        margin: 0 auto 2rem auto; } }
+        margin: 3rem auto 2rem auto;
+        height: auto;
+        padding-bottom: 3rem;
+        width: 29.8rem; } }
+    @media only screen and (max-width: 650px) {
+      .callout__slider--6 {
+        margin: 2rem 1rem;
+        height: auto;
+        padding: 2rem .5rem;
+        width: auto; } }
   .callout__slider--7 {
     width: 29.2rem;
     height: 100%;
@@ -1037,6 +1046,9 @@ input {
 
 .callout__box {
   width: 9.05rem; }
+  @media only screen and (max-width: 650px) {
+    .callout__box {
+      width: 7.3rem; } }
 
 .callout__symb {
   margin-left: .6rem;
@@ -2163,10 +2175,13 @@ table {
       @media only screen and (max-width: 1053px) {
         .bg__block--left--2 {
           height: auto;
-          width: 100%; } }
-      @media only screen and (max-width: 1053px) {
+          width: 100%;
+          position: relative;
+          padding: 3rem 0;
+          margin: 0; } }
+      @media only screen and (max-width: 650px) {
         .bg__block--left--2 {
-          padding: 4.35rem 0 0; } }
+          padding: 4.35rem 0 3rem; } }
   .bg__block--top {
     background-color: #282623;
     height: 33rem; }

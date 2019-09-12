@@ -65,9 +65,12 @@
                 @include bp(1053){
                     height: auto;
                     width: 100%;
+                    position: relative;
+                    padding: 3rem 0;
+                    margin: 0;
                 }
-                @include bp(1053){
-                    padding: 4.35rem 0 0;
+                @include bp(650){
+                    padding: 4.35rem 0 3rem;
                 }
             }
         }

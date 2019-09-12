@@ -270,6 +270,7 @@ $(document).ready(function() {
         $(".page--60").remove();
 
         $(".page--64 .container-right-2-col .callout__slider > *").detach().appendTo('.page--64 .container-left-2-col .callout__slider');
+        $('.page--64 .container-right-2-col').remove();
         $(".page--64 .content-holder").detach().appendTo('.page--62 .content-holder');
         $(".page--64 .container-right-2-col").remove();
 
@@ -669,6 +670,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.nav-bar').hide();
         };
 
+        // $('.page--62 .content-holder')
 
         var navItem2m = [
              [ [1] , '            <a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-name bold">Intro</span></a><span class="dividing-bar">/</span>'],
