@@ -106,6 +106,12 @@ ul.no-dots-ul{
 
 			&--3{ color: $col-signature-black; }
 		}
+
+		&__cta {
+			font-size: .8rem;
+			color: $col-secondary-yellow;
+			&:hover{ font-weight: bold; }
+		}
 	
 		&__connected{
 			&:before{
