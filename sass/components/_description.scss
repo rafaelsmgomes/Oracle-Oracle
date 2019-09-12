@@ -10,10 +10,13 @@
         flex-wrap: wrap;
 
         &--1{
-            height: 20rem;
+            height: 22rem;
             // @include bp(1053){
             //     height: auto;
             // }
+        }
+        &--3{
+            height: 23rem;
         }
         @include bp(1053){
             flex-wrap: nowrap;

@@ -226,11 +226,16 @@ textarea {
     &--1::after{
       margin-bottom: .8rem;
     }
-    &__quaternary{
-      @include bp(1053){
-        width: 29.8rem;
-        margin: 2rem auto;
-      }    
+  }
+
+  &__quaternary{
+    @include bp(1053){
+      width: 29.8rem;
+      margin: 2rem auto;
+    }    
+    @include bp(650){
+      width: auto;
+      margin: 0 1.5rem 2rem;
     }
   }
 }
@@ -418,7 +423,7 @@ textarea {
         padding-left: .5rem;
       }
       @include bp(650){
-        font-size: .6rem;
+        font-size: .7rem;
         & img{
           display: none;
         }

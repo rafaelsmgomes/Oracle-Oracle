@@ -269,26 +269,25 @@ $(document).ready(function() {
         $(".page--59").remove();
         $(".page--60").remove();
 
-        $(".page--64 .container-right-2-col .callout__slider > *").detach().appendTo('.page--64 .container-left-2-col .callout__slider');
-        $('.page--64 .container-right-2-col').remove();
-        $(".page--64 .content-holder").detach().appendTo('.page--62 .content-holder');
-        $(".page--64 .container-right-2-col").remove();
-
+        $(".page--63 .container-right-2-col .callout__slider > *").detach().appendTo('.page--63 .container-left-2-col .callout__slider');
+        $('.page--63 .container-right-2-col').remove();
+        $(".page--63 .content-holder").detach().appendTo('.page--62 .content-holder');
+        $(".page--63 .container-right-2-col").remove();
         $(".page--63").remove();
-        $(".page--64").remove();
-        
-        $(".page--67 .container-right-2-col > *").detach().appendTo('.page--67 .container-left-2-col');
-        $(".page--67 .content-holder").detach().appendTo('.page--66 .content-holder');
-        $(".page--66 .content-holder").detach().appendTo('.page--65 .content-holder');
-        $(".page--66").remove();
-        $(".page--67").remove();
 
-        $(".page--71 .content-holder").detach().appendTo('.page--70 .content-holder');
+        
+        $(".page--66 .container-right-2-col > *").detach().appendTo('.page--66 .container-left-2-col');
+        $(".page--66 .content-holder").detach().appendTo('.page--65 .content-holder');
+        $(".page--65 .content-holder").detach().appendTo('.page--64 .content-holder');
+        $(".page--65").remove();
+        $(".page--66").remove();
+
         $(".page--70 .content-holder").detach().appendTo('.page--69 .content-holder');
         $(".page--69 .content-holder").detach().appendTo('.page--68 .content-holder');
+        $(".page--68 .content-holder").detach().appendTo('.page--67 .content-holder');
+        $(".page--68").remove();
         $(".page--69").remove();
         $(".page--70").remove();
-        $(".page--71").remove();
 
 
 
@@ -458,7 +457,6 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     
     if (context == 'large') {
         if (currentSlide === 0 || 
-            currentSlide === 5 || 
             currentSlide === finance || 
             currentSlide === finance-1 || 
             currentSlide === humanResources || 
@@ -500,7 +498,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             [64,65,66,71], // both: up to conclusion 
             [67,68,69], // next: up2
             [68,69,70], // prev: up2 
-            [1], // prev: up2 
+            [1], // next: white 
         ];
         $.each(arrayArrow[0], function( i, v ){
             if (currentSlide == v) {

@@ -11,10 +11,15 @@
             background-color: $col-signature-black;
             background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
             background-size: cover;
-
+            
             @include bp(1053){
                 margin-top: -3.5rem;
-                height: 100vh;
+                margin-bottom: -3.7rem;
+                height: 40rem;
+                position: relative;
+            }
+            @include bp(750){
+                height: auto;
             }
         }
         &--home{
@@ -50,6 +55,10 @@
             &--cover{
                 @include bp(1053){
                     height: 13rem;
+                    width: 100%;
+                }
+                @include bp(750){
+                    height: 6.4rem;
                     width: 100%;
                 }
             }

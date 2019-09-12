@@ -4,6 +4,7 @@
     margin-top: 2rem;
 
     @include bp(1053){
+        margin: 2rem auto 1.2rem;
         width: 22rem;
         max-width: 85vw;
     }
@@ -19,6 +20,11 @@
         width: 30.95rem;
         height: 14.5rem;
         margin-left: -3.5rem;
+        @include bp(1053){
+            margin: 2rem auto 1.2rem;
+            width: 22rem;
+            max-width: 85vw;
+        }
         @include bp(650){
             width: auto;
             height: auto;

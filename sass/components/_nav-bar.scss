@@ -13,6 +13,9 @@
   @include bp(1053){
     padding-left: calc(((100vw - 29.8rem) / 2) - .5rem);
   }
+  @include bp(650){
+    padding-left: 1.5rem;
+  }
 
   a {
     text-decoration: none;

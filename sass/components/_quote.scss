@@ -11,10 +11,6 @@
 			height: auto;
 			padding: 3rem 0 0;
 		}
-		@include bp(1053){
-			height: auto;
-			padding: 3rem 0 0;
-		}
 	}
 
 	&__wrapper{
@@ -29,10 +25,13 @@
 			width: 29.8rem;
 			padding-left: 0;
 		}
+		@include bp(700){
+			width: auto;
+			margin: 0 1.5rem 1.2rem;
+		}
 		@include bp(650){
 			height: auto;
 			width: auto;
-			margin: 0 1.5rem 1.2rem;
 		}
 	}
 
@@ -69,6 +68,9 @@
 
 			@include bp(1053){
 				width: 29.8rem;
+			}
+			@include bp(700){
+				width: auto;
 			}
 			@include bp(650){
 				width: auto;

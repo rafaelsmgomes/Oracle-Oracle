@@ -8,16 +8,20 @@
     width: 47.6rem;
     background-color: $col-white;
     overflow: hidden;
-
+    
     @include bp(1053){
+      margin-top: 5.65rem;
       margin-left: 10%;
       width: 78%;
       padding-left: 7.5%;
+      margin-bottom: 6rem;
+      height: auto;
     }
-    @include bp(700){
+    @include bp(750){
       padding-left: 5%;
       padding-right: 5%;
-      margin-bottom: 3rem;
+      margin-bottom: 6rem;
+      margin-top: 2rem;
     }
     @include bp(550){
       height: auto;
@@ -37,7 +41,7 @@
     @include bp(1053){
       
     }
-    @include bp(641){
+    @include bp(750){
       width: 100%;
     }
   }

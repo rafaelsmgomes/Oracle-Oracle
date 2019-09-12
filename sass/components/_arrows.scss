@@ -54,6 +54,9 @@
   z-index: 2000;
   background-repeat: no-repeat;
   mix-blend-mode: luminosity;
+  @include bp(1053){
+    left: .7rem;
+  }
 }
 
 [dir='rtl'] .slick-prev {
@@ -72,7 +75,9 @@
   background-repeat: no-repeat;
   fill: black;
   mix-blend-mode: luminosity; 
-  // background-blend-mode: color;
+  @include bp(1053){
+    right: .7rem;
+  }
 }
 
 [dir='rtl'] .slick-next {

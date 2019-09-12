@@ -97,6 +97,9 @@
     &--1{
       margin-bottom: 3.2rem;
     }
+    &--2{
+      margin-bottom: 1rem;
+    }
   }
 
   &__container{
@@ -112,8 +115,19 @@
 }
 
 .bc-player-SyGHte2Ul_default:hover .vjs-big-play-button{
-  background-color: #e50000!important;
+  background-color: $col-signature-red !important;
+}
+.bc-player-SyGHte2Ul_default:hover .vjs-volume-level{
+  background-color: $col-signature-red !important;
+}
+.bc-player-SyGHte2Ul_default:hover .vjs-volume-level{
+  background-color: $col-signature-red !important;
 }
 .bc-player-SyGHte2Ul_default .vjs-play-progress{
-    background-color: #e50000!important;
+    background-color: $col-signature-red !important;
 }
+.bc-player-SyGHte2Ul_default:hover .vjs-menu-item.vjs-selected{
+    background-color: $col-signature-red !important;
+}
+
+//    

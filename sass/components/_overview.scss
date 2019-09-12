@@ -43,6 +43,7 @@
         }
         @include bp(650){
             height: 3rem;
+            margin-right: 0;
         }
     }
     &__cta{
