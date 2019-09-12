@@ -456,17 +456,17 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 	$('.slick-arrow').show();
     
     if (context == 'large') {
-        if (currentSlide === 0 || 
-            currentSlide === finance || 
-            currentSlide === finance-1 || 
+        if (currentSlide === 0 ) {
+                $('.slick-prev.slick-arrow').hide();
+                $('.slick-next.slick-arrow').hide();
+        } else if ( currentSlide === finance || 
             currentSlide === humanResources || 
             currentSlide === humanResources-1 || 
             currentSlide === supplyChain || 
             currentSlide === supplyChain-1 || 
             currentSlide === customerExperience ||
-            currentSlide === customerExperience-1 ||
-            currentSlide === conclusionSlide-1 ) {
-                $('.slick-prev.slick-arrow').hide();
+            currentSlide === conclusionSlide-1 ||
+            currentSlide === customerExperience-1 ) {
                 $('.slick-next.slick-arrow').hide();
         } else if(currentSlide === conclusionSlide) {
             $('.slick-prev.slick-arrow').hide();
@@ -492,13 +492,14 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
     if (context == 'large') {
 
         var arrayArrow = [
-            [9,24,28,34,49,57], // next: up, white
-            [14,18,39,45,53,63], // prev: up, white
-            [61,63,70], // next: back, white
-            [64,65,66,71], // both: up to conclusion 
-            [67,68,69], // next: up2
-            [68,69,70], // prev: up2 
-            [1], // next: white 
+            [], // next: up, white - 9,24,28,34,49,57
+            [], // prev: up, white - 14,18,39,45,53,63
+            [], // next: back, white - 61,63,70
+            [63,64,65,66,67,68,69,70], // both: up to conclusion - 64,65,66,71
+            [], // next: up2 - 67,68,69
+            [], // prev: up2 - 68,69,70
+            [1,5,9,24,28,34,49,57,61,62,69], // next: white 
+            [5,6,14,18,20,21,30,31,39,41,42,45,53,60,62], // prev: white 
         ];
         $.each(arrayArrow[0], function( i, v ){
             if (currentSlide == v) {
@@ -533,6 +534,11 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         $.each(arrayArrow[6], function( i, v ){
             if (currentSlide == v) {
                 $('.slick-arrow.slick-next').addClass('next--white');
+            }
+        });
+        $.each(arrayArrow[7], function( i, v ){
+            if (currentSlide == v) {
+                $('.slick-arrow.slick-prev').addClass('prev--white');
             }
         });
     }
@@ -614,7 +620,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
              [ [57] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 3/5</span> '],
              [ [58] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 4/5</span> '],
              [ [59] , '            <span class="dividing-bar">/</span><span class="chap-sub">Marketing Experience 5/5</span> '],
-             [ [60,61] , ''],
+             [ [60,61,62] , ''],
         ];
         $.each(navItem3, function( i, arr2 ){
             $.each( arr2[0], function( i, v ){
@@ -639,10 +645,10 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             currentSlide == 14 || 
             currentSlide == 45 || 
             currentSlide == 53 || 
-            currentSlide == 63 || 
+            currentSlide == 62 || 
+            currentSlide == 67 || 
             currentSlide == 68 || 
             currentSlide == 69 || 
-            currentSlide == 70 || 
             currentSlide == 39 ) {
             $('.logo-home__path').css('fill', '#fcfbfa');
             $('.dividing-bar').addClass('nav-white');

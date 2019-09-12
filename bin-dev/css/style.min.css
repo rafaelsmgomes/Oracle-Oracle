@@ -1721,7 +1721,7 @@ ul.no-dots-ul {
     margin-right: 1rem; }
     @media only screen and (max-width: 650px) {
       .overview__cta {
-        margin-right: 4rem; } }
+        margin-right: 0rem; } }
 
 .composition {
   cursor: pointer;
