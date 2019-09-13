@@ -40,6 +40,7 @@
         &--2{
             height: auto;
             margin-right: -2.8rem;
+            flex-direction: column;
         }
         @include bp(650){
             height: 3rem;
@@ -49,6 +50,13 @@
     &__cta{
         margin-left: auto;
         margin-right: 1rem;
+
+        &--2{ 
+            margin-bottom: .5rem;
+            margin-right: 0;
+            margin-left: auto;
+        }
         @include bp(650){ margin-right: 0rem;}
+
     }
 }

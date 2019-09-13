@@ -37,12 +37,10 @@ svg:not(:root) {
 .home-icon{  
   &--2{
     display: block;
-    width: 2rem;
-    height: 2rem;
-    margin-right: .7rem;
+    height: 2rem; 
 
     @include bp(650){
-      width: 4rem;
+      height: 4rem;
     }
   }
 }

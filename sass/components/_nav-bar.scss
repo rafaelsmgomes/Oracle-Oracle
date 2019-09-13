@@ -1,6 +1,7 @@
 .nav-bar {
   width: 100%;
   padding-left: 6.15rem;
+  padding-right: 6.15rem;
   height: 2.90rem;
   position: absolute;
   top: 0;
@@ -53,6 +54,23 @@
       &:hover {
         transform: scale(1.2);
       }
+    }
+    &--5{
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+
+      & .dividing-bar{
+        margin: 0 .3rem; 
+      }
+    }
+  }
+  &__right{
+    display: flex;
+    align-items: center; 
+    & span{
+      @include Body-1;
+      margin-left: .1rem; 
     }
   }
 }

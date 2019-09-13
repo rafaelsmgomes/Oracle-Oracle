@@ -25,6 +25,7 @@ var customerExperience2=47;
 var customerExperience3=51;
 var customerExperience4=55;
 var conclusionSlide=61;
+var lastPage=70;
 // var chapter5=12;
 // var chapter6=13;
 // var chapter7=14;
@@ -630,6 +631,14 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             });
         });
 
+        $('.nav__right svg > *').css('fill', '#645B54');
+        $('.logo-home__path').css('fill', '#56504b');
+        $('.chap-name').removeClass('bold nav-white');
+        $('.chap-sub').removeClass('bold nav-white');
+        $('.dividing-bar').removeClass('nav-white');
+        $('.nav__right span').css('color', '#383330');
+        $('.nav__item--5 .dividing-bar').css('color', '#383330');
+
         if(currentSlide == finance ||
         currentSlide == humanResources -1 || 
         currentSlide == humanResources || 
@@ -653,15 +662,12 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.logo-home__path').css('fill', '#fcfbfa');
             $('.dividing-bar').addClass('nav-white');
             $('.chap-name').addClass('nav-white');
-            $('.chap-sub').addClass('bold nav-white')
-        } else if (currentSlide > 6 ){
-            $('.logo-home__path').css('fill', '#56504b');
-            $('.chap-name').removeClass('bold nav-white');
-            $('.chap-sub').removeClass('bold nav-white')
-            $('.dividing-bar').removeClass('nav-white');
-        } else {
-            $('.dividing-bar').removeClass('nav-white');
-        }
+            $('.chap-sub').addClass('bold nav-white');
+        } else if (currentSlide == 2) {
+            $('.nav__right span').css('color', '#fcfbfa');
+            $('.nav__right svg > *').css('fill', '#fcfbfa');
+            $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
+        } 
     }
 
     if (context === 'medium' || context == 'small') {
@@ -725,6 +731,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             });
         });
 
+        
         if (currentSlide == finance ||
         currentSlide == finance -1 ||
         currentSlide == humanResources -1 ||
