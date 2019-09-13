@@ -28,10 +28,11 @@ svg:not(:root) {
 
 .logo-tag{
   position: absolute; 
-  bottom: 0rem;
+  bottom: 0.4rem;
   right: 2.6rem;
   display: block;
   z-index: 100;
+  @include bp(1053){ bottom: 0; }
 }
 
 .home-icon{  

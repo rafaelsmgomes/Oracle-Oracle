@@ -141,9 +141,9 @@ input {
       display: block;
       bottom: auto;
       right: auto;
+      margin: 3rem 3rem 1.2rem auto;
     }
     @include bp(1053){
-      margin: 3rem 3rem -.80rem auto;
       width: auto;
       display: block;
       bottom: auto;

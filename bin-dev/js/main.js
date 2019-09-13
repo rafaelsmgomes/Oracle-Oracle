@@ -51,7 +51,7 @@ if ( $window.width() <= 1053) {
     var customerExperience4=20;
     var conclusionSlide=22;
     
-    if ($window.width() <= 767) {
+    if ($window.width() <= 500) {
         context = 'small';
     }
 }
@@ -638,6 +638,8 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         $('.dividing-bar').removeClass('nav-white');
         $('.nav__right span').css('color', '#383330');
         $('.nav__item--5 .dividing-bar').css('color', '#383330');
+        $('.nav__item--2, .nav__item--3').show();
+
 
         if(currentSlide == finance ||
         currentSlide == humanResources -1 || 
@@ -678,26 +680,27 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.nav__right span').css('color', '#fcfbfa');
             $('.nav__right svg > *').css('fill', '#fcfbfa');
             $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
-        } 
+        } else if (currentSlide == homePage) {
+            $('.nav__right span').css('color', '#fcfbfa');
+            $('.nav__right svg > *').css('fill', '#fcfbfa');
+            $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
+            $('.nav-bar').show();
+            $('.nav__item--1, .nav__item--2, .nav__item--3').hide();
+        }
     }
 
     if (context === 'medium' || context == 'small') {
 
-        if(currentSlide === 0 || currentSlide === 2){
-            $('.nav-bar').hide();
-        }else if (currentSlide > 0){
-            $('.nav-bar').show();
-        }else{
-            $('.nav-bar').hide();
-        };
+        $('.nav-bar').show();
+
 
         // $('.page--62 .content-holder')
 
         var navItem2m = [
              [ [1] , '            <a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-name bold">Intro</span></a><span class="dividing-bar">/</span>'],
              [ [2] , ''],
-             [ [3] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>Finance</b></span></a>'],
-             [ [4,5,6,7] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "); "><span class="chap-name">Finance</span></a>'],
+             [ [3] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>FIN</b></span></a>'],
+             [ [4,5,6,7] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', finance); "); "><span class="chap-name">FIN</span></a>'],
              [ [8] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>HR</b></span></a>'],
              [ [9,10,11] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "); "><span class="chap-name">HR</span></a>'],
              [ [12] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"); "><span class="chap-name nav-white"><b>SC</b></span></a>'],
@@ -725,7 +728,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
              [ [9] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Career Development</span></a>'],
              [ [10] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Hiring Experience</span></a>'],
              [ [11,12] , ''],
-             [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Supply Chain Experience</span></a>'],
+             [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">SC Experience</span></a>'],
              [ [14] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Product Management</span></a>'],
              [ [15,16] , ''],
              [ [17] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Customer Purchasing</span></a>'],
@@ -742,8 +745,54 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             });
         });
 
+        // if (context == 'small'){
+        //     var navItem3m = [
+        //         [ [1] , ''],
+        //         [ [2,3] , ''],
+        //         [ [4] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Reporting &uarr;</span></a>'],
+        //         [ [5] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Planning &uarr;</span></a>'],
+        //         [ [6] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Expense Submission</span></a>'],
+        //         [ [7,8] , ''],
+        //         [ [9] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Career Development</span></a>'],
+        //         [ [10] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Hiring Experience</span></a>'],
+        //         [ [11,12] , ''],
+        //         [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Supply Chain Experience</span></a>'],
+        //         [ [14] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Product Management</span></a>'],
+        //         [ [15,16] , ''],
+        //         [ [17] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Customer Purchasing</span></a>'],
+        //         [ [18] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Sales Experience</span></a>'],
+        //         [ [19] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Employee Experience</span></a>'],
+        //         [ [20] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Marketing Experience</span></a>'],
+        //         [ [21,22,23,24,25,26] , ''],
+        //    ];
+        //    $.each(navItem3m, function( i, arr2 ){
+        //        $.each( arr2[0], function( i, v ){
+        //            if(currentSlide == v ) {
+        //                $('.nav__item--3').html(arr2[1]);
+        //            }
+        //        });
+        //    });
+        // }    
+
+        $('.nav-bar').show();
+        $('.nav__item--1 > *').show(); 
+
+        if(currentSlide === 0 ){
+            $('.nav-bar').hide();
+        } else if (currentSlide == homePage) {
+            $('.nav__item--1 > *').hide(); 
+        }
         
-        if (currentSlide == finance ||
+        $('.logo-home__path').css('fill', '#56504b');
+        $('.chap-name').removeClass('nav-white');
+        $('.chap-sub').removeClass('bold nav-white')
+        $('.dividing-bar').removeClass('nav-white');
+        $('.nav-bar').removeClass('nav__bg-black');
+        $('.nav-bar').addClass('nav__bg-white');
+        $('.nav__right span').css('color', '#56504b');
+        $('.nav__right svg > *').css('fill', '#56504b');
+        $('.nav__item--5 .dividing-bar').css('color', '#56504b');
+if (currentSlide == finance ||
         currentSlide == finance -1 ||
         currentSlide == humanResources -1 ||
         currentSlide == humanResources ||
@@ -756,15 +805,14 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.dividing-bar').addClass('nav-white');
             $('.chap-name').addClass('bold nav-white');
             $('.nav-bar').addClass('nav__bg-black');
-        } else if (currentSlide > 0 ){
-            $('.logo-home__path').css('fill', '#56504b');
-            $('.chap-name').removeClass('nav-white');
-            $('.chap-sub').removeClass('bold nav-white')
-            $('.dividing-bar').removeClass('nav-white');
-            $('.nav-bar').removeClass('nav__bg-black');
-            $('.nav-bar').addClass('nav__bg-white');
-        } else {
-            $('.dividing-bar').removeClass('nav-white');
+            $('.nav__right span').css('color', '#fcfbfa');
+            $('.nav__right svg > *').css('fill', '#fcfbfa');
+            $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
+        } else if (currentSlide == homePage) {
+            $('.nav__right span').css('color', '#fcfbfa');
+            $('.nav__right svg > *').css('fill', '#fcfbfa');
+            $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
+            $('.nav__item--1, .nav__item--2, .nav__item--3').hide();
         }
 
         if (currentSlide === 1){
@@ -775,6 +823,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             $('.nav__item--2').show();
             $('.nav__item--3').show();
             $('.nav__item--4').hide();
+            $('.nav__item--5').show();
         };
     }
 

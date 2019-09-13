@@ -79,11 +79,11 @@ ul.no-dots-ul{
 		}
 
 		&--4{ 
-			padding-bottom: .625rem; 
+			padding-bottom: .5rem; 
 			@include bp(1053){
 				width: 20.8rem;
 			} 
-			@include bp(1053){
+			@include bp(650){
 				width: auto;
 				margin: 0 0 0 1rem;
 			} 

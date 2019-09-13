@@ -13,9 +13,11 @@
 
   @include bp(1053){
     padding-left: calc(((100vw - 29.8rem) / 2) - .5rem);
+    padding-right: calc(((100vw - 29.8rem) / 2) - .5rem);
   }
   @include bp(650){
     padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   a {
@@ -59,21 +61,40 @@
       margin-left: auto;
       display: flex;
       align-items: center;
+      // @include bp(1053){
+      //   display: none;
+      // }
 
       & .dividing-bar{
         margin: 0 .3rem; 
+        @include bp(1053){
+          margin: 0 .1rem;
+        }
       }
     }
   }
   &__right{
     display: flex;
     align-items: center; 
+
+    // @include bp(1053){
+    //   margin-top: 3rem
+    // }
     & span{
       @include Body-1--Bold; 
       margin-left: .1rem; 
+      transition: margin-left .2s;
+      @include bp(1053){
+        display: none;
+      }
+
+      &:hover{ margin-left: .4rem;}
     }
     &--2 svg{
-      height: 1rem;
+      height: .9rem;
+      &:hover{
+        transform: scale(1.1);
+      }
     }
   }
 

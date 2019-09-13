@@ -20,6 +20,13 @@
             }
             @include bp(750){
                 height: auto;
+                min-height: 100vh;
+            }
+            &--2{
+                background-color: $col-signature-black;
+                background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+                background-size: cover;
+    
             }
         }
         &--home{

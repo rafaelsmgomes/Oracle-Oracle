@@ -107,8 +107,10 @@ textarea {
     color: $col-signature-black;
     
     &--main{
+      @include H1;
       display: block;
       line-height: 1.35;
+      font-family: OracleSans_Bd;
     }
     &--sub{
       @include H3;
@@ -322,6 +324,9 @@ textarea {
     color: $col-signature-red;
     align-self: flex-end;
     font-size: .8rem;
+    & > a {
+      margin-left: auto;
+    }
     @include bp(650){
       font-size: .7rem;
     }
@@ -345,6 +350,9 @@ textarea {
       &--2{ 
         color: $col-white; 
         width: 16rem;
+        @include bp(1053){
+          width: auto;
+        }
       }
     }
     &__description{
