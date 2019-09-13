@@ -69,10 +69,14 @@
     display: flex;
     align-items: center; 
     & span{
-      @include Body-1;
+      @include Body-1--Bold; 
       margin-left: .1rem; 
     }
+    &--2 svg{
+      height: 1rem;
+    }
   }
+
 }
 
 .company-logo{

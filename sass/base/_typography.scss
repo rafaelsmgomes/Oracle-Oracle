@@ -272,13 +272,11 @@ textarea {
 
 .bold{
   font-family: $font-bold;
-  font-weight: 700;
 
   &--2{ 
     @include Body-2--Bold;  
     font-family: $font-bold;
     font-size: .8rem; 
-    font-weight: bold;
     color: inherit;
   }
   &--3{
@@ -314,6 +312,8 @@ textarea {
   &--3{ 
     color: $col-signature-red;
     align-self: flex-end;
+    margin-right: 0;
+    margin-left: auto;
     @include bp(650){
       font-size: .7rem;
     }
@@ -342,7 +342,10 @@ textarea {
     &__header{
       @include Body-2--Bold;
       color: $col-secondary-yellow; 
-      &--2{ color: $col-white; }
+      &--2{ 
+        color: $col-white; 
+        width: 16rem;
+      }
     }
     &__description{
       @include Body-2--Italic;
@@ -417,7 +420,7 @@ textarea {
       & img{
         display: inline-block;
         width: 2.5rem;
-        height: 1.15rem;
+        height: 1.05rem;
         transition: all .5s; 
       }
       &:hover img{

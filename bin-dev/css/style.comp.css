@@ -11,6 +11,9 @@ $Breakpoint argument choices:
 -land
 -desk
 */
+* {
+  outline: hotpink solid 1px; }
+
 *,
 *::after,
 *::before {
@@ -154,21 +157,18 @@ strong {
 h1 {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1.35;
   color: #383330; }
 
 h2 {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
   line-height: 1.31;
   color: #383330; }
 
 h3 {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.1rem;
-  font-weight: bold;
   line-height: 1.32;
   color: #383330; }
 
@@ -203,7 +203,6 @@ textarea {
 .cover__title {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1.35;
   color: #383330;
   font-family: OracleSans_Bd;
@@ -215,7 +214,6 @@ textarea {
   .cover__title--sub {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
-    font-weight: bold;
     line-height: 1.32;
     color: #383330;
     display: block;
@@ -245,19 +243,18 @@ textarea {
 .header__primary {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 2rem;
-  font-weight: bold;
   line-height: 1.35;
   color: #383330;
   color: #fcfbfa; }
   .header__primary--1 {
     display: block;
     font-size: 1.6rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    margin-left: 1rem; }
 
 .header__secondary {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
   line-height: 1.31;
   color: #383330; }
   @media only screen and (max-width: 1053px) {
@@ -290,7 +287,6 @@ textarea {
 .header__tertiary {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   color: #282623;
@@ -357,17 +353,14 @@ textarea {
     margin-bottom: 3rem; }
 
 .bold {
-  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
-  font-weight: 700; }
+  font-family: OracleSans_Bd, Arial, Helvetica, sans-serif; }
   .bold--2 {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .80rem;
-    font-weight: bold;
     line-height: 1.38;
     color: #383330;
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .8rem;
-    font-weight: bold;
     color: inherit; }
   .bold--3 {
     margin-bottom: 1.2rem; }
@@ -384,7 +377,6 @@ textarea {
 .vid_text {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: bold;
   line-height: 1.38;
   color: #383330;
   color: #fcfbfa;
@@ -398,7 +390,6 @@ textarea {
   align-items: center;
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   font-size: .95rem; }
@@ -407,7 +398,9 @@ textarea {
     font-size: 1rem; }
   .btn-txt--3 {
     color: #d1350f;
-    align-self: flex-end; }
+    align-self: flex-end;
+    margin-right: 0;
+    margin-left: auto; }
     @media only screen and (max-width: 650px) {
       .btn-txt--3 {
         font-size: .7rem; } }
@@ -426,12 +419,12 @@ textarea {
 .callout__txt__header {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: bold;
   line-height: 1.38;
   color: #383330;
   color: #e6ac58; }
   .callout__txt__header--2 {
-    color: #fcfbfa; }
+    color: #fcfbfa;
+    width: 16rem; }
 
 .callout__txt__description {
   font-family: OracleSans_Lt, Arial, Helvetica, sans-serif;
@@ -451,7 +444,6 @@ textarea {
   .callout__flex__txt--bold {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
-    font-weight: bold;
     line-height: 1.33;
     color: #383330;
     font-size: 1.1rem;
@@ -466,7 +458,6 @@ textarea {
 .chapters__title--main {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   font-size: .85rem;
@@ -486,7 +477,6 @@ textarea {
 .chapters__symbol {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   font-size: 2.75rem;
@@ -496,7 +486,6 @@ textarea {
 .chapters__cta {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   color: #d1350f;
@@ -505,7 +494,6 @@ textarea {
 .overview__txt--footer {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   color: #d1350f;
@@ -516,7 +504,7 @@ textarea {
   .overview__txt--footer img {
     display: inline-block;
     width: 2.5rem;
-    height: 1.15rem;
+    height: 1.05rem;
     transition: all .5s; }
   .overview__txt--footer:hover img {
     padding-left: .5rem; }
@@ -541,7 +529,6 @@ textarea {
   .overview__subchapters__textbox--main {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .80rem;
-    font-weight: bold;
     line-height: 1.38;
     color: #383330;
     line-height: 1.44;
@@ -564,7 +551,6 @@ textarea {
 .metrics__container--main {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: bold;
   line-height: 1.38;
   color: #383330;
   color: #2b6242;
@@ -583,7 +569,6 @@ textarea {
 .quote__txt {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .80rem;
-  font-weight: bold;
   line-height: 1.38;
   color: #383330;
   color: #282623; }
@@ -608,7 +593,6 @@ textarea {
   .results__item--main {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
-    font-weight: bold;
     line-height: 1.33;
     color: #383330;
     color: #ae562c; }
@@ -622,7 +606,6 @@ textarea {
 .cases__header {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: 1.6rem;
-  font-weight: bold;
   line-height: 1.31;
   color: #383330;
   margin-bottom: .4rem; }
@@ -630,7 +613,6 @@ textarea {
 .cases__sub {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   color: #ae562c;
@@ -854,7 +836,7 @@ input {
         width: auto;
         margin-bottom: 10rem; } }
   .btn--3 {
-    width: auto;
+    width: 100%;
     margin-top: 1.3rem;
     margin-left: auto; }
     @media only screen and (max-width: 1053px) {
@@ -957,7 +939,8 @@ input {
       clear: both; }
     .callout__slider--4__link {
       display: flex;
-      align-items: center; }
+      align-items: center;
+      width: 20.5rem; }
     .callout__slider--4:hover {
       transform: scale(1.025);
       box-shadow: 0.1rem 0.2rem rgba(40, 38, 35, 0.2); }
@@ -971,7 +954,7 @@ input {
         margin: 0 1.5rem .6rem; } }
   .callout__slider--5 {
     margin: -7rem 0 0 -4.4rem;
-    padding: 7rem 4.2rem 2.2rem 5.2rem;
+    padding: 7rem 4.2rem 1.2rem 5.2rem;
     height: 35.8rem;
     width: 29.4rem;
     top: 2.8rem;
@@ -1065,7 +1048,6 @@ input {
   width: 2.5rem;
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   color: #e6ac58;
@@ -1428,12 +1410,10 @@ svg:not(:root) {
 
 .home-icon--2 {
   display: block;
-  width: 2rem;
-  height: 2rem;
-  margin-right: .7rem; }
+  height: 2rem; }
   @media only screen and (max-width: 650px) {
     .home-icon--2 {
-      width: 4rem; } }
+      height: 4rem; } }
 
 ul.no-dots-ul {
   list-style: none; }
@@ -1506,7 +1486,6 @@ ul.no-dots-ul {
   .bullet__item__header {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: .9rem;
-    font-weight: bold;
     line-height: 1.33;
     color: #383330;
     color: #e6ac58;
@@ -1530,20 +1509,34 @@ ul.no-dots-ul {
     color: #e6ac58; }
     .bullet__item__cta:hover {
       font-weight: bold; }
-  .bullet__item__connected:before {
-    background-color: rgba(229, 219, 190, 0.15);
-    width: .1rem;
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: -.85rem; }
-  .bullet__item__connected--3:before {
-    background-color: rgba(174, 86, 44, 0.15); }
-  .bullet__item__connected:first-of-type:before {
-    top: .8rem; }
-  .bullet__item__connected:last-of-type:before {
-    height: .8rem; }
+  .bullet__item__connected {
+    list-style-type: none; }
+    .bullet__item__connected:after {
+      content: "";
+      background-color: #e6ac58;
+      width: .35rem;
+      height: .35rem;
+      position: absolute;
+      border-radius: 50%;
+      top: 0.4rem;
+      bottom: 0;
+      left: -0.95rem; }
+    .bullet__item__connected:before {
+      background-color: rgba(229, 219, 190, 0.15);
+      width: .1rem;
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: -.85rem; }
+    .bullet__item__connected--3:before {
+      background-color: rgba(174, 86, 44, 0.15); }
+    .bullet__item__connected--3:after {
+      background-color: #ae562c; }
+    .bullet__item__connected:first-of-type:before {
+      top: .7rem; }
+    .bullet__item__connected:last-of-type:before {
+      height: .7rem; }
 
 .metrics__wrapper {
   border-left: 2px solid #2b6242;
@@ -1574,6 +1567,7 @@ ul.no-dots-ul {
 .nav-bar {
   width: 100%;
   padding-left: 6.15rem;
+  padding-right: 6.15rem;
   height: 2.90rem;
   position: absolute;
   top: 0;
@@ -1615,6 +1609,24 @@ ul.no-dots-ul {
     transition: all .1s; }
     .nav__item--4:hover {
       transform: scale(1.2); }
+  .nav__item--5 {
+    margin-left: auto;
+    display: flex;
+    align-items: center; }
+    .nav__item--5 .dividing-bar {
+      margin: 0 .3rem; }
+
+.nav__right {
+  display: flex;
+  align-items: center; }
+  .nav__right span {
+    font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
+    font-size: .9rem;
+    line-height: 1.33;
+    color: #383330;
+    margin-left: .1rem; }
+  .nav__right--2 svg {
+    height: 1rem; }
 
 .company-logo {
   opacity: 1;
@@ -1661,7 +1673,6 @@ ul.no-dots-ul {
 .chap-sub {
   font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
   font-size: .9rem;
-  font-weight: bold;
   line-height: 1.33;
   color: #383330;
   line-height: 1.3333; }
@@ -1715,7 +1726,8 @@ ul.no-dots-ul {
     align-items: center; }
     .overview__footer--2 {
       height: auto;
-      margin-right: -2.8rem; }
+      margin-right: -2.8rem;
+      flex-direction: column; }
     @media only screen and (max-width: 650px) {
       .overview__footer {
         height: 3rem;
@@ -1723,6 +1735,10 @@ ul.no-dots-ul {
   .overview__cta {
     margin-left: auto;
     margin-right: 1rem; }
+    .overview__cta--2 {
+      margin-bottom: .5rem;
+      margin-right: 0;
+      margin-left: auto; }
     @media only screen and (max-width: 650px) {
       .overview__cta {
         margin-right: 0rem; } }
@@ -1925,16 +1941,22 @@ ul.no-dots-ul {
 .quote__txt {
   position: relative;
   margin-bottom: 1.2rem;
-  padding-top: 4.4rem; }
+  margin-top: 4.4rem; }
   .quote__txt:before {
     content: "\201C";
     position: absolute;
-    top: -.5rem;
+    top: -5rem;
     left: -1rem;
     font-size: 10rem;
+    font-weight: bold;
     color: rgba(121, 114, 109, 0.1);
     font-family: OracleSans;
     z-index: 0; }
+
+@-moz-document url-prefix() {
+  .quote__txt:before {
+    top: -3.5rem;
+    left: -1rem; } }
   .quote__txt--cases {
     padding-top: 2.5rem; }
     .quote__txt--cases:before {
@@ -2044,8 +2066,7 @@ table {
   padding-top: .5rem;
   display: block;
   width: 100%;
-  border-bottom: 4px solid #e6ac58;
-  margin-bottom: 1rem; }
+  border-bottom: 4px solid #e6ac58; }
 
 .under-red--long::after {
   content: "";

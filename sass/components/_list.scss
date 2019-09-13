@@ -114,6 +114,19 @@ ul.no-dots-ul{
 		}
 	
 		&__connected{
+			list-style-type: none; 
+
+			&:after{
+				content: "";
+				background-color: $col-secondary-yellow; 
+				width: .35rem;
+				height: .35rem;
+				position: absolute;
+				border-radius: 50%;
+				top: 0.4rem;
+				bottom: 0;
+				left: -0.95rem;
+			}
 			&:before{
 				background-color: rgba($color: $col-supporting-beige, $alpha: .15);
 				width: .1rem;
@@ -124,12 +137,13 @@ ul.no-dots-ul{
 				left: -.85rem;
 			}
 			&--3:before{background-color: rgba($col-secondary-orange, $alpha: .15);}
+			&--3:after{background-color: $col-secondary-orange;}
 	
 			&:first-of-type:before{
-				top: .8rem;
+				top: .7rem;
 			}
 			&:last-of-type:before{
-				height: .8rem;
+				height: .7rem;
 			}
 		}
 

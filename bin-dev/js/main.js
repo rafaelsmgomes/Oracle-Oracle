@@ -633,7 +633,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
 
         $('.nav__right svg > *').css('fill', '#645B54');
         $('.logo-home__path').css('fill', '#56504b');
-        $('.chap-name').removeClass('bold nav-white');
+        $('.chap-name').removeClass('nav-white');
         $('.chap-sub').removeClass('bold nav-white');
         $('.dividing-bar').removeClass('nav-white');
         $('.nav__right span').css('color', '#383330');
@@ -644,26 +644,37 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         currentSlide == humanResources || 
         currentSlide == supplyChain - 1 ||
         currentSlide == supplyChain ||
+        currentSlide == 62 || 
         currentSlide == customerExperience - 1 ||
         currentSlide == customerExperience || 
+        currentSlide == 67 || 
+        currentSlide == 68 || 
+        currentSlide == 69 || 
         currentSlide == conclusionSlide - 1 ) {
             $('.logo-home__path').css('fill', '#fcfbfa');
             $('.dividing-bar').addClass('nav-white');
             $('.chap-name').addClass('bold nav-white');
+            $('.nav__right span').css('color', '#fcfbfa');
+            $('.nav__right svg > *').css('fill', '#fcfbfa');
+            $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');
         } else if (currentSlide == 18 ||
             currentSlide == 14 || 
             currentSlide == 45 || 
             currentSlide == 53 || 
-            currentSlide == 62 || 
-            currentSlide == 67 || 
-            currentSlide == 68 || 
-            currentSlide == 69 || 
             currentSlide == 39 ) {
             $('.logo-home__path').css('fill', '#fcfbfa');
             $('.dividing-bar').addClass('nav-white');
             $('.chap-name').addClass('nav-white');
             $('.chap-sub').addClass('bold nav-white');
-        } else if (currentSlide == 2) {
+        } else if (currentSlide == 9 ||
+            currentSlide == 2 ||
+            currentSlide == 28 ||
+            currentSlide == 34 ||
+            currentSlide == 49 ||
+            currentSlide == 57 ||
+            currentSlide == conclusionSlide ||
+            currentSlide == 66 ||
+            currentSlide == 24) {
             $('.nav__right span').css('color', '#fcfbfa');
             $('.nav__right svg > *').css('fill', '#fcfbfa');
             $('.nav__item--5 .dividing-bar').css('color', '#fcfbfa');

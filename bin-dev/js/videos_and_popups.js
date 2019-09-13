@@ -108,7 +108,7 @@ function openVideoOverlay(ob) {
         position: ['auto', 'auto'],
         appendTo:'html'
     });
-}
+};
 
 function openOverlay(pop){
     var popID=pop;
