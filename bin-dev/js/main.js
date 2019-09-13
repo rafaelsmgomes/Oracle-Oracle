@@ -51,7 +51,7 @@ if ( $window.width() <= 1053) {
     var customerExperience4=20;
     var conclusionSlide=22;
     
-    if ($window.width() <= 500) {
+    if ($window.width() <= 450) {
         context = 'small';
     }
 }
@@ -745,35 +745,6 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             });
         });
 
-        // if (context == 'small'){
-        //     var navItem3m = [
-        //         [ [1] , ''],
-        //         [ [2,3] , ''],
-        //         [ [4] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Reporting &uarr;</span></a>'],
-        //         [ [5] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Planning &uarr;</span></a>'],
-        //         [ [6] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Expense Submission</span></a>'],
-        //         [ [7,8] , ''],
-        //         [ [9] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Career Development</span></a>'],
-        //         [ [10] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Hiring Experience</span></a>'],
-        //         [ [11,12] , ''],
-        //         [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Supply Chain Experience</span></a>'],
-        //         [ [14] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Product Management</span></a>'],
-        //         [ [15,16] , ''],
-        //         [ [17] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Customer Purchasing</span></a>'],
-        //         [ [18] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Sales Experience</span></a>'],
-        //         [ [19] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Employee Experience</span></a>'],
-        //         [ [20] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Marketing Experience</span></a>'],
-        //         [ [21,22,23,24,25,26] , ''],
-        //    ];
-        //    $.each(navItem3m, function( i, arr2 ){
-        //        $.each( arr2[0], function( i, v ){
-        //            if(currentSlide == v ) {
-        //                $('.nav__item--3').html(arr2[1]);
-        //            }
-        //        });
-        //    });
-        // }    
-
         $('.nav-bar').show();
         $('.nav__item--1 > *').show(); 
 
@@ -825,6 +796,12 @@ if (currentSlide == finance ||
             $('.nav__item--4').hide();
             $('.nav__item--5').show();
         };
+        if (context == 'small') {
+            $('.nav__item--3').hide();
+            $('.chap-name').addClass('bold');
+            $('.header').addClass('rewidow');
+        }
+
     }
 
 

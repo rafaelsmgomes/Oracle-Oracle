@@ -436,9 +436,10 @@ textarea {
       }
       @include bp(650){
         font-size: .7rem;
-        & img{
-          display: none;
-        }
+        text-align: end;
+      }
+      @include bp(375){
+        font-size: .6rem;
       }
     }
   }
@@ -451,13 +452,20 @@ textarea {
       width: 9.8rem;
       margin-bottom: 2.4rem;
       font-size: .8rem; 
+      
+      @include bp(650){
+        width: 12rem;
+      }
+      @include bp(350){
+        width: auto;
+      }
 
       &--4{
         width: 13.1rem;
         margin-bottom: 1.7rem;
-      }
-      @include bp(650){
-        width: 12rem;
+        @include bp(650){
+          width: 11.5rem;
+        }
       }
       &--main{
         @include Body-2--Bold;
