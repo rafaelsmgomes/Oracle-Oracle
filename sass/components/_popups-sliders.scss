@@ -141,6 +141,9 @@
             transform: scale(.975);
             position: absolute;
         }
+        &:hover &__item--1:not(:hover){
+            box-shadow: none;
+        }
 
 
         &__item{
@@ -159,6 +162,7 @@
 
             &--1{ 
                 left: 27.5%;
+                box-shadow: 0 .75rem 1.5rem rgba($color: $col-signature-black, $alpha: .3);
                 top: 1rem;
             }
             &--2{}

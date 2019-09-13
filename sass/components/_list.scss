@@ -116,7 +116,7 @@ ul.no-dots-ul{
 		&__connected{
 			&:before{
 				background-color: rgba($color: $col-supporting-beige, $alpha: .15);
-				width: 2px;
+				width: .1rem;
 				content: "";
 				position: absolute;
 				top: 0;
