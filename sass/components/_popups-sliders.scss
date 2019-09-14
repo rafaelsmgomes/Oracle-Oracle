@@ -10,10 +10,17 @@
             box-shadow: .1rem .75rem 1.5rem rgba($color: $col-signature-black, $alpha: .3);
         }
     }
-    &--2 > img {
+    &--2 > img,
+    &--3 > img {
         &:hover{
             box-shadow: none;
+            -webkit-filter: drop-shadow (2px 15px 30px $col-signature-black);
+            filter: drop-shadow (2px 15px 30px $col-signature-black);
         }
+    }
+    &--3 > img {
+        max-height: 27.2rem;
+        margin: 0 auto 1.2rem;
     }
 
 
@@ -159,7 +166,6 @@
             box-shadow: none;
         }
 
-
         &__item{
             position: absolute;
             height: 19rem;
@@ -167,6 +173,7 @@
                 width: 40%;
                 height: auto;
             }
+
 
             &:hover{
                 transform: scale(1.025);
@@ -188,6 +195,46 @@
 
         }
     }
+
+    &__diag{
+        position: relative;
+        width: 22.7rem;
+        height: 13rem;
+
+        &--item{
+            position: absolute;
+
+            &:hover{
+                transform: scale(1.2) !important;
+                z-index: 10;
+            }
+
+
+            &--1{
+                width: 54%;
+            }
+            &--2{
+                width: 54%;
+                bottom: 0;
+                right: 0;
+            }
+            &--3{
+                width: 70%;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                box-shadow: 0 .75rem 1.5rem rgba($color: $col-signature-black, $alpha: .3);
+                
+                &:hover{
+                    transform: scale(1.01) translate(-50%, -50%) !important;
+                }
+                &:not(:hover){
+                    transform: scale(.95) translate(-50%, -50%) !important;
+                }
+            }
+        }
+    }
+
 }
 
 .close-bttn-holder{

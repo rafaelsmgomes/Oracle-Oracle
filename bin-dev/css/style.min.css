@@ -1810,8 +1810,14 @@ ul.no-dots-ul {
     .composition > img:hover {
       transform: scale(1.025);
       box-shadow: 0.1rem 0.75rem 1.5rem rgba(40, 38, 35, 0.3); }
-  .composition--2 > img:hover {
-    box-shadow: none; }
+  .composition--2 > img:hover,
+  .composition--3 > img:hover {
+    box-shadow: none;
+    -webkit-filter: drop-shadow 2px 15px 30px #282623;
+    filter: drop-shadow 2px 15px 30px #282623; }
+  .composition--3 > img {
+    max-height: 27.2rem;
+    margin: 0 auto 1.2rem; }
   @media only screen and (max-width: 1053px) {
     .composition {
       margin: 2rem auto 1.2rem;
@@ -1938,6 +1944,31 @@ ul.no-dots-ul {
         top: 1rem; }
       .composition__triple__item--3 {
         right: 0; }
+  .composition__diag {
+    position: relative;
+    width: 22.7rem;
+    height: 13rem; }
+    .composition__diag--item {
+      position: absolute; }
+      .composition__diag--item:hover {
+        transform: scale(1.2) !important;
+        z-index: 10; }
+      .composition__diag--item--1 {
+        width: 54%; }
+      .composition__diag--item--2 {
+        width: 54%;
+        bottom: 0;
+        right: 0; }
+      .composition__diag--item--3 {
+        width: 70%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0 0.75rem 1.5rem rgba(40, 38, 35, 0.3); }
+        .composition__diag--item--3:hover {
+          transform: scale(1.01) translate(-50%, -50%) !important; }
+        .composition__diag--item--3:not(:hover) {
+          transform: scale(0.95) translate(-50%, -50%) !important; }
 
 .close-bttn-holder {
   width: 100%;
