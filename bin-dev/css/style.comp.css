@@ -1805,6 +1805,11 @@ ul.no-dots-ul {
   cursor: pointer;
   margin-bottom: 1.2rem;
   margin-top: 2rem; }
+  .composition > img {
+    transition: all .2s; }
+    .composition > img:hover {
+      transform: scale(1.025);
+      box-shadow: 0.1rem 0.75rem 1.5rem rgba(40, 38, 35, 0.3); }
   @media only screen and (max-width: 1053px) {
     .composition {
       margin: 2rem auto 1.2rem;
