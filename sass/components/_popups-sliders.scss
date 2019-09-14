@@ -2,6 +2,14 @@
     cursor: pointer;
     margin-bottom: 1.2rem;
     margin-top: 2rem;
+    
+    & > img {
+        transition: all .2s;
+        &:hover{
+            transform: scale(1.025);
+            box-shadow: .1rem .75rem 1.5rem rgba($color: $col-signature-black, $alpha: .3);
+        }
+    }
 
     @include bp(1053){
         margin: 2rem auto 1.2rem;
@@ -17,9 +25,9 @@
         margin-top: 0; 
     }
     &--1{
-        width: 30.95rem;
-        height: 14.5rem;
-        margin-left: -3.5rem;
+        width: 27rem;
+        height: 13.5rem;
+        margin-left: -2.5rem;
         @include bp(1053){
             margin: 2rem auto 1.2rem;
             width: 22rem;

@@ -202,7 +202,6 @@ textarea {
   font-size: 2rem;
   line-height: 1.35;
   color: #383330;
-  font-family: OracleSans_Bd;
   line-height: normal;
   color: #282623; }
   .cover__title--main {
@@ -211,8 +210,7 @@ textarea {
     line-height: 1.35;
     color: #383330;
     display: block;
-    line-height: 1.35;
-    font-family: OracleSans_Bd; }
+    line-height: 1.35; }
   .cover__title--sub {
     font-family: OracleSans_Bd, Arial, Helvetica, sans-serif;
     font-size: 1.1rem;
@@ -1189,17 +1187,34 @@ input {
   .citation__item:not(:last-child) {
     margin-bottom: .6rem; }
 
-#teconsent a {
-  color: #fff; }
-
-.copyright {
+.copyright--1 {
+  color: #fff;
   padding: 0;
   position: relative;
   bottom: auto;
   font-size: 0.60rem;
   display: flex;
   justify-content: center;
-  margin-top: 0.50rem; }
+  margin-top: 0.50rem;
+  font-family: OracleSans, Arial, Helvetica, sans-serif;
+  font-size: .60rem;
+  line-height: 1.33;
+  color: #383330; }
+  .copyright--1 p {
+    font-family: OracleSans, Arial, Helvetica, sans-serif;
+    font-size: .60rem;
+    line-height: 1.33;
+    color: #383330;
+    font-size: 12px;
+    margin: 0;
+    color: #4e5052; }
+    .copyright--1 p a {
+      color: #41727e; }
+      .copyright--1 p a:hover {
+        text-decoration: underline; }
+  @media only screen and (max-width: 1053px) {
+    .copyright--1 {
+      display: none; } }
 
 .description__wrapper {
   width: 100%;
@@ -1803,9 +1818,9 @@ ul.no-dots-ul {
   .composition:first-child {
     margin-top: 0; }
   .composition--1 {
-    width: 30.95rem;
-    height: 14.5rem;
-    margin-left: -3.5rem; }
+    width: 27rem;
+    height: 13.5rem;
+    margin-left: -2.5rem; }
     @media only screen and (max-width: 1053px) {
       .composition--1 {
         margin: 2rem auto 1.2rem;
@@ -2217,9 +2232,9 @@ table {
   @media only screen and (max-width: 1053px) {
     .video__wrapper {
       margin: 0 auto 3rem; } }
-  @media only screen and (max-width: 1053px) {
+  @media only screen and (max-width: 350px) {
     .video__wrapper {
-      width: 14.5rem;
+      width: 14.6rem;
       transform: translateX(3%); } }
   .video__wrapper--1 {
     margin-bottom: 3.2rem; }
@@ -2237,7 +2252,8 @@ table {
   width: 6.2rem; }
   @media only screen and (max-width: 375px) {
     .video__info {
-      width: 4.5rem; } }
+      width: 4.7rem;
+      margin-left: .2rem; } }
 
 .bc-player-SyGHte2Ul_default:hover .vjs-big-play-button {
   background-color: #d1350f !important; }

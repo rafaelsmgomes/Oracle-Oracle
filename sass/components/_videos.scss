@@ -54,14 +54,14 @@
     -moz-transition: opacity .5s 1s ease-in-out;
     -o-transition: opacity .5s 1s ease-in-out;
     @include absCenter
-    &--1{
-      width: 100%;
-    }
+      &--1{
+        width: 100%;
+      }
 
-    &:hover{
-      opacity: .75;  
-    }
-  }
+      &:hover{
+        opacity: .75;  
+      }
+  } 
 
   &:hover .video-play-bttn{
     opacity:  .75;
@@ -123,8 +123,8 @@
     @include bp(1053){
       margin: 0 auto 3rem;
     }
-    @include bp(1053){
-      width: 14.5rem;
+    @include bp(350){
+      width: 14.6rem;
       transform: translateX(3%);
     }
     
@@ -146,7 +146,8 @@
     margin-top: .5rem;
     width: 6.2rem;
     @include bp(375){
-      width: 4.5rem;
+      width: 4.7rem;
+      margin-left: .2rem;
     }
   }
 }

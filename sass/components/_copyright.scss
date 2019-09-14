@@ -1,7 +1,5 @@
-#teconsent a {
-    color: #fff;
-}
-.copyright{
+.copyright--1{
+  color: #fff;
 	padding: 0;
   position: relative;
   bottom: auto;
@@ -9,4 +7,21 @@
   display: flex;
   justify-content: center;
   margin-top: 0.50rem;
+  @include Caption;
+  & p {
+    @include Caption;
+    font-size: 12px;
+    margin: 0;
+    color: #4e5052;
+    & a {
+      color: $col-supporting-lightblue;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  @include bp(1053){
+    display: none;
+  }
 }

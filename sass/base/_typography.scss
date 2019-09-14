@@ -102,7 +102,6 @@ textarea {
   }
   &__title{
     @include H1;
-    font-family: OracleSans_Bd;
     line-height: normal;
     color: $col-signature-black;
     
@@ -110,7 +109,6 @@ textarea {
       @include H1;
       display: block;
       line-height: 1.35;
-      font-family: OracleSans_Bd;
     }
     &--sub{
       @include H3;
