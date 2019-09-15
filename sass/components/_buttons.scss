@@ -100,7 +100,7 @@ input {
       cursor: auto;
       margin-bottom: 10rem;
     }
-    @include bp(1053){
+    @include bp(650){
       margin: 2rem 1.5rem;
       width: auto; 
       margin-bottom: 10rem;
@@ -112,6 +112,7 @@ input {
     margin-left: auto;
 
     @include bp(1053){
+      width: 29.8rem;
       margin-bottom: 1.3rem;
       margin-right: calc((100vw - 29.8rem) / 2);
 
@@ -120,6 +121,7 @@ input {
       }
     }
     @include bp(650){
+      width: auto;
       margin-left: auto;
       margin-right: 1.5rem;
     }
@@ -138,19 +140,18 @@ input {
     }
 
     @include bp(1053){
+      margin: 3rem 3rem 1.2rem auto;
       position: relative;
-      margin: 3rem auto;
       width: 29.8rem;
       display: block;
       bottom: auto;
       right: auto;
-      margin: 3rem 3rem 1.2rem auto;
     }
-    @include bp(1053){
+    @include bp(650){
       width: auto;
-      display: block;
       bottom: auto;
       right: auto;
+      margin: 3rem 2.5rem 1.2rem 1.5rem; 
     }
   }
 }

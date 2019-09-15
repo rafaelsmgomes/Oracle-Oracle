@@ -136,7 +136,7 @@
         @include bp(650){
             flex-direction: column;
             & > * {
-                width: 22rem;
+                width: auto;
                 max-width: 85vw;
             }
         }

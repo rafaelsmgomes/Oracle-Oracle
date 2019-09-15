@@ -145,8 +145,17 @@
             @include bp(650){
                 margin: 2rem 1rem;
                 height: auto;
-                padding: 2rem .5rem;
+                padding: 2rem 4.5rem;
                 width: auto;
+            }
+            @include bp(520){
+                padding: 2rem;
+            }
+            @include bp(450){
+                padding: 2rem .8rem;
+            }
+            @include bp(360){
+                padding: 2rem .5rem;
             }
         }
         &--7{
@@ -172,7 +181,7 @@
                 margin: 2.3rem .8rem; 
                 width: auto;
                 height: auto;
-                padding: 3rem .8rem 2rem;
+                padding: 3rem 1.2rem 2rem;
                 & > * {
                     width: auto;
                 }
