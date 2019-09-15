@@ -129,6 +129,9 @@ input {
     position: absolute;
     bottom: 1.1rem;
     right: 5rem;
+    & > * {
+      text-align: end;
+    }
 
     &--flex{
       bottom: 1.5rem;

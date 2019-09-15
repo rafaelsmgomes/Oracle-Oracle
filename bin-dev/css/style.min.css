@@ -866,6 +866,8 @@ input {
     position: absolute;
     bottom: 1.1rem;
     right: 5rem; }
+    .btn__section > * {
+      text-align: end; }
     .btn__section--flex {
       bottom: 1.5rem; }
     @media only screen and (max-width: 1053px) {
@@ -2844,7 +2846,7 @@ table {
     padding-top: 0;
     position: relative; }
   @media only screen and (max-width: 1053px) {
-    .page--6, .page--7, .page--21, .page--22, .page--32, .page--42, .page--43, .page--61, .page--31 {
+    .page--6, .page--7, .page--21, .page--22, .page--33, .page--34, .page--44, .page--45, .page--65, .page--31 {
       background-color: #282623; } }
 
 .TOC-right .TOC-wrap {
