@@ -9,7 +9,7 @@
 	@include bp(1053){
     position: fixed;
     bottom: 0px;
-    overflow: hidden;
+    overflow: visible;
     top: 0px;
 		@include platformMobile;
 	}
@@ -127,13 +127,15 @@ a{
     width: auto;
     z-index: 0;
     @include bp(1053){
-    	padding: 3.50rem 0rem 0rem 0rem;
+    	padding: 3.50rem 0rem 2rem 0rem;
     	width: auto;
     	margin: 0;
     	// margin-left: 4.465%;
     	// margin-right: 1.9%;
     	min-height: calc(#{100%} - #{80rem});
-    	height: unset;
+		height: unset;
+		overflow: scroll !important;
+		
     }
     // @include bp(800){
 	//     padding: 2.00rem 4.50rem 5.00rem 5vw;
@@ -152,8 +154,7 @@ a{
 
 .slick-slide > .container--1{
 	@include bp(1053){
-		padding: 0;
-		height: calc(#{100vh} - #{2.90rem});
+		padding-bottom: 6.4rem;
 	}
 } 
 

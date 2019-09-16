@@ -86,7 +86,7 @@ input {
         color: $col-signature-red;
       }
       & > .arrow--2{
-        background-image: url('../assets/graphics/icons/arrow_blue_lt.svg');
+        background-image: url("../assets/graphics/icons/arrow_blue_lt.svg");
         transform: translateX(0.20rem);
       }
     }  

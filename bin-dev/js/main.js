@@ -319,12 +319,6 @@ $(document).ready(function() {
         });
 
 
-        if($('body').width() <768) {
-
-            for(let i=1; i<12; i++){
-                $(".footnote__"+i).detach().appendTo('.footnote-container__'+i);
-            }
-        }
 
     }
 
@@ -561,7 +555,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
              [ [21,22,23,24,25,26,27,28,29,30,31,32] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', humanResources); "><span class="chap-name">HR</span></a>'],
              [ [33,34,35,36,37,38,39,40,41,42,43] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', supplyChain); "><span class="chap-name">SC</span></a>'],
              [ [44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', customerExperience); "><span class="chap-name">CX</span></a>'],
-             [ [65,66,67,68,69,70,71] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', conclusionSlide); "><span class="chap-name"><b>Conclusion</b></span></a>'],
+             [ [65,66,67,68,69,70,71,72,73,74] , '            <span class="dividing-bar">/</span><a class="toc-link" onclick=" $(\'.book-slider\').slick(\'slickGoTo\', conclusionSlide); "><span class="chap-name"><b>Conclusion</b></span></a>'],
         ];
         $.each(navItem2, function( i, arr2 ){
             $.each( arr2[0], function( i, v ){
@@ -725,24 +719,27 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
             });
         });
 
+        // var navItem3m = [
+        //      [ [1] , ''],
+        //      [ [2,3] , ''],
+        //      [ [4] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Reporting</span></a>'],
+        //      [ [5] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Planning</span></a>'],
+        //      [ [6] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Expense Submission</span></a>'],
+        //      [ [7,8] , ''],
+        //      [ [9] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Career Development</span></a>'],
+        //      [ [10] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Hiring Experience</span></a>'],
+        //      [ [11,12] , ''],
+        //      [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">SC Experience</span></a>'],
+        //      [ [14] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Product Management</span></a>'],
+        //      [ [15,16] , ''],
+        //      [ [17] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Customer Purchasing</span></a>'],
+        //      [ [18] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Sales Experience</span></a>'],
+        //      [ [19] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Employee Experience</span></a>'],
+        //      [ [20] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Marketing Experience</span></a>'],
+        //      [ [21,22,23,24,25,26] , ''],
+        // ];
         var navItem3m = [
-             [ [1] , ''],
-             [ [2,3] , ''],
-             [ [4] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Reporting</span></a>'],
-             [ [5] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Financial Planning</span></a>'],
-             [ [6] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Expense Submission</span></a>'],
-             [ [7,8] , ''],
-             [ [9] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Career Development</span></a>'],
-             [ [10] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Hiring Experience</span></a>'],
-             [ [11,12] , ''],
-             [ [13] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">SC Experience</span></a>'],
-             [ [14] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Product Management</span></a>'],
-             [ [15,16] , ''],
-             [ [17] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Customer Purchasing</span></a>'],
-             [ [18] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Sales Experience</span></a>'],
-             [ [19] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Employee Experience</span></a>'],
-             [ [20] , '<span class="dividing-bar">/</span><a  onclick="$(\'.page\').animate({ scrollTop: 0 }, \'fast\');"><span class="chap-sub">Marketing Experience</span></a>'],
-             [ [21,22,23,24,25,26] , ''],
+             [ [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26] , ''],
         ];
         $.each(navItem3m, function( i, arr2 ){
             $.each( arr2[0], function( i, v ){
@@ -770,7 +767,7 @@ $('.book-slider').on('afterChange', function(event, slick, currentSlide, nextSli
         $('.nav__right span').css('color', '#56504b');
         $('.nav__right svg > *').css('fill', '#56504b');
         $('.nav__item--5 .dividing-bar').css('color', '#56504b');
-if (currentSlide == finance ||
+        if (currentSlide == finance ||
         currentSlide == finance -1 ||
         currentSlide == humanResources -1 ||
         currentSlide == humanResources ||

@@ -8,35 +8,35 @@
   margin-bottom: -1.1rem;
 
   &--1{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P2-6079753985001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P2-6079753985001.jpg");
     background-size: cover;
   }
   &--2{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P7-6079745585001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P7-6079745585001.jpg");
     background-size: cover;
   }
   &--3{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P12-6079750162001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P12-6079750162001.jpg");
     background-size: cover;
   }
   &--4{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P21-6079745588001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P21-6079745588001.jpg");
     background-size: cover;
   }
   &--5{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P31-6079746464001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P31-6079746464001.jpg");
     background-size: cover;
   }
   &--6{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P47-6079744068001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P47-6079744068001.jpg");
     background-size: cover;
   }
   &--7{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P55-6080502346001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P55-6080502346001.jpg");
     background-size: cover;
   }
   &--8{
-    background-image: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/P61-6079753984001.jpg);
+    background-image: url("../assets/Thumbnails/video-thumbs/198x118/P61-6079753984001.jpg");
     background-size: cover;
   }
 
@@ -46,7 +46,7 @@
 
   .video-play-bttn{
     content: '';
-    background: url(../../bin-dev/assets/Thumbnails/video-thumbs/198x118/overlay-tri-with-BG.png) no-repeat center center; 
+    background: url('../assets/Thumbnails/video-thumbs/198x118/overlay-tri-with-BG.png') no-repeat center center; 
     background-size: contain;
     height: 100%;    
     cursor: pointer;

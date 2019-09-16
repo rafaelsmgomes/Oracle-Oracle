@@ -9,7 +9,7 @@
 
         &--cover{
             background-color: $col-signature-black;
-            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+            background-image: url('../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg');
             background-size: cover;
             
             @include bp(1053){
@@ -24,13 +24,13 @@
             }
             &--2{
                 background-color: $col-signature-black;
-                background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+                background-image: url('../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg');
                 background-size: cover;
     
             }
         }
         &--home{
-            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg);
+            background-image: url('../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg');
             background-size: 100%;
         }
     }
@@ -117,13 +117,13 @@
     &-pattern{
 
         &--2{
-            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
+            background-image: url('../assets/graphics/Backgroung-Patterns/texture-half-page.svg');
             background-size: cover;
 
             &-x{
                 
                 @include bp(1053){
-                    background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/texture-half-page.svg);
+                    background-image: url('../assets/graphics/Backgroung-Patterns/texture-half-page.svg');
                     background-size: cover; 
                     position: absolute;
                     z-index: 0;
@@ -145,22 +145,22 @@
             bottom: 0;
             left: 0;
             background-repeat: no-repeat;
-            &--1{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-1.jpg); }
-            &--2{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-2.jpg); }
-            &--3{ background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-3.jpg); }
+            &--1{ background-image: url('../assets/graphics/Backgroung-Patterns/pattern-bottom-bar-1.jpg'); }
+            &--2{ background-image: url('../assets/graphics/Backgroung-Patterns/pattern-bottom-bar-2.jpg'); }
+            &--3{ background-image: url('../assets/graphics/Backgroung-Patterns/pattern-bottom-bar-3.jpg'); }
         }
     }
 
     &__bottom-cover{
         display: none;
         @include bp(1053){
-            background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-bottom-bar-large.png);
+            background-image: url('../assets/graphics/Backgroung-Patterns/pattern-bottom-bar-large.png');
             background-repeat: no-repeat; 
             width: 100%;
             height: 7rem;
             position: absolute;
 
-            bottom: 0;
+            bottom: -2rem;
             left: 0;
             display: block;
             float: left;

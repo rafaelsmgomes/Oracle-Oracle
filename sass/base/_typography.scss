@@ -29,6 +29,9 @@ body {
   font-family: $font-arial;
   color: #4e5052;
   height: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
 }
 
 p {

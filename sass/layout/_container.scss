@@ -92,7 +92,7 @@
 	&-pattern{
 
 		&--3{
-			background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+			background-image: url('../assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg');
 			background-size: cover;
 			padding: 3.4rem;
 			@include bp(1053){
@@ -101,7 +101,7 @@
 		}
 
 		&--1{
-			background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+			background-image: url('../assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg');
 			background-size: cover;
 			padding: 3.4rem;
 
@@ -113,7 +113,7 @@
 			}
 			&-x{
 				@include bp(1053){
-					background-image: url(../../bin-dev/assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg);
+					background-image: url('../assets/graphics/Backgroung-Patterns/pattern-half-page-left@2x.jpg');
 					background-size: cover;
 					z-index: 0;
 					display: block;   
