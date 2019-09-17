@@ -6,10 +6,10 @@
 
         @include bp(1053){
             flex-direction: column;
-            margin: 0 auto -2rem;
-            background-image: url("../assets/graphics/Backgroung-Patterns/pattern-full-page@2x.jpg");
+            margin: 0 auto -5rem;
+            background-image: url("../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg");
             background-size: cover;
-            padding: 2rem 0;
+            padding: 5rem 0;
 
         }
 

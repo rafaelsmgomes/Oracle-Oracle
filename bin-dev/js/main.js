@@ -92,7 +92,6 @@ $(document).ready(function() {
                     slidesToShow: 1,
                     adaptiveHeight: true,
                     accessibility:false,
-                    appendArrows: $(".footer-phone")
                 }
             }
         ]
@@ -116,6 +115,7 @@ $(document).ready(function() {
         }
     });
 
+    $('.page').css('height', $(window).height()); 
 
 
     if ($('body').width() < 1053 ) {
@@ -128,6 +128,11 @@ $(document).ready(function() {
             $('.page').animate({ scrollTop: 0 }, 'fast');
             $(".footer-phone").removeClass('up');
         } );
+
+        // $(window).innerHeight();
+        // $('.main_container').css('height', (window.height()));
+        $('.page').css('height', $(window).height()); 
+        console.log( window.innerHeight);
 
         $('.minus-marg--1').removeClass('minus-marg--1');
 
@@ -161,7 +166,6 @@ $(document).ready(function() {
 
         });
 
-        $('body').css('height', window.innerHeight);
         $('.book-slider').slick('unslick');
 
         // Move footnotes at bottom of page  
@@ -833,11 +837,12 @@ $(window).on('resize orientationchange', function() {
     if(curr_context != context){
         location.reload();
     }
-    if (isTouchDevice == true) {
+    if (isTouchDevice == true ) {
         setTimeout(function(){
             var fix = window.innerHeight;
             $('body').css('height', fix);
-            $(".footer-phone").removeClass('up');
+            $('.page').css('height', fix);
+            $('.main_container').css('height', fix);
         },500)
     }
 });
@@ -909,9 +914,9 @@ function openPop2(){
                 slidesToScroll: 1,
                 arrows: true,
                 dots:true,
-                appendArrows: '.popupContainer',
-                prevArrow: '<span class="icon-chevron-left"></span>',
-                nextArrow: '<span class="icon-chevron-right"></span>'
+                // appendArrows: '.popupContainer',
+                // prevArrow: '<span class="icon-chevron-left"></span>',
+                // nextArrow: '<span class="icon-chevron-right"></span>'
             });
 
         })

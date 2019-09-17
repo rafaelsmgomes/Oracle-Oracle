@@ -140,7 +140,7 @@ input {
     }
 
     @include bp(1053){
-      margin: 3rem 3rem 1.2rem auto;
+      margin: 3rem 3rem 3rem auto;
       position: relative;
       width: 29.8rem;
       display: block;
@@ -151,7 +151,7 @@ input {
       width: auto;
       bottom: auto;
       right: auto;
-      margin: 3rem 2.5rem 1.2rem 1.5rem; 
+      margin: 3rem 2.5rem 3rem 1.5rem; 
     }
   }
 }

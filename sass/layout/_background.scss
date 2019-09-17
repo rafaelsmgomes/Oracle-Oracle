@@ -14,7 +14,7 @@
             
             @include bp(1053){
                 margin-top: -3.5rem;
-                margin-bottom: -3.7rem;
+                margin-bottom: -3.7rem; 
                 height: 40rem;
                 position: relative;
             }
@@ -26,12 +26,15 @@
                 background-color: $col-signature-black;
                 background-image: url('../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg');
                 background-size: cover;
-    
             }
         }
         &--home{
             background-image: url('../assets/graphics/Backgroung-Patterns/pattern-full-page.jpg');
             background-size: 100%;
+
+            @include bp(1053){
+                background-image: none;
+            }
         }
     }
     &__container{
