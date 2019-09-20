@@ -127,7 +127,7 @@ a{
     width: auto;
     z-index: 0;
     @include bp(1053){
-    	padding: 3.50rem 0rem 2rem 0rem;
+    	padding: 3.50rem 0rem 0rem 0rem;
     	width: auto;
     	margin: 0;
     	// margin-left: 4.465%;
@@ -154,14 +154,14 @@ a{
 
 .slick-slide > .container--1{
 	@include bp(1053){
-		padding-bottom: 6.4rem;
+		padding-bottom: 0rem;
 	}
 } 
 
 .slick-slide > .container--2{
 	@include bp(1053){
 		// padding-bottom: 11rem;
-		padding-bottom: 15rem;		
+		padding-bottom: 0rem;		
 	}
 } 
 
