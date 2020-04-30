@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/rafaelsmgomes/Oracle-Oracle#readme",
   "dependencies": {
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "scrollnav": "^3.0.2"
   },
   "devDependencies": {
